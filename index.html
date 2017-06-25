@@ -12,7 +12,7 @@
 </head>
 <body>
 <div>
-    <div id="container" class="container" style="z-index: 10; height:50vh">
+    <div id="container" class="parallax-container" style="z-index: 10;">
         <div id="scene" class="scene">
             <div class="layer" data-depth="0.80"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud" style="width: 200px; left: 0px; top: 0px; "></div>
             <div class="layer" data-depth="0.50"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud" style="width: 300px; left: 400px; top: 50px; "></div>
@@ -21,21 +21,22 @@
             <div class="layer" data-depth="0.90"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud" style="width: 500px; left: -600px; top: 170px; "></div>
             <div class="layer" data-depth="0.30"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud" style="width: 200px; left: -700px; top: 70px; "></div>
             <div class="layer" data-depth="0.80"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud" style="width: 400px; left: 700px; top: 290px; "></div>
-            <div class="layer" data-depth="0.15"><img src="img/nais.png" class="cloud nais-logo-shadow" style="width: 400px; top: 100px; margin-left: auto; margin-right: auto; left: 0; right:0"></div>
+            <div class="layer" data-depth="0.15"><img src="img/nais.png" class="cloud nais-logo-shadow nais-logo"></div>
         </div>
     </div>
 
-    <div class="bottom">
+    <div class="lower-half">
         <div class="wrap">
             <div class="box box1 shadow1 center">
 
-                <h3><img src="img/nais-text.png" class="nais-text" style="width:300px;" /></h3>
+                <h3><img src="img/nais-text.png" class="nais-text" /></h3>
                 <p class="nais-subtext" style="text-align:center;">A pretty nice kubernetes platform</p>
             </div>
         </div>
     </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
