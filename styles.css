@@ -16,6 +16,7 @@ body {
   background: -o-linear-gradient(#6da6b8 0%, #9ED9EB 30%); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#6da6b8 0%, #9ED9EB 30%); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#6da6b8 0%, #9ED9EB 30%); /* Standard syntax */
+  overflow-x: hidden;
 }
 
 .scene {
@@ -277,7 +278,7 @@ and (max-device-width : 320px) {
 }
 .middle-container{
   min-height: 350px;
-  height: 33vh;
+  height: 45vh;
   position: relative;
   background: #fff;
   background: -webkit-linear-gradient(#9ED9EB 0%, #fff 5%); /* For Safari 5.1 to 6.0 */
@@ -299,8 +300,8 @@ and (max-device-width : 320px) {
   background: -moz-linear-gradient(#fff 0%, #9EEBA1 5%); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#fff 0%, #9EEBA1 5%); /* Standard syntax */
   position: absolute;
-  min-height: 350px;
-  max-height: 32vh;
+  min-height: 250px;
+  max-height: 20vh;
   width: 100%;
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -409,7 +410,7 @@ and (max-device-width : 320px) {
   -o-transform: translateZ(-75px);
   transform: translateZ(-75px);
 }
-.flip-box .object:hover, .flip-box .object:focus {
+.flip-box .object:hover, .flip-box .object:focus, .flip-box .object:active {
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
   -o-transition-property: -o-transform;
@@ -457,7 +458,7 @@ and (max-device-width : 320px) {
   -o-transform: rotateY(-90deg) translateZ(150px);
   transform: rotateY(-90deg) translateZ(150px);
 }
-.flip-box.flip-up .object:hover, .flip-box.flip-up .object:focus {
+.flip-box.flip-up .object:hover, .flip-box.flip-up .object:focus, .flip-box .object:active {
   -webkit-transform: translateZ(-75px) rotateX(180deg);
   -moz-transform: translateZ(-75px) rotateX(180deg);
   -ms-transform: translateZ(-75px) rotateX(180deg);
@@ -517,7 +518,7 @@ and (max-device-width : 320px) {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-.no-csstransforms3d .flip-box .object:hover .back {
+.no-csstransforms3d .flip-box .object:hover .back, .no-csstransforms3d .flip-box .object:active .back {
   top: 0;
   z-index: 1;
 }
