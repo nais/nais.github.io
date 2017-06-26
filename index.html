@@ -8,35 +8,183 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
 </head>
 <body>
 <div class="body-wrapper">
-    <div id="container" class="parallax-container" style="z-index: 10;">
+    <div id="container" class="top-container" style="z-index: 10;">
         <div id="scene" class="scene">
-            <div class="layer" data-depth="0.80"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud" style="width: 200px; left: 0px; top: 0px; "></div>
-            <div class="layer" data-depth="0.50"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud" style="width: 300px; left: 400px; top: 50px; "></div>
-            <div class="layer" data-depth="0.30"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud" style="width: 300px; left: -100px; top: 170px; "></div>
-            <div class="layer" data-depth="0.20"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud" style="width: 100px; left: 600px; top: 270px; "></div>
-            <div class="layer" data-depth="0.90"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud" style="width: 500px; left: -600px; top: 170px; "></div>
-            <div class="layer" data-depth="0.30"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud" style="width: 200px; left: -700px; top: 70px; "></div>
-            <div class="layer" data-depth="0.80"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud" style="width: 400px; left: 700px; top: 290px; "></div>
-            <div class="layer" data-depth="0.15"><img src="img/nais.png" class="cloud nais-logo-shadow nais-logo"></div>
+            <div class="layer" data-depth="0.80"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud"
+                                                      style="width: 200px; left: 0px; top: 0px; "></div>
+            <div class="layer" data-depth="0.50"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud"
+                                                      style="width: 300px; left: 400px; top: 50px; "></div>
+            <div class="layer" data-depth="0.30"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud"
+                                                      style="width: 300px; left: -100px; top: 130px; "></div>
+            <div class="layer" data-depth="0.20"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud"
+                                                      style="width: 100px; left: 500px; top: 100px; "></div>
+            <div class="layer" data-depth="0.90"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud"
+                                                      style="width: 500px; left: -500px; top: 110px; "></div>
+            <div class="layer" data-depth="0.30"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud"
+                                                      style="width: 200px; left: -550px; top: 70px; "></div>
+            <div class="layer" data-depth="0.80"><img src="http://i.imgur.com/ZNp41C7.png" class="cloud"
+                                                      style="width: 400px; left: 550px; top: 130px; "></div>
+            <div class="layer" data-depth="0.15"><img src="img/nais.png" class="nais-logo nais-logo-shadow"></div>
         </div>
     </div>
 
-    <div class="lower-half">
-        <div class="wrap">
-            <div class="box box1 shadow1 center">
-
-                <h3><img src="img/nais-text.png" class="nais-text" /></h3>
+    <div class="middle-container">
+            <div class="box box-pink box-shadow box-shadow-pink box-border center">
+                <h3><img src="img/nais-text.png" class="nais-text"/></h3>
                 <p class="nais-subtext" style="text-align:center;">A pretty nice kubernetes platform</p>
             </div>
-        </div>
+    </div>
+    <div class="lower-container">
+            <ul class="flip-boxes">
+                <li class="flip-box flip-up">
+                    <div class="object">
+                        <div class="front">
+                            <div class="flip-content">
+                                <h1>Naisible</h1>
+                                <i>Build nais clusters</i>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="flip-content">
+                                <ul>
+                                    <li><a href="https://github.com/nais/naisible"><i class="fa fa-fw fa-github"
+                                                                                      aria-hidden="true"></i>&nbsp;Github
+                                        project</a></li>
+                                    <li><a href="https://github.com/nais/naisible/blob/master/readme.md"><i
+                                            class="fa fa-fw fa-book" aria-hidden="true"></i>&nbsp;Documentation</a></li>
+                                    <li><a href="https://github.com/nais/naisible/archive/master.zip"><i
+                                            class="fa fa-fw fa-download" aria-hidden="true"></i>&nbsp;Download</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flank"></div>
+                    </div>
+                </li><!-- /.flip-box -->
+
+                <li class="flip-box flip-side">
+                    <div class="object">
+                        <div class="front">
+                            <div class="flip-content">
+                                <h1>Naiscaper</h1>
+                                <i>Landscape clusters naisly</i>
+
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="flip-content">
+                                <ul>
+                                    <li><a href="https://github.com/nais/naiscaper"><i
+                                            class="fa fa-fw fa-github" aria-hidden="true"></i>&nbsp;Github project</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flank"></div>
+                    </div>
+                </li><!-- /.flip-box -->
+
+                <li class="flip-box flip-up">
+                    <div class="object">
+                        <div class="front">
+                            <div class="flip-content">
+                                <h1>Naisd</h1>
+                                <i>Deploy nais applications</i>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="flip-content">
+                                <ul>
+                                    <li><a href="https://github.com/navikt/nais-platform-apps"><i
+                                            class="fa fa-fw fa-github" aria-hidden="true"></i>&nbsp;Github project</a>
+                                    </li>
+                                    <li><a href="https://github.com/navikt/nais-platform-apps/blob/master/README.md"><i
+                                            class="fa fa-fw fa-book" aria-hidden="true"></i>&nbsp;Documentation</a></li>
+                                    <li><a href="https://github.com/navikt/nais-platform-apps/archive/master.zip"><i
+                                            class="fa fa-fw fa-download" aria-hidden="true"></i>&nbsp;Download</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flank"></div>
+                    </div>
+                </li><!-- /.flip-box -->
+
+                <li class="flip-box flip-up">
+                    <div class="object">
+                        <div class="front">
+                            <div class="flip-content">
+                                <h1>Nais-logd</h1>
+                                <i>Nais log system</i>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="flip-content">
+                                <ul>
+                                    <li><a href="https://github.com/navikt/nais-logd"><i class="fa fa-fw fa-github"
+                                                                                      aria-hidden="true"></i>&nbsp;Github
+                                        project</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flank"></div>
+                    </div>
+                </li><!-- /.flip-box -->
+
+                <li class="flip-box flip-side">
+                    <div class="object">
+                        <div class="front">
+                            <div class="flip-content">
+                                <h1>Naispository</h1>
+                                <i>Nais helm repository</i>
+
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="flip-content">
+                                <ul>
+                                    <li><a href="https://github.com/navikt/nais-repo"><i
+                                            class="fa fa-fw fa-github" aria-hidden="true"></i>&nbsp;Github project</a>
+                                    </li>
+                                    <li><a href="https://github.com/navikt/nais-repo/blob/master/README.md"><i
+                                            class="fa fa-fw fa-book" aria-hidden="true"></i>&nbsp;Documentation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flank"></div>
+                    </div>
+                </li><!-- /.flip-box -->
+
+                <li class="flip-box flip-up">
+                    <div class="object">
+                        <div class="front">
+                            <div class="flip-content">
+                                <h1>Nais charts</h1>
+                                <i>Quite nais chards</i>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="flip-content">
+                                <ul>
+                                    <li><a href="https://github.com/navikt/nais-platform-apps"><i
+                                            class="fa fa-fw fa-github" aria-hidden="true"></i>&nbsp;Github project</a>
+                                    </li>
+                                    <li><a href="https://github.com/navikt/nais-platform-apps/blob/master/README.md"><i
+                                            class="fa fa-fw fa-book" aria-hidden="true"></i>&nbsp;Documentation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flank"></div>
+                    </div>
+                </li><!-- /.flip-box -->
+
     </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
