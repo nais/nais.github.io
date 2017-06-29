@@ -156,6 +156,8 @@ and (max-device-width : 1024px)  {
     width: 200px;
     top: 50px;
     padding-left: 200px;
+    display:none;
+    visibility:hidden;
 
   }
   .top-container {
@@ -282,11 +284,7 @@ and (max-device-width : 320px) {
   justify-content: center;
 }
 .lower-container {
-  background: #9EEBA1;
-  background: -webkit-linear-gradient(#fff 0%, #9EEBA1 5%); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#fff 0%, #9EEBA1 5%); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#fff 0%, #9EEBA1 5%); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#fff 0%, #9EEBA1 5%); /* Standard syntax */
+  background: #fff;
   position: absolute;
   width: 100%;
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -322,11 +320,11 @@ and (max-device-width : 320px) {
 .flip-content {
   margin:7px;
   height: 85%;
-  border: 2px dashed #fff;
+  border: 2px dashed #333;
   border-radius: 5px;
-  box-shadow: 0px 0px 0px 7px #9EEBA1;
+  box-shadow: 0px 0px 0px 7px #fff;
   text-align: center;
-  color: #fff;
+  color: #333;
 }
 .flip-content h1 {
   margin-top: 10px;
@@ -344,7 +342,7 @@ and (max-device-width : 320px) {
   text-decoration: none;
 }
 .flip-content ul > li > a:hover {
-  color: #f5f5f5;
+  color: #666;
 }
 
 
@@ -419,7 +417,7 @@ and (max-device-width : 320px) {
 }
 .flip-box .front {
   z-index: 1;
-  background-color: #9EEBA1;
+  background-color: #fff;
   -webkit-transform: rotateY(0deg) translateZ(75px);
   -moz-transform: rotateY(0deg) translateZ(75px);
   -ms-transform: rotateY(0deg) translateZ(75px);
@@ -428,7 +426,8 @@ and (max-device-width : 320px) {
 }
 .flip-box .back {
   z-index: 0;
-  background-color: #d5aefc;
+  background-color: #333;
+  color: #fff;
   -webkit-transform: rotateY(180deg) translateZ(75px);
   -moz-transform: rotateY(180deg) translateZ(75px);
   -ms-transform: rotateY(180deg) translateZ(75px);
@@ -439,7 +438,7 @@ and (max-device-width : 320px) {
   width: 150px;
   height: 100px;
   left: 75px;
-  background-color: #67a86a;
+  background-color: #000;
   -webkit-transform: rotateY(-90deg) translateZ(150px);
   -moz-transform: rotateY(-90deg) translateZ(150px);
   -ms-transform: rotateY(-90deg) translateZ(150px);
