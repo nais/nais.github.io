@@ -3281,8 +3281,8 @@
 			filter: blur(2px);
 		}
 
-/* Naiscaper */
-#naiscaper .logo {
+/* components */
+#components .logo {
 	-moz-transition: opacity 2s ease, -moz-transform 1s ease;
 	-webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
 	-ms-transition: opacity 2s ease, -ms-transform 1s ease;
@@ -3297,7 +3297,7 @@
 
 }
 
-#naiscaper .logo .icon {
+#components .logo .icon {
 	border-radius: 100%;
 	border: solid 2px rgba(255, 255, 255, 0.125);
 	cursor: default;
@@ -3310,7 +3310,7 @@
 	overflow: hidden;
 
 }
-#naiscaper .logo .icon > img {
+#components .logo .icon > img {
 	position:absolute;
 	top:50%;
 	display:block;
@@ -3326,15 +3326,15 @@
 
 @media screen and (max-width: 736px) {
 
-	#naiscaper .logo {
+	#components .logo {
 		margin: 0 0 1em 0;
 	}
 
-	#naiscaper .logo .icon {
+	#components .logo .icon {
 		font-size: 1.5em;
 	}
 
-	#naiscaper a {
+	#components a {
 		font-size: 0.8em;
 	}
 
