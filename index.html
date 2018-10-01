@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Solid State by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
@@ -13,147 +13,185 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107216247-1"></script>
-    <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments)};
-         gtag('js', new Date());
-         gtag('config', 'UA-107216247-1');
-     </script>
 </head>
-<body>
+<body class="is-preload">
 
-<!-- Page Wrapper -->
-<div id="page-wrapper">
+<!-- Header -->
+<section id="header">
+    <header>
+        <span class="image avatar"><img src="images/nais-logo.png" alt="" /></span>
+        <h1 id="logo"><a href="#">NAIS</a></h1>
+        <p>NAV's application platform<br />
+            built on Kubernetes</p>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="#about" class="active">About</a></li>
+            <li><a href="#components">Components</a></li>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <ul class="icons">
+            <li><a href="https://twitter.com/nais_io" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://github.com/nais" class="icon fa-github"><span class="label">Github</span></a></li>
+        </ul>
+    </footer>
+</section>
 
-    <!-- Header -->
+<!-- Wrapper -->
+<div id="wrapper">
 
-    <!-- Banner -->
-    <section id="banner">
-        <div class="inner">
-            <div class="logo inline"><span class="icon"><img src="images/nais.png"/></span></div>
-            <h2 class="inline">nais</h2>
-            <p>An application container platform built on <a href="https://kubernetes.io">Kubernetes</a></p>
-        </div>
-    </section>
+    <!-- Main -->
+    <div id="main">
 
-    <!-- Wrapper -->
-    <section id="wrapper">
-
-        <!-- Nais -->
-        <section id="nais" class="wrapper spotlight style1">
-            <div class="inner">
-                <a href="#" class="image"><img src="images/nais-logo.png" alt=""/></a>
-                <div class="content">
-                    <h2 class="major">NAV's Application Infrastructure Service</h2>
-                    <p>
-                        NAIS is an application platform built to increase development speed by providing our developers at <a href="https://www.nav.no">NAV</a>
-                        with the best possible tools to develop, test and run their applications.
-                    </p>
-                    <p>
-                        And it's open source!
-                    </p>
-                    <a href="https://github.com/nais" class="special">Learn more</a>
-                </div>
+        <!-- One -->
+        <section id="about">
+            <div class="image main" data-position="center">
+                <img src="images/banner.jpeg" alt="" />
+            </div>
+            <div class="container">
+                <header class="major">
+                    <h2>NAIS</h2>
+                    <p>NAV's Application Infrastructure Service<br />
+                        built on <a href="https://kubernetes.io">Kubernetes</a></p>
+                </header>
+                <p>
+                    <br/>
+                    <br/>
+                    NAIS is an application platform built to increase development speed by providing our developers at <a href="https://www.nav.no">NAV</a>
+                    with the best possible tools to develop, test and run their applications.
+                </p>
+                <p>
+                    And it's open source!
+                </p>
+                <a href="https://github.com/nais" class="special">Learn more</a>
             </div>
         </section>
-
 
         <!-- Components -->
-        <section id="components" class="wrapper alt spotlight style2">
-            <div class="inner">
-                <div class="content">
-                  <h2 class="major">Components</h2>
-                    <p>We use these components in our NAIS clusters</p>
-                    <div class="logos">
-                        <div class="logo">
-                            <span class="icon"><img src="images/ansible.png"/></span>
-                            <a href="https://www.ansible.com/">Ansible</a>
-                        </div>
-                        <div class="logo">
-                            <span class="icon"><img src="images/helm.png"/></span>
-                            <a href="https://github.com/kubernetes/helm">Helm</a>
-                        </div>
-                        <div class="logo">
-                            <span class="icon"><img src="images/sensu.png"/></span>
-                            <a href="https://sensuapp.org/">Sensu</a>
-                        </div>
-                        <div class="logo">
-                            <span class="icon"><img src="images/grafana.png"/></span>
-                            <a href="https://grafana.com/">Grafana</a>
-                        </div>
-                        <div class="logo">
-                            <span class="icon"><img src="images/coredns.png"/></span>
-                            <a href="https://github.com/coredns/coredns">CoreDNS</a>
-                        </div>
-                        <div class="logo">
-                            <span class="icon"><img src="images/influxdb.jpeg"/></span>
-                            <a href="https://www.influxdata.com/">InfluxDB</a>
-                        </div>
-                        <div class="logo">
-                            <span class="icon"><img src="images/istio.png"/></span>
-                            <a href="https://istio.io/">Istio</a>
-                        </div>
-                        <div class="logo">
-                            <span class="icon"><img src="images/kubernetes.png"/></span>
-                            <a href="https://kubernetes.io/">Kubernetes</a>
-                        </div>
-                        <div class="logo">
-                            <span class="icon"><img src="images/traefik.png"/></span>
-                            <a href="https://traefik.io/">Traefik</a>
-                        </div>
+        <section id="components">
+            <div class="container">
+                <h3>Components in NAIS</h3>
+                <div class="logos">
+                    <div class="logo">
+                        <span class="icon"><img src="images/ansible.png"/></span>
+                        <a href="https://www.ansible.com/">Ansible</a>
                     </div>
+                    <div class="logo">
+                        <span class="icon"><img src="images/helm.png"/></span>
+                        <a href="https://github.com/kubernetes/helm">Helm</a>
+                    </div>
+                    <div class="logo">
+                        <span class="icon"><img src="images/sensu.png"/></span>
+                        <a href="https://sensuapp.org/">Sensu</a>
+                    </div>
+                    <div class="logo">
+                        <span class="icon"><img src="images/grafana.png"/></span>
+                        <a href="https://grafana.com/">Grafana</a>
+                    </div>
+                    <div class="logo">
+                        <span class="icon"><img src="images/coredns.png"/></span>
+                        <a href="https://github.com/coredns/coredns">CoreDNS</a>
+                    </div>
+                    <div class="logo">
+                        <span class="icon"><img src="images/influxdb.jpeg"/></span>
+                        <a href="https://www.influxdata.com/">InfluxDB</a>
+                    </div>
+                    <div class="logo">
+                        <span class="icon"><img src="images/istio.png"/></span>
+                        <a href="https://istio.io/">Istio</a>
+                    </div>
+                    <div class="logo">
+                        <span class="icon"><img src="images/kubernetes.png"/></span>
+                        <a href="https://kubernetes.io/">Kubernetes</a>
+                    </div>
+                    <div class="logo">
+                        <span class="icon"><img src="images/traefik.png"/></span>
+                        <a href="https://traefik.io/">Traefik</a>
+                    </div>
+                </div>
 
+                <p>
+                    <br/>
+                    Check out our NAIS documentation if you are curious to learn more about how we have designed and built our platform.
+                </p>
+                <a href="https://nais.github.io/doc" class="special">Learn more</a>
+            </div>
+        </section>
+
+
+
+        <!--
+        <section id="posts">
+            <div class="container">
+                <h3>News and stuff</h3>
+                <div class="features">
+                    <article>
+                        <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                        <div class="inner">
+                            <h4>Possibly broke spacetime</h4>
+                            <p>Well well shit happens 🤷‍♀️.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+                        <div class="inner">
+                            <h4>Terraformed a small moon</h4>
+                            <p>At least we do like terraform.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+                        <div class="inner">
+                            <h4>Snapped dark matter in the wild</h4>
+                            <p>And thats all we know.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
-        <!-- Docs -->
-        <section id="doc" class="wrapper spotlight style3">
-            <div class="inner">
-                <a href="#" class="image"><img src="images/docs.png" alt=""/></a>
-                <div class="content">
-                    <h2 class="major">Documentation</h2>
-                    <p>
-                        Check out our NAIS documentation if you are curious to learn more about how we have designed and built our platform.<br/><br/>
-                        <a href="https://nais.github.io/doc" class="special">Learn more</a>
-                    </p>
+        -->
+
+        <section id="contact">
+            <div class="container">
+                <h4>Contact us</h4>
+                <div class="row">
+                    <ul class="contact">
+                        <li class="fa-home">
+                            Arbeids- og velferdsdirektoratet<br/>
+                            v/ AURA<br/>
+                            Sannergata 2<br/>
+                            0557 Oslo<br/>
+                            Norway
+                        </li>
+                        <li class="fa-twitter"><a href="https://twitter.com/nais_io">@nais_io</a></li>
+                    </ul>
                 </div>
             </div>
-        </section>  
-
-
-        <!-- Footer -->
-        <section id="footer">
-            <div class="inner">
-                <h2 class="major">Contact us</h2>
-               <ul class="contact">
-                    <li class="fa-home">
-                        Arbeids- og velferdsdirektoratet<br/>
-                        v/ AURA<br/>
-                        Sannergata 2<br/>
-                        0557 Oslo, Norway
-                    </li>
-                    <li class="fa-twitter"><a href="https://twitter.com/nais_io">@nais_io</a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; <a href="https://www.nav.no">NAV</a></li>
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-
         </section>
+
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <ul class="copyright">
+                <li>&copy; <a href="https://www.nav.no">NAV</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Header image: <a href="https://unsplash.com/@ripato?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Ricardo Gomez Angel"> <title>unsplash-logo</title></path>Ricardo Gomez Angel</a></li>
+            </ul>
+        </div>
     </section>
 
 </div>
 
 <!-- Scripts -->
-
-<script src="assets/js/skel.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
-<script data-cfasync="false" type="text/javascript"
-        src="https://rawgit.com/nais/nais.github.io/master/assets/js/form-submission-handler.js"></script>
 
 </body>
 </html>

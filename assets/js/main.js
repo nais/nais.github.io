@@ -1,166 +1,159 @@
 /*
-	Solid State by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 (function($) {
 
-	"use strict";
+	var $window = $(window),
+		$body = $('body'),
+		$header = $('#header'),
+		$titleBar = null,
+		$nav = $('#nav'),
+		$wrapper = $('#wrapper');
 
-	skel.breakpoints({
-		xlarge:	'(max-width: 1680px)',
-		large:	'(max-width: 1280px)',
-		medium:	'(max-width: 980px)',
-		small:	'(max-width: 736px)',
-		xsmall:	'(max-width: 480px)'
-	});
+	// Breakpoints.
+		breakpoints({
+			xlarge:   [ '1281px',  '1680px' ],
+			large:    [ '1025px',  '1280px' ],
+			medium:   [ '737px',   '1024px' ],
+			small:    [ '481px',   '736px'  ],
+			xsmall:   [ null,      '480px'  ],
+		});
 
-	$(function() {
+	// Play initial animations on page load.
+		$window.on('load', function() {
+			window.setTimeout(function() {
+				$body.removeClass('is-preload');
+			}, 100);
+		});
 
-		var	$window = $(window),
-			$body = $('body'),
-			$header = $('#header'),
-			$banner = $('#banner');
+	// Tweaks/fixes.
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+		// Polyfill: Object fit.
+			if (!browser.canUse('object-fit')) {
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+				$('.image[data-position]').each(function() {
 
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
+					var $this = $(this),
+						$img = $this.children('img');
 
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
+					// Apply img as background.
+						$this
+							.css('background-image', 'url("' + $img.attr('src') + '")')
+							.css('background-position', $this.data('position'))
+							.css('background-size', 'cover')
+							.css('background-repeat', 'no-repeat');
 
-		// Header.
-			if (skel.vars.IEVersion < 9)
-				$header.removeClass('alt');
+					// Hide img.
+						$img
+							.css('opacity', '0');
 
-			if ($banner.length > 0
-			&&	$header.hasClass('alt')) {
-
-				$window.on('resize', function() { $window.trigger('scroll'); });
-
-				$banner.scrollex({
-					bottom:		$header.outerHeight(),
-					terminate:	function() { $header.removeClass('alt'); },
-					enter:		function() { $header.addClass('alt'); },
-					leave:		function() { $header.removeClass('alt'); }
 				});
 
 			}
 
-		// Menu.
-			var $menu = $('#menu');
+	// Header Panel.
 
-			$menu._locked = false;
+		// Nav.
+			var $nav_a = $nav.find('a');
 
-			$menu._lock = function() {
+			$nav_a
+				.addClass('scrolly')
+				.on('click', function() {
 
-				if ($menu._locked)
-					return false;
+					var $this = $(this);
 
-				$menu._locked = true;
+					// External link? Bail.
+						if ($this.attr('href').charAt(0) != '#')
+							return;
 
-				window.setTimeout(function() {
-					$menu._locked = false;
-				}, 350);
+					// Deactivate all links.
+						$nav_a.removeClass('active');
 
-				return true;
-
-			};
-
-			$menu._show = function() {
-
-				if ($menu._lock())
-					$body.addClass('is-menu-visible');
-
-			};
-
-			$menu._hide = function() {
-
-				if ($menu._lock())
-					$body.removeClass('is-menu-visible');
-
-			};
-
-			$menu._toggle = function() {
-
-				if ($menu._lock())
-					$body.toggleClass('is-menu-visible');
-
-			};
-
-			$menu
-				.appendTo($body)
-				.on('click', function(event) {
-
-					event.stopPropagation();
-
-					// Hide.
-						$menu._hide();
+					// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
+						$this
+							.addClass('active')
+							.addClass('active-locked');
 
 				})
-				.find('.inner')
-					.on('click', '.close', function(event) {
+				.each(function() {
 
-						event.preventDefault();
-						event.stopPropagation();
-						event.stopImmediatePropagation();
+					var	$this = $(this),
+						id = $this.attr('href'),
+						$section = $(id);
 
-						// Hide.
-							$menu._hide();
+					// No section for this link? Bail.
+						if ($section.length < 1)
+							return;
 
-					})
-					.on('click', function(event) {
-						event.stopPropagation();
-					})
-					.on('click', 'a', function(event) {
+					// Scrollex.
+						$section.scrollex({
+							mode: 'middle',
+							top: '5vh',
+							bottom: '5vh',
+							initialize: function() {
 
-						var href = $(this).attr('href');
+								// Deactivate section.
+									$section.addClass('inactive');
 
-						event.preventDefault();
-						event.stopPropagation();
+							},
+							enter: function() {
 
-						// Hide.
-							$menu._hide();
+								// Activate section.
+									$section.removeClass('inactive');
 
-						// Redirect.
-							window.setTimeout(function() {
-								window.location.href = href;
-							}, 350);
+								// No locked links? Deactivate all links and activate this section's one.
+									if ($nav_a.filter('.active-locked').length == 0) {
 
-					});
+										$nav_a.removeClass('active');
+										$this.addClass('active');
 
-			$body
-				.on('click', 'a[href="#menu"]', function(event) {
+									}
 
-					event.stopPropagation();
-					event.preventDefault();
+								// Otherwise, if this section's link is the one that's locked, unlock it.
+									else if ($this.hasClass('active-locked'))
+										$this.removeClass('active-locked');
 
-					// Toggle.
-						$menu._toggle();
-
-				})
-				.on('keydown', function(event) {
-
-					// Hide on escape.
-						if (event.keyCode == 27)
-							$menu._hide();
+							}
+						});
 
 				});
 
-	});
+		// Title Bar.
+			$titleBar = $(
+				'<div id="titleBar">' +
+					'<a href="#header" class="toggle"></a>' +
+					'<span class="title">' + $('#logo').html() + '</span>' +
+				'</div>'
+			)
+				.appendTo($body);
+
+		// Panel.
+			$header
+				.panel({
+					delay: 500,
+					hideOnClick: true,
+					hideOnSwipe: true,
+					resetScroll: true,
+					resetForms: true,
+					side: 'right',
+					target: $body,
+					visibleClass: 'header-visible'
+				});
+
+	// Scrolly.
+		$('.scrolly').scrolly({
+			speed: 1000,
+			offset: function() {
+
+				if (breakpoints.active('<=medium'))
+					return $titleBar.height();
+
+				return 0;
+
+			}
+		});
 
 })(jQuery);
