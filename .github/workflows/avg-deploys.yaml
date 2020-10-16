@@ -1,0 +1,20 @@
+name: Gnuplot of avg. deploys
+on:
+  push:
+    paths:
+      - '.github/scripts/deploys.gnuplot'
+      - '.github/workflows/av-deploys.yaml'
+
+jobs:
+  gnuplot:
+    name: Gnuplot av deploys
+    runs-ons: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: gnuplot -p deploys.gnuplot
+      - name: Commit new graph
+        run: |
+          git config --global user.name "$GITHUB_ACTOR"
+          git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git commit -am "Updated graph with new data"
+          git push
