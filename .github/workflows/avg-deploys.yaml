@@ -3,7 +3,7 @@ on:
   push:
     paths:
       - '.github/scripts/deploys.gnuplot'
-      - '.github/workflows/av-deploys.yaml'
+      - '.github/workflows/avg-deploys.yaml'
 
 jobs:
   gnuplot:
