@@ -4,6 +4,8 @@ on:
     paths:
       - '.github/scripts/deploys.gnuplot'
       - '.github/workflows/avg-deploys.yaml'
+      - '.github/actions/gnuplot/*'
+      - './deploy-data.tsv'
 
 jobs:
   gnuplot:
@@ -11,7 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: gnuplot -p deploys.gnuplot
+      - uses: ./.github/actions/gnuplot
+        with:
+          script: ./.github/scripts/deploys.gnuplot
       - name: Commit new graph
         run: |
           git config --global user.name "$GITHUB_ACTOR"

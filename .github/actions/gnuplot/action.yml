@@ -1,0 +1,9 @@
+name: Gnuplot
+inputs:
+  script:
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.script }}
