@@ -7,7 +7,8 @@ set style line 1 \
 set grid
 set ytics 100
 set offsets 0,2,0,0
+set xlabel "Year"
 set term png medium size 1080
 set output './images/deployments_per_week_graph.png'
 set key autotitle columnhead
-plot "deploy_data.tsv" with linespoints linestyle 1 notitle
+plot "deploy_data.tsv" with linespoints linestyle 1 title "Avg. #deploys/week per year"
