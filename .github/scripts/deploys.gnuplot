@@ -6,7 +6,7 @@ set style line 1 \
 
 set grid
 set ytics 100
-set offsets 0,2,0,0
+set offsets 0,2,100,0
 set xlabel "Year"
 set term png medium size 1080
 set output './images/deployments_per_week_graph.png'
