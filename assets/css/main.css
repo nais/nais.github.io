@@ -3322,7 +3322,7 @@ input[type="button"]:disabled,
     opacity: 1;
     margin: 0 1em 1.3em 0;
     display: inline-block;
-
+    text-align: center
 }
 
 
