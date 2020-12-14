@@ -168,7 +168,7 @@ a.special:not(.button):active:before {
 }
 
 strong, b {
-    color: #777;
+    color: #696969;
     font-weight: 700;
 }
 
@@ -181,7 +181,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #777;
+    color: #696969;
     font-weight: 700;
     line-height: 1em;
     margin: 0 0 0.5625em 0;
@@ -1836,7 +1836,7 @@ header.major h2 {
 }
 
 header.major h2 + p {
-    color: #777;
+    color: #696969;
     font-size: 1.75em;
     font-weight: 700;
     margin-top: -0.75em;
@@ -1849,7 +1849,7 @@ form {
 }
 
 label {
-    color: #777;
+    color: #696969;
     display: block;
     font-size: 0.9em;
     font-weight: 700;
@@ -1908,7 +1908,7 @@ select {
 }
 
 select option {
-    color: #777;
+    color: #696969;
     background: #fff;
 }
 
@@ -2536,7 +2536,7 @@ table td {
 }
 
 table th {
-    color: #777;
+    color: #696969;
     font-size: 0.9em;
     font-weight: 700;
     padding: 0 0.75em 0.75em 0.75em;
@@ -2662,7 +2662,7 @@ input[type="button"].alt,
 .button.alt {
     background-color: transparent;
     box-shadow: inset 0 0 0 2px #e4e4e4;
-    color: #777 !important;
+    color: #696969 !important;
 }
 
 input[type="submit"].alt:hover,
@@ -2670,7 +2670,7 @@ input[type="reset"].alt:hover,
 input[type="button"].alt:hover,
 .button.alt:hover {
     background-color: #f4f4f4;
-    color: #777 !important;
+    color: #696969 !important;
 }
 
 input[type="submit"].alt:active,
