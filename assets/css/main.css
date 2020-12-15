@@ -3202,7 +3202,8 @@ input[type="button"]:disabled,
     }
 
     h4 {
-        font-size: 1em;
+      color: #555555;
+      font-size: 1em;
     }
 
     /* Image */
