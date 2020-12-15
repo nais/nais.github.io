@@ -72,6 +72,23 @@ input, select, textarea {
     appearance: none;
 }
 
+/* skip to content */
+.show-on-focus {
+  margin: 0;
+  clip: rect(1px,1px,1px,1px);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.show-on-focus:focus {
+  z-index: 20;
+  width: auto;
+  height: auto;
+  clip: auto;
+}
+
 /* Basic */
 
 html {
