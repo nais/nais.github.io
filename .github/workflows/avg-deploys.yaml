@@ -5,7 +5,7 @@ on:
       - '.github/scripts/deploys.gnuplot'
       - '.github/workflows/avg-deploys.yaml'
       - '.github/actions/gnuplot/*'
-      - './deploy-data.tsv'
+      - 'deploy-data.tsv'
 
 jobs:
   gnuplot:
