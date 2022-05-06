@@ -11,4 +11,5 @@ set xlabel "Year"
 set term png medium size 1080
 set output './images/deployments_per_week_graph.png'
 set key autotitle columnhead
-plot "deploy_data.tsv" with linespoints linestyle 1 title "Avg. #deploys/week per year"
+set datafile separator ","
+plot "deploy_data.csv" with linespoints linestyle 1 title "Avg. #deploys/week per year"
