@@ -79,7 +79,7 @@
 		<p>
 			One way we measure the effect of NAIS in NAV is by measuring our deployment frequency across
 			all the applications. NAIS was introduced to NAV in 2017, and has continuously worked to
-			improve “speed and flow” foor teams, while helping teams make safe and robust applications.
+			improve “speed and flow” for teams, while helping teams make safe and robust applications.
 		</p>
 
 		<figure class="my-8 flex flex-col items-center">
