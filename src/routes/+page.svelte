@@ -56,7 +56,7 @@
 	<div class="max-w-4xl mx-auto text-center my-12 sm:my-24">
 		<h2 class="text-3xl font-bold">Only for NAV? Then why am I even here?</h2>
 		<p>
-			We are currently running a <a href="https://naas.nais.io">NaaS pilot,</a>
+			We are currently running a pilot for <a href="https://naas.nais.io">NAIS as a service</a>,
 			to see if other organizations could benefit from our tools.
 			<br />
 			<a href="/#contact">Contact us</a>
