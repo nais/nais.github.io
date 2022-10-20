@@ -30,9 +30,7 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
-      - run: |
-          npm run build
-          cp CNAME build/
+      - run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
