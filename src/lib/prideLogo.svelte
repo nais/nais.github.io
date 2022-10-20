@@ -1,9 +1,10 @@
 <svg
-	version="1.1"
-	id="Layer_1"
-	xmlns="http://www.w3.org/2000/svg"
+	{...$$restProps}
 	viewBox="0 0 174.52 249.18"
-	{...$$restProps}>
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+	focusable="false"
+	role="img">
 	<title>NAIS logo</title>
 	<path
 		fill="#008026"
