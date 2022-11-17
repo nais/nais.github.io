@@ -25,7 +25,6 @@
 			word = words[wordIndex].slice(0, word.length + 1);
 		} else {
 			reverse = true;
-			wordIndex = (wordIndex + 1) % words.length;
 			pause = true;
 			setTimeout(() => {
 				pause = false;
