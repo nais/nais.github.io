@@ -15,7 +15,7 @@
 		"@navikt/ds-css": "^1.3.21",
 		"@navikt/ds-icons": "^1.3.21",
 		"@sveltejs/adapter-static": "^1.0.0-next.44",
-		"@sveltejs/kit": "1.0.0-next.516",
+		"@sveltejs/kit": "1.15.2",
 		"@tailwindcss/typography": "^0.5.7",
 		"@typescript-eslint/eslint-plugin": "^5.40.0",
 		"@typescript-eslint/parser": "^5.40.0",
