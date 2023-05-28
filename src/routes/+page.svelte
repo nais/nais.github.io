@@ -6,7 +6,25 @@
 	import Saving from "$lib/icons/Saving.svelte";
 	import SelfService from "$lib/icons/SelfService.svelte";
 
-	const grid = [
+	const news = [
+		{
+			title: "Cloud Native Oslo: Building and testing infrastructure NAV style",
+			image: "2023-cncf-oslo-testing-infra.png",
+			link: "https://www.youtube.com/watch?v=OwEHXqniCe8",
+		},
+		{
+			title: "Linkerd Day Europe 2023: Securing 1/3 of Norway's Annual State Budget",
+			image: "2023-kubecon-linkerd-security.png",
+			link: "https://www.youtube.com/watch?v=-VV4j6x7t84",
+		},
+		{
+			title: "JavaZone 2022: Hvordan vi sikrer NAV.no og 1-3 av Norges statsbudsjett",
+			image: "2022-javazone-sikkerhet.png",
+			link: "https://vimeo.com/748031584",
+		},
+	];
+
+	const features = [
 		{
 			title: "Deploy",
 			icon: SelfService,
@@ -53,6 +71,21 @@
 		</p>
 	</div>
 
+	<div class="max-w-4xl mx-auto text-center">
+		<h2 class="text-3xl font-bold">NAIS in the news</h2>
+	</div>
+
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 lg:gap-16 my-2 sm:my-4">
+		{#each news.slice(0, 3) as item}
+			<div class="p-8 flex flex-col gap-5 items-center text-center">
+				<a href={item.link} class="no-underline text-back">
+					<img src={`/images/news/${item.image}`} alt={item.title} />
+					<h3 class="text-2xl font-bold">{item.title}</h3>
+				</a>
+			</div>
+		{/each}
+	</div>
+
 	<div class="max-w-4xl mx-auto text-center my-12 sm:my-24">
 		<h2 class="text-3xl font-bold">Only for NAV? Then why am I even here?</h2>
 		<p>
@@ -65,11 +98,11 @@
 	</div>
 
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 lg:gap-16 my-2 sm:my-4">
-		{#each grid as item}
+		{#each features as feature}
 			<div class="bg-gray-50 p-8 flex flex-col gap-5 items-center text-center">
-				<svelte:component this={item.icon} class="h-12" aria-hidden="true" />
-				<h3 class="text-2xl font-bold">{item.title}</h3>
-				<p>{item.text}</p>
+				<svelte:component this={feature.icon} class="h-12" aria-hidden="true" />
+				<h3 class="text-2xl font-bold">{feature.title}</h3>
+				<p>{feature.text}</p>
 			</div>
 		{/each}
 	</div>
