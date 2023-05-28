@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .text-interaction-primary {
+		color: #0067c5
+  }
+}
+
 html,
 body {
 	@apply h-full;
