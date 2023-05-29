@@ -51,6 +51,7 @@
 			A team centric application platform that provides devops teams with the tools they need.
 			Developed at NAV for teams at NAV.
 		</p>
+		<img src="/images/diagrams/overview.svg" class="diagram-overview" alt="NAIS overview" />
 	</div>
 
 	<div class="max-w-4xl mx-auto text-center my-12 sm:my-24">
