@@ -1,0 +1,4 @@
+Contact: soc@nav.no
+Preferred-Languages: no, en
+Canonical: https://nais.io/.well-known/security.txt
+Disclosure: Full
