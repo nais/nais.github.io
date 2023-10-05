@@ -28,11 +28,6 @@
 				class="text-interaction-primary font-bold inline-flex items-center">
 				Read our technical journal
 			</a>
-			<a
-				href="https://www.finn.no/job/fulltime/ad.html?finnkode=315132284" target="_blank"
-				class="text-interaction-primary font-bold inline-flex items-center" rel="noreferrer">
-				⚠️ We're hiring
-			</a>
 		</nav>
 	</div>
 </div>
