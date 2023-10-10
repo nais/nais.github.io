@@ -143,8 +143,8 @@
 			JavaZone...
 		</p>
 
-		<!-- <p>
-			.... or you could reach us on <a href="mailto:contact@nais.io">e-mail</a>
-		</p> -->
+		<p>
+			.... or you could reach us on <a href="mailto:nais@nav.no">e-mail</a>
+		</p>
 	</div>
 </div>
