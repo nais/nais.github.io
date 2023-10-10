@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { onMount } from "svelte";
+
 	const words = ["run", "observe", "monitor", "debug", "test", "deploy"];
 
 	const speed = 100;
@@ -48,17 +50,13 @@
 		}
 	}
 
-	function run() {
+	onMount(() => {
 		const interval = setInterval(tick, speed);
-		return {
-			destroy() {
-				clearInterval(interval);
-			},
-		};
-	}
+		return () => clearInterval(interval);
+	});
 </script>
 
-<div use:run>
+<div>
 	<span class="sr-only">{words.slice(0, -1).join(", ")} and {words.slice(-1)[0]}</span>
 	<span aria-hidden="true">{word}</span>
 	<span aria-hidden="true" class="cursor">|</span>

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import PrideLogo from "$lib/prideLogo.svelte";
 	import { page } from "$app/stores";
+	import PrideLogo from "$lib/prideLogo.svelte";
 
 	type menuItem = {
 		pride?: boolean;
@@ -19,7 +19,7 @@
 
 <div dir="ltr" class="navds-tabs navds-tabs--medium inline-block pb-1">
 	<div class="navds-tabs__tablist-wrapper hidden sm:block">
-		<div role="navigation" aria-orientation="horizontal" class="navds-tabs__tablist">
+		<div role="navigation" class="navds-tabs__tablist">
 			{#each menu as item}
 				<a
 					href={item.href}

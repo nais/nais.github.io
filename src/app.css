@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 @layer components {
-  .text-interaction-primary {
-		color: #0067c5
-  }
+	.text-interaction-primary {
+		color: #0067c5;
+	}
 }
 
 html,
