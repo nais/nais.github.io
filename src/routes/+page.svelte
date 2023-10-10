@@ -7,11 +7,11 @@
 	import SelfService from "$lib/icons/SelfService.svelte";
 
 	const news = [
-    {
-      title: "NDC Oslo 2023: Building a dedicated platform for frontend developers",
-      image: "2023-ndc-oslo-frontend-platform.png",
-      link: "https://www.youtube.com/watch?v=feM64m6Csqw",
-    },
+		{
+			title: "NDC Oslo 2023: Building a dedicated platform for frontend developers",
+			image: "2023-ndc-oslo-frontend-platform.png",
+			link: "https://www.youtube.com/watch?v=feM64m6Csqw",
+		},
 		{
 			title: "Cloud Native Oslo: Building and testing infrastructure NAV style",
 			image: "2023-cncf-oslo-testing-infra.png",
@@ -143,8 +143,8 @@
 			JavaZone...
 		</p>
 
-		<p>
+		<!-- <p>
 			.... or you could reach us on <a href="mailto:contact@nais.io">e-mail</a>
-		</p>
+		</p> -->
 	</div>
 </div>
