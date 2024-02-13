@@ -28,7 +28,6 @@
 				<p>
 					<a href="https://docs.nais.io">Documentation</a>
 					<a href="https://start.nais.io">Create an application</a>
-					<a href="https://naas.nais.io">About NaaS</a>
 					<a href="https://uustatus.no/nn/erklaringer/publisert/f048df55-0ea0-43d4-b884-6a6be23f098f">Accessibility statement (in norwegian)</a>
 					<a href="https://sikkerhet.nav.no/">Security</a>
 				</p>

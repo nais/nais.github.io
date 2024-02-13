@@ -11,7 +11,6 @@
 	const menu: menuItem[] = [
 		{ name: "NAIS", href: "/", pride: true },
 		{ name: "Documentation", href: "https://docs.nais.io" },
-		{ name: "NaaS pilot", href: "https://naas.nais.io" },
 		{ name: "Blog", href: "https://nais.io/blog" },
 		{ name: "Contact", href: "/#contact" },
 	];
