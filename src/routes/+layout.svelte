@@ -41,7 +41,7 @@
 				</p>
 			</div>
 		</div>
-		<p>Copyright © 2022 NAV IT | All rights reserved.</p>
+		<p>Copyright © 2024 NAV IT | All rights reserved.</p>
 	</div>
 </div>
 
