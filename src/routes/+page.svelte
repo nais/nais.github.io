@@ -136,8 +136,12 @@
 
 	<div class="max-w-4xl mx-auto text-center my-12 sm:my-24">
 		<h2 id="contact" class="text-3xl font-bold">Contact us</h2>
-		<p>If you work at NAV, reach us on Slack!</p>
-
+		<p>Reach us on Slack! We're available on the following slacks:</p>
+		<ul>
+			<li><a href="https://nav-it.slack.com/archives/C5KUST8N6">NAV</a></li>
+			<li><a href="https://offentlig-paas-no.slack.com/archives/C7PK9DU92">Offentlig PaaS</a></li>
+			<li><a href="https://kubernetes.slack.com/archives/CNJHE4QAH">Kubernetes</a></li>
+		</ul>
 		<p>
 			If not, look for someone wearing a t-shirt with the NAIS logo on it at your neighbourhood
 			JavaZone...
