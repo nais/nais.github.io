@@ -1,0 +1,19 @@
+@import './reset.css';
+
+:root {
+	--color-primary: #f76890;
+	--color-black: #222;
+	--content-max-width: 1424px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #f7fafe;
+	color: #222;
+}
+a {
+	color: inherit;
+}
+a:hover {
+	color: var(--color-primary);
+}
