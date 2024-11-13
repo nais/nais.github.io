@@ -1,13 +1,13 @@
 <script>
-	import Glance from '$lib/Glance.svelte';
+	import Glance from "$lib/Glance.svelte";
 	import {
 		BulletListIcon,
 		CogRotationIcon,
 		HandShakeHeartIcon,
 		RocketIcon,
 		SealCheckmarkIcon,
-		VitalsIcon
-	} from '@nais/ds-svelte-community/icons';
+		VitalsIcon,
+	} from "@nais/ds-svelte-community/icons";
 </script>
 
 <div class="glances">
@@ -45,7 +45,7 @@
 <style>
 	.glances {
 		font-size: 1.15rem;
-		padding: 8vw 4vw;
+		padding: min(8vw, 7.2rem) min(4vw, 3.6rem);
 		max-width: var(--content-max-width);
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -57,7 +57,7 @@
 	}
 	.glances::after {
 		position: absolute;
-		content: '';
+		content: "";
 		height: 300px;
 		width: 500px;
 		left: 0;

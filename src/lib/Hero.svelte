@@ -1,5 +1,5 @@
 <script>
-	import Navlogo from '$lib/icons/Navlogo.svelte';
+	import Navlogo from "$lib/icons/Navlogo.svelte";
 </script>
 
 <div class="hero">
@@ -19,13 +19,13 @@
 
 <style>
 	.hero {
-		padding: 8vw 4vw;
+		padding: min(8vw, 7.2rem) min(4vw, 3.6rem);
 		max-width: var(--content-max-width);
 		margin: auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 8vw;
+		gap: min(8vw, 7.2rem);
 	}
 	.content {
 		font-size: 1.5rem;

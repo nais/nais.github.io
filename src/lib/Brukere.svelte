@@ -1,6 +1,6 @@
 <script>
-	import Navlogo from './icons/Navlogo.svelte';
-	import SsblogoFull from './icons/SsblogoFull.svelte';
+	import Navlogo from "./icons/Navlogo.svelte";
+	import SsblogoFull from "./icons/SsblogoFull.svelte";
 </script>
 
 <div class="section">
@@ -10,7 +10,8 @@
 		<SsblogoFull />
 	</div>
 	<div>
-		<a class="mail" href="mailto:nais@nav.no">Snakk med oss</a> om Nais kan passe hos dere
+		<a class="mail" href="mailto:nais@nav.no">Snakk med oss</a>
+		 om Nais kan passe hos dere
 	</div>
 </div>
 
@@ -18,7 +19,7 @@
 	.section {
 		font-size: 1.5rem;
 		padding-block: 4rem;
-		padding-inline: 4vw;
+		padding-inline: min(4vw, 3.6rem);
 		max-width: var(--content-max-width);
 		text-align: center;
 		display: grid;
@@ -29,7 +30,7 @@
 	}
 	.section::after {
 		position: absolute;
-		content: '';
+		content: "";
 		height: 300px;
 		width: 500px;
 		left: 40%;
