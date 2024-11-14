@@ -29,8 +29,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm ci
-      - run: npm run build
+      - run: yarn --frozen-lockfile
+      - run: yarn run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
