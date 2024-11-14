@@ -550,6 +550,11 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
+"@types/unist@^2.0.0", "@types/unist@^2.0.2", "@types/unist@^2.0.3":
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.11.tgz#11af57b127e32487774841f7a4e54eab166d03c4"
+  integrity sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==
+
 "@typescript-eslint/eslint-plugin@8.14.0":
   version "8.14.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.14.0.tgz#7dc0e419c87beadc8f554bf5a42e5009ed3748dc"
@@ -1223,6 +1228,16 @@ magic-string@^0.30.11, magic-string@^0.30.12, magic-string@^0.30.5:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.5.0"
 
+mdsvex@^0.12.3:
+  version "0.12.3"
+  resolved "https://registry.yarnpkg.com/mdsvex/-/mdsvex-0.12.3.tgz#859d9a4985659fb4258e9343a859cabdc16ae911"
+  integrity sha512-C/uIJamjNo5PHHnR3JHqsBPoLcfUBpzRmAEB6FLMXI/s7XHOceswjDMKqSPEW2WHmYpKm0taZ3U20GSyhMridA==
+  dependencies:
+    "@types/unist" "^2.0.3"
+    prism-svelte "^0.4.7"
+    prismjs "^1.17.1"
+    vfile-message "^2.0.4"
+
 merge2@^1.3.0:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
@@ -1377,6 +1392,16 @@ prettier@^3.3.2:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.3.3.tgz#30c54fe0be0d8d12e6ae61dbb10109ea00d53105"
   integrity sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==
+
+prism-svelte@^0.4.7:
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/prism-svelte/-/prism-svelte-0.4.7.tgz#fbc6709450b4e2ed660ddb82c3718817fc584cbe"
+  integrity sha512-yABh19CYbM24V7aS7TuPYRNMqthxwbvx6FF/Rw920YbyBWO3tnyPIqRMgHuSVsLmuHkkBS1Akyof463FVdkeDQ==
+
+prismjs@^1.17.1:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.29.0.tgz#f113555a8fa9b57c35e637bba27509dcf802dd12"
+  integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
 
 punycode@^2.1.0:
   version "2.3.1"
@@ -1609,6 +1634,13 @@ typescript@^5.0.0:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.3.tgz#5f3449e31c9d94febb17de03cc081dd56d81db5b"
   integrity sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==
 
+unist-util-stringify-position@^2.0.0:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/unist-util-stringify-position/-/unist-util-stringify-position-2.0.3.tgz#cce3bfa1cdf85ba7375d1d5b17bdc4cada9bd9da"
+  integrity sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==
+  dependencies:
+    "@types/unist" "^2.0.2"
+
 uri-js@^4.2.2:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-4.4.1.tgz#9b1a52595225859e55f669d928f88c6c57f2a77e"
@@ -1620,6 +1652,14 @@ util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+vfile-message@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/vfile-message/-/vfile-message-2.0.4.tgz#5b43b88171d409eae58477d13f23dd41d52c371a"
+  integrity sha512-DjssxRGkMvifUOJre00juHoP9DPWuzjxKuMDrhNbk2TdaYYBNMStsNhEOt3idrtI12VQYM/1+iM0KOzXi4pxwQ==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    unist-util-stringify-position "^2.0.0"
 
 vite@^5.0.3:
   version "5.4.11"
