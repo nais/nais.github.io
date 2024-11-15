@@ -34,7 +34,7 @@
 	<nav class="main-menu" class:isOpen>
 		<ul class="main-menu-list">
 			<!-- <li><a class:isActive={isActive("blogg")} href="/blog">Blogg</a></li> -->
-			<li><a class="main-menu-item" href="https://nais.io/blog">Blogg</a></li>
+			<li><a class="main-menu-item" href="https://nais.io/blog/">Blogg</a></li>
 			<li><a class="main-menu-item" href="https://docs.nais.io">Dokumentasjon</a></li>
 			<!-- <li><a class="main-menu-item" href="/annonseringer" class:isActive={isActive('annonseringer')}>Annonseringer</a></li> -->
 			<!-- <li>
