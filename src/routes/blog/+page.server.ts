@@ -1,6 +1,5 @@
 interface Post {
 	route: string;
-	content: string;
 	metadata: {
 		title: string;
 		date: string;

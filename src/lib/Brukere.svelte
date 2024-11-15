@@ -40,7 +40,7 @@
 		z-index: -1;
 	}
 	.section::after {
-		background: linear-gradient(to right, #3380a512, #6ee5c212);
+		background: linear-gradient(to right, #3381a53e, #6ee5c125);
 	}
 	.users {
 		font-size: 3rem;

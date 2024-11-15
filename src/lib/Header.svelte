@@ -33,7 +33,8 @@
 	</button>
 	<nav class="main-menu" class:isOpen>
 		<ul class="main-menu-list">
-			<li><a class:isActive={isActive("blogg")} href="/blog">Blogg</a></li>
+			<!-- <li><a class:isActive={isActive("blogg")} href="/blog">Blogg</a></li> -->
+			<li><a class="main-menu-item" href="https://nais.io/blog">Blogg</a></li>
 			<li><a class="main-menu-item" href="https://docs.nais.io">Dokumentasjon</a></li>
 			<!-- <li><a class="main-menu-item" href="/annonseringer" class:isActive={isActive('annonseringer')}>Annonseringer</a></li> -->
 			<!-- <li>
@@ -87,11 +88,11 @@
 	}
 	.header::before {
 		transform: translate(-75%, -60%);
-		background: linear-gradient(to right, #ff910012, #f7689028, #6200ff15);
+		background: linear-gradient(to right, #ff910067, #f7689155, #6200ff51);
 	}
 	.header::after {
 		transform: translate(0, -60%);
-		background: linear-gradient(to right, #3380a518, #6ee5c218);
+		background: linear-gradient(to right, #3381a542, #6ee5c131);
 	}
 
 	.home {

@@ -1,13 +1,20 @@
 import adapter from "@sveltejs/adapter-static";
 import path from "path";
 import { mdsvex } from "mdsvex";
+import remarkRelativeImages from "mdsvex-relative-images";
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
 	extensions: ['.svelte', '.svx', '.md'],
-	preprocess: mdsvex({extensions: ['.svx', '.md']}),
+	preprocess: [
+		mdsvex({
+			extensions: ['.svx', '.md', '.mdx'],
+			remarkPlugins: [remarkRelativeImages],
+		})
+	],
 
 	kit: {
 		adapter: adapter({

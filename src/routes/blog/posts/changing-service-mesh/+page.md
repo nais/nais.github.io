@@ -7,7 +7,6 @@ author: Frode Sundby
 tags: [istio, linkerd, LoadBalancing]
 ---
 
-
 ## Why change?
 With an ambition of making our environments as secure as possible, we jumped on the service-mesh bandwagon in 2018 with Istio 0.7 and have stuck with it since.
 
@@ -23,7 +22,7 @@ We looked to the grand ol' Internet for alternatives and fixed our gaze on the r
 Having honed in on our preferred candidate, we decided to take it for a quick spin in a cluster and found our suspicions to be accurate.
 
 Rarely has a meme depicted a feeling more strongly
-<!--![service-mesh-experiance](/blog/images/service-mesh-experience.jpg)-->
+![service-mesh-experiance](./images/service-mesh-experience.jpg)
 
 Even though we'd invested a lot of time and built in quite a bit of Istio into our platform, we knew we had to make the change.
 
@@ -36,7 +35,7 @@ The traffic was then forwarded to the Istio Ingressgateway, who in turn sent it 
 Before the Ingressgateway could reach the application, both NetworkPolicies and AuthorizationPolicies were required to allow the traffic.
 We used an [operator](https://github.com/nais/naiserator) to configure these policies when an application was deployed.
 
-<!-- ![changing-service-mesh](/blog/images/changing-service-mesh-1.png) -->
+![changing-service-mesh-1](./images/changing-service-mesh-1.png)
 
 ### New LoadBalancers and ingress controllers
 Since our LoadBalancers were configured by (and sent traffic to) Istio, we had to change the way we configured them.
@@ -86,7 +85,7 @@ spec:
 ```
 
 Alrighty. We'd now gotten ourselves a brand new set of independantly configured LoadBalancers and a shiny new Ingress Controller.
-<!-- ![changing-service-mesh](/blog/images/changing-service-mesh-2.png) -->
+![changing-service-mesh-2](./images/changing-service-mesh-2.png)
 
 However - if we'd started shipping traffic to the new components at this stage, things would start breaking as there were no ingresses in the cluster - only VirtualServices.
 To avoid downtime, we created an interim ingress that forwarded all traffic to the Istio IngressGateway:
@@ -104,7 +103,7 @@ spec:
         path: /
   ...
 ```
-<!-- ![changing-service-mesh](/blog/images/changing-service-mesh-3.png) -->
+![changing-service-mesh-3](./images/changing-service-mesh-3.png)
 With this ingress in place, we could reach all the existing VirtualServices exposed by the Istio Ingressgateway via the new Loadbalancers and Nginx.
 And we could point our DNS records to the new rig without anyone noticing a thing.
 
@@ -127,7 +126,7 @@ One thing we didn't take into concideration (but should have), was that some app
 When an ingress was created for a shared hostname, Nginx would stop forwarding requests for these hosts to Istio Ingressgateway, resulting in non-migrated applications not getting any traffic.
 Realizing this, we started migrating applications on the same hostname simultaneously too.
 
-<!-- ![changing-service-mesh](/blog/images/changing-service-mesh-4.png) -->
+![changing-service-mesh-4](./images/changing-service-mesh-4.png)
 And within a couple of hours, all workloads were migrated and we had ourselves a brand spanking new service-mesh in production.
 And then they all lived happily ever after...
 
@@ -137,7 +136,7 @@ Except that we had to clean up Istio's mess.
 What was left after the party was a fully operational Istio control plane, a whole bunch of Istio CRD's and a completely unused set of LoadBalancers. In addition we had to clean up everything related to Istio in a whole lot of pipelines and components
 
 
-<!-- ![changing-service-mesh](/blog/images/changing-service-mesh-5.png)
-![changing-service-mesh](/blog/images/changing-service-mesh-6.png) -->
+![changing-service-mesh-5](./images/changing-service-mesh-5.png)
+![changing-service-mesh-6](./images/changing-service-mesh-6.png)
 
 It has to be said - there is a certain satisfaction in cleaning up after a party that has been going on for too long.

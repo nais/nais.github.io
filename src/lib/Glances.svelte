@@ -67,6 +67,6 @@
 		z-index: -1;
 	}
 	.glances::after {
-		background: linear-gradient(to right, #ff910012, #f7689012);
+		background: linear-gradient(to right, #ff91002a, #f7689124);
 	}
 </style>
