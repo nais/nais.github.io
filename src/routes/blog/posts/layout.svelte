@@ -26,4 +26,9 @@
 		flex-direction: column;
 		gap: 2rem;
 	}
+
+	:global(pre) {
+		overflow-x: auto;
+		padding: 0.5rem;
+	}
 </style>

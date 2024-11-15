@@ -1,7 +1,14 @@
 import adapter from "@sveltejs/adapter-static";
 import path from "path";
-import { mdsvex } from "mdsvex";
+import { mdsvex, escapeSvelte } from "mdsvex";
+import { createHighlighter } from "shiki";
 import remarkRelativeImages from "mdsvex-relative-images";
+
+const theme = "github-dark";
+const highlighter = await createHighlighter({
+	themes: [theme],
+	langs: ["javascript", "typescript", "yaml", "bash", "ts", "elm", "sh", "shell"],
+});
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -13,6 +20,12 @@ const config = {
 			extensions: [".svx", ".md", ".mdx"],
 			remarkPlugins: [remarkRelativeImages],
 			layout: "/src/routes/blog/posts/layout.svelte",
+			highlight: {
+				highlighter: async (code, lang = "text") => {
+					const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
+					return `{@html \`${html}\` }`;
+				},
+			},
 		}),
 	],
 
