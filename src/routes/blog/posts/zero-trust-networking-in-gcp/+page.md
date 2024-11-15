@@ -10,14 +10,14 @@ tags: [sikkerhet, zero-trust]
 ## Background
 Firewalls and zones have been our primary defense mechanism for years. This model defines a strict perimeter around our applications. 
 The perimiter is designed to keep potential attackers on the outside, but also to be able to control the flow of data out of the perimiter.
-![Firewall](/blog/images/zero-trust-1.png)
+![Firewall](./images/zero-trust-1.png)
 
 
 The challenge with this model in a containerized world, is that our applications has become more distributed, which leaves us with more components and thus additional attack surfaces.
-![Firewall](/blog/images/zero-trust-2.png)
+![Firewall](./images/zero-trust-2.png)
 
 Additionally, the attack methods have become more sophisticated, so our safety planning and solutions must be able to address the following: _What happens if an attacker is able to breach our perimeter?_
-![Firewall](/blog/images/zero-trust-3.png)
+![Firewall](./images/zero-trust-3.png)
 
 Since an application's architecture is based primarily on an outer defense layer, it would be a relatively simple task
 for an attacker that is already on the inside to compromise other applications within the same perimeter. Most
@@ -25,15 +25,15 @@ applications have implemented further safety mechanisms, but those who rely sole
 extremely vulnerable.
 
 This problem has been addressed using network segmentation; applications with the same safety level and affiliation are grouped together behind separate firewalls.
-![Firewall](/blog/images/zero-trust-4.png)
+![Firewall](./images/zero-trust-4.png)
 
 The challenge remains the same, though; a compromised application could mean a compromised zone.
 
 The next level using this methodology is micro-segmentation and a zone model, where applications and services are grouped in even smaller and more specific zones, givig a potential attacker an even smaller attack surface.
-![Micro-segmentation](/blog/images/zero-trust-5.png)
+![Micro-segmentation](./images/zero-trust-5.png)
 
 Following this methodology, the inevitable conclusion will be to have a network perimeter around each individual application.
-![Individual security zones around each node on the network](/blog/images/zero-trust-6.png)
+![Individual security zones around each node on the network](./images/zero-trust-6.png)
 
 Once each application has its own perimeter, the next thing to address is:
 
@@ -42,7 +42,7 @@ Once each application has its own perimeter, the next thing to address is:
 
 We know this is the case on unsafe networks like the Internet, but we can still transfer sensitive data, like bank transactions, safely thanks to encryption.
 It is no longer a safe assumption that there are no attackers in our own data centers, our private cloud or in the public cloud, so we should encrypt communication even here.
-![Transport security between each node](/blog/images/zero-trust-7.png)
+![Transport security between each node](./images/zero-trust-7.png)
 
 We need to base our transportation security on authentication and authorization between all services, so that we can be
 cryptographically certain that both the sender and the receiver are who they claim they are. Each endpoint is given a

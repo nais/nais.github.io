@@ -7,7 +7,7 @@ author: Jan-Kåre Solbakken
 tags: ["remote", "hybrid"]
 ---
 
-![hybrid](/blog/images/hybrid.png) 
+![hybrid](./images/hybrid.png) 
 
 ```
 In this post we will share how the NAIS team works and how the pandemic shaped the way we go about our business. This is by no means a recipe for how to do things, merely a summary of the things we have found to work well for us. YMMV.

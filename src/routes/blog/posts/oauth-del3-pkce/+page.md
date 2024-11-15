@@ -7,7 +7,7 @@ author: Jan-Kåre Solbakken
 tags: ["oauth", "oidc", "sikkerhet"]
 ---
 
-![OAuth2](/blog/images/oauth2.png) 
+![OAuth2](./images/oauth2.png) 
 
 ## Bakgrunn
 
@@ -23,7 +23,7 @@ For å bøte på disse svakhetene har det blitt laget et tillegg til OAuth-stand
 
 Authorization Code flow ser ut som vist i figuren (se [del 1][del 1](/blog/posts/oauth1) for detaljer).
 
-![authorization code flow](/blog/images/auth_code.png) 
+![authorization code flow](./images/auth_code.png) 
 
 PKCE legger på følgende tillegg:
  - Klienten genererer en tilfeldig verdi som kalles `code_verifier`. Denne brukes til å generere en `code_challenge` vha en forhåndsavtalt metode. Challengen og `code_challenge_method` legges som ekstra parametre på det initielle `/auth`-kallet til id-provideren.

@@ -7,7 +7,7 @@ author: Jan-Kåre Solbakken
 tags: ["oauth", "oidc", "sikkerhet"]
 ---
 
-![OAuth2](/blog/images/oauth2.png) 
+![OAuth2](./images/oauth2.png) 
 
 ## Bakgrunn
 I NAV er [OAuth og OIDC](/blog/posts/oauth1) de facto standard for å løse autentisering og autorisering i appene våre. I en løst koblet verden med mikrotjenester og [zero trust](https://doc.nais.io/appendix/zero-trust) er det imidlertid flere brikker som må på plass. Hvordan kan man på en trygg måte kalle andre tjenester videre bakover i kjeden og samtidig bevare sluttbrukerkonteksten? Tidligere har man benyttet såkalte "systembrukere", dvs brukere som identifiserer systemet/tjenesten som det kalles fra. Man har hatt en eller flere [Security Token Services](https://en.wikipedia.org/wiki/Security_token_service) som har vekslet systembrukerens brukernavn og passord inn i et access token som benyttes for videre kall. Dette har flere ulemper. Systembrukerene må ha ganske romslige rettigheter (som gjør det ekstra viktig at de ikke blir kompromittert), og informasjon om sluttbrukeren som initierte kallet blir borte med mindre man legger på hjemmesnekra hacks.
@@ -17,7 +17,7 @@ I NAV er [OAuth og OIDC](/blog/posts/oauth1) de facto standard for å løse aute
 
 ### Flyten
 
-![token exchange flow](/blog/images/exchange.png)
+![token exchange flow](./images/exchange.png)
 
 * Sluttbruker logger inn hos ID-provider.
 * ID-provider returnerer et access token med audience `API 1`.

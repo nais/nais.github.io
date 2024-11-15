@@ -7,17 +7,17 @@ author: Jan-Kåre Solbakken
 tags: [slsa,sikkerhet,supplychain]
 ---
 
-![salsa](/blog/images/salsa.webp)
+![salsa](./images/salsa.webp)
 
 "Software supply chain" is a term describing everything that happens to code from the time it leaves the developers fingers until it runs in production. The code needs to be compiled, tested, packaged and deployed, and these steps take place in a variety of systems and use lots of complex third party solutions. Our apps also depend on an increasing number of third party libraries and frameworks that we often know next to nothing about. 
 
-![dependencies](/blog/images/react-hello-world-deps.png)
+![dependencies](./images/react-hello-world-deps.png)
 
 Every step in the supply chain represents a possible attack vector. If a malicious actor is able to compromise one or more parts of the chain it is trivial to inject any kind of malware into our products. Why use loads of resources trying to circumvent all the security measures in production when you can quietly insert all the backdoors you need beforehand? The steady [rise](https://www.enisa.europa.eu/news/enisa-news/understanding-the-increase-in-supply-chain-security-attacks) in supply chain attacks show that more and more threat actors are embracing this way of doing business.
 
 There are several steps we can take to maintain the integrity of our supply chains. The first and most obvious one is to put as much care into securing our build and development pipelines as we do our production environments. Anyone with a few years experience in this industry has seen far to many unpatched and misconfigured Jenkins servers loaded with crappy plugins that store secrets in plain text. Not that it makes a huge difference anyway since the same secrets are readily available in the company-wide Slack and haven't been rotated in 5 years. 2FA, proper handling of secrets and configuration, regular patching, all that good stuff must also be applied to the dev side of the house. 
 
-![unpatched jenkins](/blog/images/jenkins-security-warnings.png)
+![unpatched jenkins](./images/jenkins-security-warnings.png)
 
 Another step is actually knowing what it is that we put into production. When we ask someone to trust our software to handle their personal information and money we should at least be able to tell them what parts our products are made of and how they are put together. The U.S. government has already published an [Executive Order](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/) that require their vendors to produce a "SBOM", or "software bill of materials", which is a list of components analogous to the list of ingredients on food packaging. Others are likely to follow suit.
 

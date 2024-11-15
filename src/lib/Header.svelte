@@ -88,11 +88,11 @@
 	}
 	.header::before {
 		transform: translate(-75%, -60%);
-		background: linear-gradient(to right, #ff910067, #f7689155, #6200ff51);
+		background: linear-gradient(to right, #ff91004f, #f768914b, #6200ff40);
 	}
 	.header::after {
 		transform: translate(0, -60%);
-		background: linear-gradient(to right, #3381a542, #6ee5c131);
+		background: linear-gradient(to right, #3381a535, #6ee5c125);
 	}
 
 	.home {

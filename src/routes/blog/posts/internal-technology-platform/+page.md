@@ -16,7 +16,7 @@ The prices are even steadily declining without you having to negotiate. No wonde
 
 NAV (Norwegian Labour and Welfare Administration) is the largest public agency in Norway. Our mission is to assist people into work, and we provide a series of benefits related to pensions, disease, unemployment, and others.
 
-![Bone fracture foot and leg on male patient with splint cast and crutches during surgery rehabilitation and orthopaedic recovery staying at home](/blog/images/GettyImages-1159293076.jpg)
+![Bone fracture foot and leg on male patient with splint cast and crutches during surgery rehabilitation and orthopaedic recovery staying at home](./images/GettyImages-1159293076.jpg)
 
 Our digital operation consists of over a hundred teams which are responsible for something technology related, big or small. At the time of writing, around half of them are cross-functional product teams, and this number is steadily increasing. We seek to group teams together in product areas which have high cohesion, and aim for little coordination and low coupling between product areas. We give teams and product areas the autonomy to figure out how to best meet the needs of their defined user group and particular life situation.
 
@@ -28,7 +28,7 @@ Over the past 3ish years, we have developed platform products which support our 
 
 1. The application platform, [NAIS](https://nais.io) (NAVs Application Infrastructure Service) delivers everything our digital teams need to develop and run an application. It provides an effective deployment pipeline (CI/CD), a Kubernetes container environment, logging and monitoring, and security stuff like authentication and secrets handling. The main user group is software developers.
 
-2. The data platform, [NADA]([https://docs.knada.io/) offers data handling and analytical capabilities for storage, processing and visualization, as well as supporting services like data catalogues for data discovery and governance. The main user groups are developers who want to share data and analysts who want to use data.
+2. The data platform, [NADA](https://docs.knada.io/) offers data handling and analytical capabilities for storage, processing and visualization, as well as supporting services like data catalogues for data discovery and governance. The main user groups are developers who want to share data and analysts who want to use data.
 
 3. The design system, [Aksel](https://aksel.nav.no/) is a library of design components, guidelines and good practices. The main user groups are designers and front end developers.
 
@@ -48,11 +48,11 @@ There are several major benefits to providing a technology platform in an organi
 
 * **Supporting speed, adaptability and learning:** As many other organisations, we are striving for high speed in our digital operation. The ability to learn and adapt faster is necessary in this ever faster changing environment. One proxy to measure this is the number of deployments made to production, since our ability to push code to production indicates how long it will take to fix a mistake, and will in turn increase our willingness to test and experiment. This graph shows how NAV has evolved from 6 big releases every year in 2012, to 1,250 deployments per week so far in 2021:
 
-![Graph of number of deployments to production per week in NAV](/blog/images/deployments-per-week.png)
+![Graph of number of deployments to production per week in NAV](./images/deployments-per-week.png)
 
 * **Cognitive load:** The platform products allow our product teams to use their mental capacity on the end-user, and not spend time on under-the-hood stuff like infrastructure or choosing an accessible colour palette.
 
-* **Autonomy vs alignment:** From a corporate perspective, one effect of high autonomy is losing alignment. At NAV, we see that building in certain compliance and security measures in the platform to provide the product teams with guardrails. For example, all use of third-party solutions like open source libraries, cloud platforms and SaaS products, are compliant in terms of procurement regulations. All icons and design elements are compliant in terms of universal accessible design. Our platform services available in public cloud are set up restricted to EU data centers in order to stay compliant to GDPR and conform to the [Zero Trust Security model](https://nais.io/blog/posts/2020/09/zero-trust-networking-in-gcp.html).
+* **Autonomy vs alignment:** From a corporate perspective, one effect of high autonomy is losing alignment. At NAV, we see that building in certain compliance and security measures in the platform to provide the product teams with guardrails. For example, all use of third-party solutions like open source libraries, cloud platforms and SaaS products, are compliant in terms of procurement regulations. All icons and design elements are compliant in terms of universal accessible design. Our platform services available in public cloud are set up restricted to EU data centers in order to stay compliant to GDPR and conform to the [Zero Trust Security model](https://nais.io/blog/posts/zero-trust-networking-in-gcp/).
 
 * **Competence and knowledge sharing:** When the internal technology platform is perceived as a compelling product, it is widely adopted and used. In turn, everyone has competence on how to use the platforms. There are several benefits: For one, it lowers the "cost" (e.g. time to get up and running) of people switching product teams, since the tool stack and methodology is more or less the same. Secondly, it further supports and enforces the strategy of loose coupling, autonomy and distributed responsibility, as it facilitates a forum for knowledge sharing. If a software developer in one team posts a question on Slack on how to perform a specific operation on NAIS, a software developer from another teams is just as likely to answer as the NAIS team members themselves.
 
