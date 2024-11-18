@@ -50,7 +50,8 @@
 		padding: 0.5rem;
 	}
 	:global(blockquote) {
-		
-
+		border-left: 0.5rem solid var(--color-primary);
+		padding: 1rem;
+		background-color: color-mix(in srgb, var(--color-primary) 10%, white);
 	}
 </style>
