@@ -23,11 +23,7 @@ Another step is actually knowing what it is that we put into production. When we
 
 Several initiatives have been started in an attempt to address the issues surrounding supply chain integrity, the most noticeable one being [Supply chain Levels for Software Artifacts - SLSA](https://slsa.dev/). SLSA aims to be vendor neutral and is backed by major players like [the Cloud Native Computing Foundation](https://www.cncf.io/) and [Google](https://security.googleblog.com/2021/06/introducing-slsa-end-to-end-framework.html) in addition to startups such as [Chainguard](https://www.chainguard.dev/about-us).
 
-```
-SLSA is "a security framework, a check-list of standards and controls to 
-prevent tampering, improve integrity, and secure packages and 
-infrastructure in your projects, businesses or enterprises".
-```
+> SLSA is "a security framework, a check-list of standards and controls to prevent tampering, improve integrity, and secure packages and infrastructure in your projects, businesses or enterprises".
 
 The framework defines four levels of increasing assurance defined by best practices:
 

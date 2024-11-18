@@ -12,12 +12,15 @@
 				<h2 class="heading">{post.metadata.title}</h2>
 			</a>
 			<p class="description">{post.metadata.description}</p>
-			<p>{format(post.metadata.date, "MMMM d, yyyy")}</p>
+			<p class="byline">{format(post.metadata.date, "MMMM d, yyyy")} by {post.metadata.author}</p>
 		</li>
 	{/each}
 </ul>
 
 <style>
+	.byline {
+		font-style: italic;
+	}
 	.list {
 		list-style: none;
 		padding: min(4vw, 3.6rem);
