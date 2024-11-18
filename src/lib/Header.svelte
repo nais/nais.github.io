@@ -3,7 +3,8 @@
 	import { get } from "svelte/store";
 	import Nais from "./icons/Nais.svelte";
 
-	const isActive = (/** @type {string} */ path) => get(page).url.pathname.startsWith(`/${path}`);
+
+	const isActive = (/** @type {string} */ path) => $page.url.pathname.startsWith(`/${path}`);
 	let isOpen = $state(false);
 </script>
 
@@ -33,7 +34,8 @@
 	</button>
 	<nav class="main-menu" class:isOpen>
 		<ul class="main-menu-list">
-			<li><a class="main-menu-item" class:isActive={isActive("blogg")} href="/blog">Blogg</a></li>
+			<li><a class="main-menu-item" class:isActive={isActive("blog")} href="/blog">Blogg</a></li>
+			<!-- <li><a class="main-menu-item" class:isActive={$page.url.pathname == "/blog"} href="/blog">Blogg</a></li> -->
 			<!-- <li><a class="main-menu-item" href="https://nais.io/blog/">Blogg</a></li> -->
 			<li><a class="main-menu-item" href="https://docs.nais.io">Dokumentasjon</a></li>
 			<!-- <li><a class="main-menu-item" href="/annonseringer" class:isActive={isActive('annonseringer')}>Annonseringer</a></li> -->
@@ -143,9 +145,9 @@
 		text-decoration: none;
 		font-size: 1.15rem;
 	}
-	/* .main-menu-item.isActive {
+	.main-menu-item.isActive {
 		color: var(--color-primary);
-	}  */
+	} 
 	/* mobile-github-link {
 		font-size: 1.5rem;
 		margin-top: 4px;
