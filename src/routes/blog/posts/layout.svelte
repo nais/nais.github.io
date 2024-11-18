@@ -39,11 +39,9 @@
 	.article :global(h1) {
 		margin-block: 0.67em;
 	}
-	.article :global(h2) {
-		margin-block: 0.83em;
-	}
-	.article :global(h3) {
-		margin-block: 1em;
+	.article :global(:is(h2, h3, h4, h5)) {
+		margin-top: 1.5em;
+		margin-bottom: 18px;
 	}
 	.article :global(p) {
 		margin-block: 1em;
