@@ -61,7 +61,8 @@
 	}
 	.article :global(blockquote) {
 		border-left: 0.5rem solid var(--color-primary);
-		padding: 1rem;
+		display: flex;
+		padding-inline: min(4vw, 2rem);
 		background-color: color-mix(in srgb, var(--color-primary) 10%, white);
 	}
 	.article :global(table) {
