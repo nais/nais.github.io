@@ -5,30 +5,44 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
-<ul class="list">
-	{#each data.posts as post}
-		<li class="item">
-			<a class="link" href={post.route}>
-				<h2 class="heading">{post.metadata.title}</h2>
-			</a>
-			<p class="description">{post.metadata.description}</p>
-			<p class="byline">{format(post.metadata.date, "MMMM d, yyyy")} by {post.metadata.author}</p>
-		</li>
-	{/each}
-</ul>
+<div class="wrapper">
+	<ul class="list">
+		{#each data.posts as post}
+			<li class="item">
+				<a class="link" href={post.route}>
+					<h2 class="heading">{post.metadata.title}</h2>
+				</a>
+				<p class="description">{post.metadata.description}</p>
+				<p class="byline">{format(post.metadata.date, "MMMM d, yyyy")} by {post.metadata.author}</p>
+			</li>
+		{/each}
+	</ul>
+</div>
 
 <style>
+	.wrapper {
+		font-size: 1.125rem;
+		padding: min(4vw, 3.6rem);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.description {
+		max-width: 60ch;
+	}
 	.byline {
 		font-style: italic;
+		font-size: 1rem;
 	}
 	.list {
+		font-size: 1.125rem;
 		list-style: none;
-		padding: min(4vw, 3.6rem);
 		max-width: 67ch;
 		margin-inline: auto;
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
+		padding: 0;
 	}
 	.link {
 		display: inline-block;
@@ -40,8 +54,5 @@
 	.item {
 		display: grid;
 		gap: 0.2rem;
-	}
-	.description {
-		font-size: 1.2rem;
 	}
 </style>
