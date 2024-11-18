@@ -52,6 +52,9 @@
 	.article :global(ol) {
 		margin-block: 1em;
 	}
+	.article :global(:is(ul, ol) :is(ol, ul)) {
+		margin-block: 0;
+	}
 	.article :global(pre) {
 		overflow-x: auto;
 		padding: 0.5rem;
