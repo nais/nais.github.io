@@ -12,8 +12,8 @@
 				<a class="link" href={post.route}>
 					<h2 class="heading">{post.metadata.title}</h2>
 				</a>
-				<p class="description">{post.metadata.description}</p>
 				<p class="byline">{format(post.metadata.date, "MMMM d, yyyy")} by {post.metadata.author}</p>
+				<p class="description">{post.metadata.description}</p>
 			</li>
 		{/each}
 	</ul>
@@ -52,7 +52,9 @@
 		text-decoration: none;
 	}
 	.item {
-		display: grid;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
 		gap: 0.2rem;
 	}
 </style>
