@@ -34,15 +34,8 @@
 	<nav class="main-menu" class:isOpen>
 		<ul class="main-menu-list">
 			<li><a class="main-menu-item" class:isActive={isActive("blog")} href="/blog">Blogg</a></li>
-			<!-- <li><a class="main-menu-item" class:isActive={$page.url.pathname == "/blog"} href="/blog">Blogg</a></li> -->
-			<!-- <li><a class="main-menu-item" href="https://nais.io/blog/">Blogg</a></li> -->
 			<li><a class="main-menu-item" href="https://docs.nais.io">Dokumentasjon</a></li>
-			<!-- <li><a class="main-menu-item" href="/annonseringer" class:isActive={isActive('annonseringer')}>Annonseringer</a></li> -->
-			<!-- <li>
-				<a class="main-menu-item" href="/status" class:isActive={isActive('status')}>Status</a>
-			</li> -->
 			<li><a class="main-menu-item" href="mailto:nais@nav.no">Kontakt oss</a></li>
-			<li><a class="main-menu-item test" class:isActive={isActive("test")} href="/test">Test</a></li>
 		</ul>
 		<a class="mobile-github-link" href="https://github.com/nais" aria-label="nais github">
 			<svg width="1em" height="1em" viewBox="0 0 98 98" xmlns="http://www.w3.org/2000/svg">
@@ -156,9 +149,6 @@
 	.desktop-github-link {
 		display: none;
 	}
-	.test {
-		visibility: hidden;
-	}	
 	@media (min-width: 768px) {
 		.header {
 			grid-template-areas: "home menu github";
