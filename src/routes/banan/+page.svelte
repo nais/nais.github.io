@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { format } from "date-fns";
-	import type { PageData } from "./$types";
+	import type { PageData } from "../blog/$types";
 
 	let { data }: { data: PageData } = $props();
 </script>

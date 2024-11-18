@@ -1,6 +1,5 @@
 <script>
 	import { page } from "$app/stores";
-	import { get } from "svelte/store";
 	import Nais from "./icons/Nais.svelte";
 
 
@@ -34,7 +33,7 @@
 	</button>
 	<nav class="main-menu" class:isOpen>
 		<ul class="main-menu-list">
-			<li><a class="main-menu-item" class:isActive={isActive("blog")} href="/blog">Blogg</a></li>
+			<li><a class="main-menu-item" class:isActive={isActive("banan")} href="/banan">Blogg</a></li>
 			<!-- <li><a class="main-menu-item" class:isActive={$page.url.pathname == "/blog"} href="/blog">Blogg</a></li> -->
 			<!-- <li><a class="main-menu-item" href="https://nais.io/blog/">Blogg</a></li> -->
 			<li><a class="main-menu-item" href="https://docs.nais.io">Dokumentasjon</a></li>
