@@ -5,32 +5,23 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
-<div class="wrapper">
-	<ul class="list">
-		{#each data.posts as post}
-			<li class="item">
-				<h2 class="heading">
-					<a class="link" href={`/blog/posts/${post.slug}`}>
-						{post.metadata.title}
-					</a>
-				</h2>
-				<div class="byline">
-					{format(post.metadata.date, "MMMM d, yyyy")} by {post.metadata.author}
-				</div>
-				<div class="description">{post.metadata.description}</div>
-			</li>
-		{/each}
-	</ul>
-</div>
+<ul class="list">
+	{#each data.posts as post}
+		<li class="item">
+			<h2 class="heading">
+				<a class="link" href={`/blog/posts/${post.slug}`}>
+					{post.metadata.title}
+				</a>
+			</h2>
+			<div class="byline">
+				{format(post.metadata.date, "MMMM d, yyyy")} by {post.metadata.author}
+			</div>
+			<div class="description">{post.metadata.description}</div>
+		</li>
+	{/each}
+</ul>
 
 <style>
-	.wrapper {
-		font-size: 1.125rem;
-		padding: min(4vw, 3.6rem);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
 	.description {
 		max-width: 60ch;
 	}

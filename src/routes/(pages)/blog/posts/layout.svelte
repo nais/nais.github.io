@@ -20,14 +20,12 @@
 	<title>{title} — Nais blog</title>
 </svelte:head>
 
-<div class="wrapper">
-	<div class="article">
-		<h1>{title}</h1>
-		{#if date && author}
-			<p class="byline">{format(date, "MMMM d, yyyy")} by {author}</p>
-		{/if}
-		{@render children()}
-	</div>
+<div class="article">
+	<h1>{title}</h1>
+	{#if date && author}
+		<p class="byline">{format(date, "MMMM d, yyyy")} by {author}</p>
+	{/if}
+	{@render children()}
 </div>
 
 <style>
@@ -50,12 +48,5 @@
 	.byline {
 		font-style: italic;
 		font-size: 1rem;
-	}
-	.wrapper {
-		font-size: 1.125rem;
-		padding: min(4vw, 3.6rem);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 	}
 </style>

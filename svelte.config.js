@@ -20,9 +20,9 @@ const config = {
 			extensions: [".svx", ".md", ".mdx"],
 			remarkPlugins: [remarkRelativeImages],
 			layout: {
-				log: "/src/routes/log/post.svelte",
-				blog: "/src/routes/blog/posts/layout.svelte",
-				_: "/src/routes/blog/posts/layout.svelte",
+				log: "/src/routes/(pages)/log/post.svelte",
+				blog: "/src/routes/(pages)/blog/posts/layout.svelte",
+				_: "/src/routes/(pages)/blog/posts/layout.svelte",
 			},
 			highlight: {
 				highlighter: async (code, lang = "text") => {
