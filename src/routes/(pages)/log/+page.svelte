@@ -5,20 +5,15 @@
 	const { data }: { data: PageData } = $props();
 </script>
 
-<div class="content">
-	{#each data.posts as { metadata, default: Post }}
-		<h2 class="heading">{metadata.title}</h2>
-		<p class="byline">{format(metadata.date, "MMMM d, yyyy")} by {metadata.author}</p>
-		<div class="post">
-			<Post />
-		</div>
-	{/each}
-</div>
+{#each data.posts as { metadata, default: Post }}
+	<h2 class="heading">{metadata.title}</h2>
+	<p class="byline">{format(metadata.date, "MMMM d, yyyy")} by {metadata.author}</p>
+	<div class="post">
+		<Post />
+	</div>
+{/each}
 
 <style>
-	.content {
-		max-width: 67ch;
-	}
 	.heading {
 		margin-top: 1.75em;
 		margin-bottom: 0.5em;

@@ -31,9 +31,7 @@
 	}
 	.list {
 		margin: 0;
-		font-size: 1.125rem;
 		list-style: none;
-		max-width: 67ch;
 		margin-inline: auto;
 		display: flex;
 		flex-direction: column;

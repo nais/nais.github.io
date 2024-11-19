@@ -2,7 +2,9 @@
 </script>
 
 <div class="wrapper">
-	<slot />
+	<div class="content">
+		<slot />
+	</div>
 </div>
 
 <style>
@@ -12,5 +14,9 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+	.content {
+		max-width: 67ch;
+		width: 100%;
 	}
 </style>

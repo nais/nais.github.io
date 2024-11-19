@@ -29,11 +29,6 @@
 </div>
 
 <style>
-	.article {
-		max-width: 67ch;
-		width: 100%;
-		font-size: 1.125rem;
-	}
 	.article :global(pre) {
 		overflow-x: auto;
 		padding: 1rem;
