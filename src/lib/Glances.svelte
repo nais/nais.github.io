@@ -13,32 +13,34 @@
 <div class="glances">
 	<Glance heading="Utrulling" --color="#FF9100">
 		<RocketIcon slot="icon" />
-		<p slot="text">Nais tar ideene dine raskt fra kode til produksjon, uten nedetid.</p>
+		<div slot="text">Nais tar ideene dine raskt fra kode til produksjon, uten nedetid.</div>
 	</Glance>
 	<Glance heading="Automatisering" --color="#634689">
 		<CogRotationIcon slot="icon" />
-		<p slot="text">Du sier hva du trenger, så setter Nais opp infrastrukturen automatisk.</p>
+		<div slot="text">Du sier hva du trenger, så setter Nais opp infrastrukturen automatisk.</div>
 	</Glance>
 	<Glance heading="Full oversikt" --color="#3380A5">
 		<BulletListIcon slot="icon" />
-		<p slot="text">
+		<div slot="text">
 			Ha kontroll på det du har kjørende, hva det koster og hvor godt du utnytter det.
-		</p>
+		</div>
 	</Glance>
 	<Glance heading="Innsikt" --color="#939E00">
 		<VitalsIcon slot="icon" />
-		<p slot="text">Verktøyene du trenger for å få innsikt i hvordan systemene dine oppfører seg.</p>
+		<div slot="text">
+			Verktøyene du trenger for å få innsikt i hvordan systemene dine oppfører seg.
+		</div>
 	</Glance>
 	<Glance heading="Sikkerhet" --color="#06893A">
 		<SealCheckmarkIcon slot="icon" />
-		<p slot="text">
+		<div slot="text">
 			Nais kommer med solide standardinnstillinger ut av boksen, og gir deg det du trenger for å
 			sikre systemene dine.
-		</p>
+		</div>
 	</Glance>
 	<Glance heading="Et Nais fellesskap" --color="#DE2E2E">
 		<HandShakeHeartIcon slot="icon" />
-		<p slot="text">Vi er mange som bruker og utvikler Nais, og vi hjelper hverandre.</p>
+		<div slot="text">Vi er mange som bruker og utvikler Nais, og vi hjelper hverandre.</div>
 	</Glance>
 </div>
 

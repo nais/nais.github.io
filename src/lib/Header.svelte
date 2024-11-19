@@ -7,7 +7,7 @@
 </script>
 
 <header class="header">
-	<h1>
+	<h1 class="heading">
 		<a class="home" href="/">
 			<Nais />
 			<span class="name">Nais</span>
@@ -89,7 +89,9 @@
 		transform: translate(0, -60%);
 		background: linear-gradient(to right, #3381a535, #6ee5c125);
 	}
-
+	.heading {
+		margin: 0;
+	}
 	.home {
 		text-decoration: none;
 		color: var(--color-primary);
@@ -128,6 +130,7 @@
 		gap: 4px;
 	}
 	.main-menu-list {
+		margin: 0;
 		list-style: none;
 		padding: 0;
 		display: flex;

@@ -4,14 +4,14 @@
 
 <div class="hero">
 	<div class="content">
-		<h2>
+		<h2 class="heading">
 			En plattform laget av <Navlogo />
 			for å gi fart og flyt til utviklerne av det offentlige Norge
 		</h2>
-		<p>
+		<div>
 			Vi mener at det skal være lett å gjøre rett. Utviklere bør kunne fokusere på det som betyr noe
 			- å lage gode applikasjoner.
-		</p>
+		</div>
 		<a class="cta" href="https://docs.nais.io">Lær mer om Nais</a>
 	</div>
 	<img class="cloud" src="multicloud.png" alt="" />
@@ -33,6 +33,9 @@
 		flex-direction: column;
 		gap: 1rem;
 		max-width: 55ch;
+	}
+	.heading {
+		margin: 0;
 	}
 	.cloud {
 		width: 50%;

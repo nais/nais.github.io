@@ -36,57 +36,16 @@
 		width: 100%;
 		font-size: 1.125rem;
 	}
-	.article :global(h1) {
-		margin-block: 0.67em;
-	}
-	.article :global(:is(h2, h3, h4, h5)) {
-		margin-top: 1.5em;
-		margin-bottom: 18px;
-	}
-	.article :global(p) {
-		margin-block: 1em;
-	}
-	.article :global(ul),
-	.article :global(ol) {
-		margin-block: 1em;
-	}
-	.article :global(:is(ul, ol) :is(ol, ul)) {
-		margin-block: 0;
-	}
 	.article :global(pre) {
 		overflow-x: auto;
-		padding: 0.5rem;
+		padding: 1rem;
 	}
 	.article :global(blockquote) {
 		border-left: 0.5rem solid var(--color-primary);
 		display: flex;
 		padding-inline: min(4vw, 2rem);
 		background-color: color-mix(in srgb, var(--color-primary) 10%, white);
-	}
-	.article :global(table) {
-		overflow-x: auto;
-		width: 100%;
-		max-width: 100%;
-		border-collapse: collapse;
-	}
-	.article :global(thead) {
-		display: table-header-group;
-		vertical-align: middle;
-	}
-	.article :global(tr) {
-		display: table-row;
-		vertical-align: inherit;
-	}
-	.article :global(th) {
-		vertical-align: bottom;
-		border-bottom: 2px solid #dee2e6;
-		text-align: inherit;
-	}
-	.article :global(th),
-	.article :global(td) {
-		vertical-align: top;
-		padding: 0.75rem;
-		border-top: 1px solid #dee2e6;
+		margin: 0;
 	}
 	.byline {
 		font-style: italic;

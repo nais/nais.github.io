@@ -7,7 +7,7 @@
 		<slot name="icon" />
 	</div>
 	<div>
-		<h2>{heading}</h2>
+		<h2 class="heading">{heading}</h2>
 		<slot name="text" />
 	</div>
 </div>
@@ -36,8 +36,9 @@
 			color-mix(in srgb, var(--color) 50%, white)
 		);
 	}
-	h2 {
+	.heading {
 		line-height: 1.3;
+		margin-top: 0;
 		margin-bottom: 0.4rem;
 	}
 </style>

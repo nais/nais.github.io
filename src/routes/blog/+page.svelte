@@ -9,11 +9,15 @@
 	<ul class="list">
 		{#each data.posts as post}
 			<li class="item">
-				<a class="link" href={post.route}>
-					<h2 class="heading">{post.metadata.title}</h2>
-				</a>
-				<p class="byline">{format(post.metadata.date, "MMMM d, yyyy")} by {post.metadata.author}</p>
-				<p class="description">{post.metadata.description}</p>
+				<h2 class="heading">
+					<a class="link" href={`/blog/posts/${post.slug}`}>
+						{post.metadata.title}
+					</a>
+				</h2>
+				<div class="byline">
+					{format(post.metadata.date, "MMMM d, yyyy")} by {post.metadata.author}
+				</div>
+				<div class="description">{post.metadata.description}</div>
 			</li>
 		{/each}
 	</ul>
@@ -35,6 +39,7 @@
 		font-size: 1rem;
 	}
 	.list {
+		margin: 0;
 		font-size: 1.125rem;
 		list-style: none;
 		max-width: 67ch;
@@ -43,6 +48,9 @@
 		flex-direction: column;
 		gap: 2rem;
 		padding: 0;
+	}
+	.heading {
+		margin: 0;
 	}
 	.link {
 		display: inline-block;
