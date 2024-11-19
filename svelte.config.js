@@ -19,7 +19,11 @@ const config = {
 		mdsvex({
 			extensions: [".svx", ".md", ".mdx"],
 			remarkPlugins: [remarkRelativeImages],
-			layout: "/src/routes/blog/posts/layout.svelte",
+			layout: {
+				log: "/src/routes/log/post.svelte",
+				blog: "/src/routes/blog/posts/layout.svelte",
+				_: "/src/routes/blog/posts/layout.svelte",
+			},
 			highlight: {
 				highlighter: async (code, lang = "text") => {
 					const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
