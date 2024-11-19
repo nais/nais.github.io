@@ -1,9 +1,8 @@
 <script lang="ts">
 	import { browser } from "$app/environment";
-	import { page } from "$app/stores";
 	import Header from "$lib/Header.svelte";
-	import "../styles/app.css";
 	import * as amplitude from "@amplitude/analytics-browser";
+	import "../styles/app.css";
 
 	if (browser) {
 		const getApiKey = () => {
@@ -19,8 +18,6 @@
 			defaultTracking: true,
 		});
 	}
-
-	console.log($page.url.pathname);
 </script>
 
 <Header />
