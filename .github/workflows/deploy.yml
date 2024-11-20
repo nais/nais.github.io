@@ -35,6 +35,8 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: build/
+        env:
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
 
   # Deployment job
   deploy:
