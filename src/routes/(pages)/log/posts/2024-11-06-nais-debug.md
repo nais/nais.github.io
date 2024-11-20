@@ -1,5 +1,5 @@
 ---
-title: ":naiser: NAIS DEBUG!"
+title: "NAIS DEBUG!"
 date: 2024-11-06T12:55:13+02:00
 author: Carl Hedgren
 tags: []

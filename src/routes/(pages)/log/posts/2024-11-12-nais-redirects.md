@@ -1,5 +1,5 @@
 ---
-title: ":naiser: Redirects, but Nais"
+title: "Redirects, but Nais"
 date: 2024-11-12T14:10:13+02:00
 author: Carl Hedgren
 tags: []

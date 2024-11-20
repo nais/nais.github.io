@@ -3,6 +3,7 @@ import path from "path";
 import { mdsvex, escapeSvelte } from "mdsvex";
 import { createHighlighter } from "shiki";
 import remarkRelativeImages from "mdsvex-relative-images";
+import remarkCustomEmojis from "./remark-custom-emojis.js";
 
 const theme = "github-dark";
 const highlighter = await createHighlighter({
@@ -18,7 +19,7 @@ const config = {
 	preprocess: [
 		mdsvex({
 			extensions: [".svx", ".md", ".mdx"],
-			remarkPlugins: [remarkRelativeImages],
+			remarkPlugins: [remarkCustomEmojis, remarkRelativeImages],
 			layout: {
 				log: "/src/routes/(pages)/log/post.svelte",
 				blog: "/src/routes/(pages)/blog/posts/layout.svelte",
