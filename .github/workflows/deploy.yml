@@ -31,12 +31,12 @@ jobs:
           node-version: 18
       - run: yarn --frozen-lockfile
       - run: yarn run build
+        env:
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: build/
-        env:
-          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
 
   # Deployment job
   deploy:
