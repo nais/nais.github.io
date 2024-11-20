@@ -5,8 +5,8 @@
 	const { data }: { data: PageData } = $props();
 </script>
 
-{#each data.posts as { metadata, default: Post }}
-	<h2 class="heading">{metadata.title}</h2>
+{#each data.posts as { metadata, slug, default: Post }}
+	<h2 class="heading" id={slug}><a class="anchorLink" href="#{slug}">{metadata.title}</a></h2>
 	<p class="byline">{format(metadata.date, "MMMM d, yyyy")} by {metadata.author}</p>
 	<div class="post">
 		<Post />
@@ -21,5 +21,9 @@
 	.byline {
 		font-style: italic;
 		font-size: 1rem;
+	}
+	.anchorLink {
+		color: inherit;
+		text-decoration: none;
 	}
 </style>

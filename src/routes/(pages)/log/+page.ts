@@ -11,8 +11,11 @@ export async function load() {
 	}>("./posts/*.md", { eager: true });
 
 	return {
-		posts: Object.values(markdownFiles).sort(
-			(a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime(),
-		),
+		posts: Object.entries(markdownFiles)
+			.map(([path, post]) => ({
+				slug: path.match(/([^\/]+)\.md$/)?.[1],
+				...post,
+			}))
+			.sort((a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime()),
 	};
 }
