@@ -5,6 +5,8 @@
 	const { data }: { data: PageData } = $props();
 </script>
 
+<i>Her poster Naisteamet informasjon om nyheter, endringer eller hendelser i plattformen.</i>
+
 {#each data.posts as { metadata, slug, default: Post }}
 	<h2 class="heading" id={slug}><a class="anchorLink" href="#{slug}">{metadata.title}</a></h2>
 	<p class="byline">{format(metadata.date, "MMMM d, yyyy")} by {metadata.author}</p>
