@@ -22,15 +22,13 @@
 </ul>
 
 <style>
-	.description {
-		max-width: 60ch;
-	}
 	.byline {
 		font-style: italic;
 		font-size: 1rem;
 	}
 	.list {
 		margin: 0;
+		margin-top: 1.34em;
 		list-style: none;
 		margin-inline: auto;
 		display: flex;

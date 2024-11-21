@@ -29,6 +29,9 @@
 </div>
 
 <style>
+	h1 {
+		margin-bottom: 1rem;
+	}
 	.article :global(pre) {
 		overflow-x: auto;
 		padding: 1rem;
