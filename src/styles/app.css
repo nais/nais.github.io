@@ -1,4 +1,4 @@
-@import './reset.css';
+@import "./reset.css";
 
 :root {
 	--color-primary: #f76890;
@@ -7,9 +7,10 @@
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
-	background-color: #fdf9fc; 
+	font-family: "Poppins", sans-serif;
+	background-color: #fdf9fc;
 	color: #222;
+	overflow-x: clip;
 }
 a {
 	color: inherit;

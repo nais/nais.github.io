@@ -8,7 +8,7 @@
 			En plattform laget av <Navlogo />
 			for å gi fart og flyt til utviklerne av det offentlige Norge
 		</h2>
-		<div>
+		<div class="text">
 			Vi mener at det skal være lett å gjøre rett. Utviklere bør kunne fokusere på det som betyr noe
 			- å lage gode applikasjoner.
 		</div>
@@ -18,14 +18,15 @@
 </div>
 
 <style>
+	.text {
+		text-wrap: balance;
+	}
 	.hero {
-		padding: min(8vw, 7.2rem) min(4vw, 3.6rem);
-		max-width: var(--content-max-width);
-		margin: auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: min(8vw, 7.2rem);
+		gap: min(8vw, 6rem);
+		padding-bottom: min(8vw, 6rem);
 	}
 	.content {
 		font-size: 1.5rem;
@@ -33,6 +34,7 @@
 		flex-direction: column;
 		gap: 1rem;
 		max-width: 55ch;
+		min-width: 26ch;
 	}
 	.heading {
 		margin: 0;

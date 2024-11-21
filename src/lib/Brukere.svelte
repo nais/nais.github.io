@@ -4,29 +4,28 @@
 </script>
 
 <div class="section">
-	<div>Nais brukes av utviklingsteam hos</div>
+	<div class="text">Nais brukes av utviklingsteam hos</div>
 	<div class="users">
 		<Navlogo />
 		<SsblogoFull />
 	</div>
-	<div>
+	<div class="text">
 		<a class="mail" href="mailto:nais@nav.no">Snakk med oss</a>
-		 om Nais kan passe hos dere
+		om Nais kan passe hos dere
 	</div>
 </div>
 
 <style>
+	.text {
+		text-wrap: balance;
+	}
 	.section {
 		font-size: 1.5rem;
-		padding-block: 4rem;
-		padding-inline: min(4vw, 3.6rem);
-		max-width: var(--content-max-width);
 		text-align: center;
 		display: grid;
 		gap: 1.5rem;
 		margin: auto;
 		position: relative;
-		overflow-x: clip;
 	}
 	.section::after {
 		position: absolute;

@@ -67,7 +67,6 @@
 		align-items: center;
 		padding-inline: min(4vw, 3.6rem);
 		position: relative;
-		overflow-x: clip;
 	}
 	.header::before,
 	.header::after {

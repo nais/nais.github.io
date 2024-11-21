@@ -47,15 +47,11 @@
 <style>
 	.glances {
 		font-size: 1.15rem;
-		padding: min(8vw, 7.2rem) min(4vw, 3.6rem);
-		max-width: var(--content-max-width);
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 		gap: 4rem;
 		justify-content: center;
-		margin: auto;
 		position: relative;
-		overflow-x: clip;
 	}
 	.glances::after {
 		position: absolute;
