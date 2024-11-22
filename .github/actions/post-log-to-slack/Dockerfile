@@ -4,6 +4,10 @@ WORKDIR /usr/src/app
 COPY package.json bun.lockb ./
 RUN bun install --frozen-lockfile --production
 
-COPY index.ts .
+COPY index.ts ./
 
-ENTRYPOINT [ "bun", "run", "index.ts" ]
+# RUN ls -la
+
+# ENTRYPOINT [ "bun", "run", "index.ts" ]
+
+ENTRYPOINT [ "ls", "-la"]
