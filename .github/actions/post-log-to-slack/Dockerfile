@@ -1,10 +1,10 @@
 FROM oven/bun:1
 WORKDIR /usr/src/app
 
-COPY package.json bun.lockb ./
+COPY .github/actions/post-log-to-slack/package.json .github/actions/post-log-to-slack/bun.lockb ./
 RUN bun install --frozen-lockfile --production
 
-COPY index.ts ./
+COPY .github/actions/post-log-to-slack/index.ts ./
 
 # RUN ls -la
 
