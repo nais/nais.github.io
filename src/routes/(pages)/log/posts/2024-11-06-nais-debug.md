@@ -10,7 +10,7 @@ Det er nå mulig å bruke et nais-debug image for å debugge containers i pods.
 
 [Se docs her](https://docs.nais.io/workloads/how-to/debugging/#kubectl-debug)
 
-Det er også støtte i nais-cli via  `nais debug &lt;appname&gt;` (krever oppdatering).
+Det er også støtte i nais-cli via  `nais debug <appname>` (krever oppdatering).
 
 Det finnes også et easter egg i imaget. Se om du kan finne det. (it's real, not just engagement hacking. )
 
