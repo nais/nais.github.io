@@ -36,6 +36,7 @@
 		"@nais/ds-svelte-community": "^0.7.5",
 		"@slack/web-api": "^7.7.0",
 		"date-fns": "^4.1.0",
+		"feed": "^4.2.2",
 		"mdast-util-find-and-replace": "^3.0.1",
 		"node-emoji": "^2.1.3",
 		"shiki": "^1.23.0",
