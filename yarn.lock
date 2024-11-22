@@ -1733,6 +1733,13 @@ parent-module@^1.0.0:
   dependencies:
     callsites "^3.0.0"
 
+parse-md@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/parse-md/-/parse-md-3.0.3.tgz#aede95c45b5eaa82088d2c26a833d156b8be6bb1"
+  integrity sha512-2kpNrrW1GBgli5VT9X9/Y6n4PVsIFVdG49tguq1PHwzsRSK0Cu0yJPTUFOwWouFT85atYNWQ1T/rmqfj7kLd8g==
+  dependencies:
+    js-yaml "^4.1.0"
+
 path-exists@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/path-exists/-/path-exists-4.0.0.tgz"
