@@ -1,9 +1,13 @@
-# Container image that runs your code
-FROM alpine:3.10
+FROM oven/bun:1
 
-# Copies your code file from your action repository to the filesystem path `/` of the container
-COPY entrypoint.sh /entrypoint.sh
+COPY package.json  /package.json
+COPY bun.lockb /bun.lockb
+RUN bun install --frozen-lockfile --production
 
-# Code file to execute when the docker container starts up (`entrypoint.sh`)
-# ENTRYPOINT ["/entrypoint.sh"]
-ENTRYPOINT ["ls", "-la"]
+COPY index.ts /index.ts
+
+# RUN ls -la
+
+ENTRYPOINT [ "bun", "run", "/index.ts" ]
+
+# ENTRYPOINT [ "ls", "-la"]
