@@ -14,9 +14,10 @@ jobs:
         uses: ./.github/actions/post-log-to-slack
         with:
           who-to-greet: "Mona the Octocat"
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
           VARS_CONTEXT: ${{ toJson(vars) }}
+
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"
