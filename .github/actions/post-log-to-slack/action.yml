@@ -12,6 +12,3 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  env:
-    GITHUB_CONTEXT:  ${{ toJson(github) }} 
-    VARS_CONTEXT:  ${{ toJson(vars) }} 
