@@ -13,8 +13,9 @@
 			<span class="name">Nais</span>
 		</a>
 	</h1>
-	<button class="main-menu-toggle" aria-label="toggle menu" onclick={() => (isOpen = !isOpen)}>
+	<button class="main-menu-toggle" class:isOpen onclick={() => (isOpen = !isOpen)}>
 		<svg
+			class="open-icon"
 			xmlns="http://www.w3.org/2000/svg"
 			width="1em"
 			height="1em"
@@ -22,11 +23,27 @@
 			viewBox="0 0 24 24"
 			focusable="false"
 			role="img">
+			<title>Åpne meny</title>
 			<path
 				fill="currentColor"
 				fill-rule="evenodd"
 				d="M2.75 6a.75.75 0 0 1 .75-.75h17a.75.75 0 0 1 0 1.5h-17A.75.75 0 0 1 2.75 6m0 6a.75.75 0 0 1 .75-.75h17a.75.75 0 0 1 0 1.5h-17a.75.75 0 0 1-.75-.75m.75 5.25a.75.75 0 0 0 0 1.5h17a.75.75 0 0 0 0-1.5z"
 				clip-rule="evenodd">
+			</path>
+		</svg>
+		<svg
+			class="close-icon"
+			xmlns="http://www.w3.org/2000/svg"
+			width="1em"
+			height="1em"
+			fill="none"
+			viewBox="0 0 24 24"
+			focusable="false"
+			role="img">
+			<title>Lukk meny</title>
+			<path
+				fill="currentColor"
+				d="M6.53 5.47a.75.75 0 0 0-1.06 1.06L10.94 12l-5.47 5.47a.75.75 0 1 0 1.06 1.06L12 13.06l5.47 5.47a.75.75 0 1 0 1.06-1.06L13.06 12l5.47-5.47a.75.75 0 0 0-1.06-1.06L12 10.94z">
 			</path>
 		</svg>
 	</button>
@@ -109,6 +126,15 @@
 	}
 	.main-menu-toggle:active {
 		background-color: #adadad;
+	}
+	.main-menu-toggle > .close-icon {
+		display: none;
+	}
+	.main-menu-toggle.isOpen > .close-icon {
+		display: block;
+	}
+	.main-menu-toggle.isOpen > .open-icon {
+		display: none;
 	}
 	.main-menu {
 		grid-area: menu;
