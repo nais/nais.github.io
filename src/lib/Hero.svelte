@@ -8,10 +8,10 @@
 			En plattform laget av <Navlogo />
 			for å gi fart og flyt til utviklerne av det offentlige Norge
 		</h2>
-		<div class="text">
+		<p class="text">
 			Vi mener at det skal være lett å gjøre rett. Utviklere bør kunne fokusere på det som betyr noe
 			- å lage gode applikasjoner.
-		</div>
+		</p>
 		<a class="cta" href="https://docs.nais.io">Lær mer om Nais</a>
 	</div>
 	<img class="cloud" src="multicloud.png" alt="" />
@@ -20,6 +20,7 @@
 <style>
 	.text {
 		text-wrap: balance;
+		margin: 0;
 	}
 	.hero {
 		display: flex;
