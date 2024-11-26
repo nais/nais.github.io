@@ -15,7 +15,7 @@
 <style>
 	.glance {
 		display: grid;
-		grid-template-columns: 60px 1fr;
+		grid-template-columns: auto 1fr;
 		align-items: start;
 		gap: 1.25rem;
 	}
