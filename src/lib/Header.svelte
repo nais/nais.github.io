@@ -117,7 +117,8 @@
 	.main-menu.isOpen {
 		display: flex;
 		flex-direction: column;
-		gap: 4px;
+		gap: 0.5rem;
+		align-items: start;
 	}
 	.main-menu-list {
 		margin: 0;
@@ -125,7 +126,7 @@
 		padding: 0;
 		display: flex;
 		flex-direction: column;
-		gap: 4px;
+		gap: 0.5rem;
 	}
 	.main-menu-item {
 		text-decoration: none;
@@ -133,6 +134,10 @@
 	}
 	.main-menu-item.isActive {
 		color: var(--color-primary);
+	}
+	.github-link {
+		font-size: 1.5rem;
+		padding-block: 2px;
 	}
 	@media (min-width: 768px) {
 		.header {
@@ -146,7 +151,8 @@
 		.main-menu-toggle {
 			display: none;
 		}
-		.main-menu {
+		.main-menu,
+		.main-menu.isOpen {
 			display: contents;
 		}
 		.main-menu-list {
@@ -156,6 +162,7 @@
 		}
 		.github-link {
 			font-size: 1.5rem;
+			padding: 0;
 		}
 	}
 </style>
