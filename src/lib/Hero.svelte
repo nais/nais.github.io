@@ -34,7 +34,6 @@
 		flex-direction: column;
 		gap: 1rem;
 		max-width: 55ch;
-		min-width: 26ch;
 	}
 	.heading {
 		margin: 0;
@@ -52,6 +51,9 @@
 		.hero {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
+		}
+		.content {
+			min-width: 26ch;
 		}
 		.cloud {
 			width: 100%;
