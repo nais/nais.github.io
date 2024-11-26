@@ -4,14 +4,14 @@
 	import Hero from "$lib/Hero.svelte";
 </script>
 
-<div class="wrapper">
+<main>
 	<Hero />
 	<Glances />
 	<Brukere />
-</div>
+</main>
 
 <style>
-	.wrapper {
+	main {
 		display: flex;
 		flex-direction: column;
 		gap: min(14vw, 8rem);

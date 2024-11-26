@@ -1,14 +1,11 @@
-<script lang="ts">
-</script>
-
-<div class="wrapper">
+<main>
 	<div class="content">
 		<slot />
 	</div>
-</div>
+</main>
 
 <style>
-	.wrapper {
+	main {
 		font-size: 1.125rem;
 		padding: min(4vw, 3.6rem);
 		display: flex;
