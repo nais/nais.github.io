@@ -20,10 +20,9 @@
 		gap: 1.25rem;
 	}
 	.icon {
-		//border: 1px solid #000;
 		border-radius: 10px;
-		padding: 5px;
-		font-size: 3rem;
+		padding: 8px;
+		font-size: 2.25rem;
 		color: var(--color);
 		border-color: var(--color);
 		box-shadow:
