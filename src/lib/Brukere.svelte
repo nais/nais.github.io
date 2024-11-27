@@ -20,7 +20,7 @@
 		text-wrap: balance;
 	}
 	.section {
-		font-size: 1.5rem;
+		font-size: 18px;
 		text-align: center;
 		display: grid;
 		gap: 1.5rem;
