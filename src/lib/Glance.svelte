@@ -39,5 +39,6 @@
 		line-height: 1.3;
 		margin-top: 0;
 		margin-bottom: 0.4rem;
+		font-size: 24px;
 	}
 </style>
