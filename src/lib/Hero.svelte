@@ -1,12 +1,10 @@
 <script>
-	import Navlogo from "$lib/icons/Navlogo.svelte";
 </script>
 
 <div class="hero">
 	<div class="content">
 		<h2 class="heading">
-			En plattform laget av <Navlogo />
-			for å gi fart og flyt til utviklerne av det offentlige Norge
+			En plattform laget av Nav for å gi fart og flyt til utviklerne av det offentlige Norge
 		</h2>
 		<p class="text">
 			Vi mener at det skal være lett å gjøre rett. Utviklere bør kunne fokusere på det som betyr noe
