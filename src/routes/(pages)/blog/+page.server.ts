@@ -1,3 +1,4 @@
+export const trailingSlash = "ignore";
 export async function load() {
 	const markdownFiles = import.meta.glob<{
 		metadata: {
