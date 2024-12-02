@@ -28,4 +28,5 @@
 	background:
 		linear-gradient(45deg, var(--g)) var(--p),
 		linear-gradient(-45deg, var(--g)) var(--p) var(--c2);
+	margin-block: 4rem;
 }
