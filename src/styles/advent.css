@@ -1,0 +1,31 @@
+:root:has(.article.advent) {
+	--color-primary: #9803a6;
+
+	--color-spectrum-1: transparent;
+	--color-spectrum-2: transparent;
+	--color-spectrum-3: transparent;
+	--color-spectrum-4: transparent;
+	--color-spectrum-5: transparent;
+}
+:root:has(.article.advent) body {
+	background: #d3cdb6;
+}
+:root:has(.article.advent) .home > .nais {
+	display: none;
+}
+:root:has(.article.advent) .home > .nais-jul {
+	display: initial;
+}
+:root:has(.article.advent) hr {
+	--size: 8px;
+	height: var(--size);
+	border: none;
+	--s: calc(var(--size) / 2);
+	--c1: red;
+	--c2: transparent;
+	--g: #0000 calc(125% / 3), var(--c1) 0 calc(175% / 3), #0000 0;
+	--p: 0 0 / calc(2 * var(--s)) calc(2 * var(--s));
+	background:
+		linear-gradient(45deg, var(--g)) var(--p),
+		linear-gradient(-45deg, var(--g)) var(--p) var(--c2);
+}

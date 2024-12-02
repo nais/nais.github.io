@@ -1,16 +1,25 @@
 @import "./reset.css";
+@import "./advent.css";
 
 :root {
 	--color-primary: #ff4d89;
 	--color-black: #222;
 	--content-max-width: 1424px;
-}
 
+	--color-spectrum-1: #ff9100;
+	--color-spectrum-2: #f76891;
+	--color-spectrum-3: #6200ff;
+	--color-spectrum-4: #3381a5;
+	--color-spectrum-5: #6ee5c1;
+}
 body {
-	font-family: "Poppins", sans-serif;
+	font-family: Poppins, sans-serif;
 	background-color: #fdf9fc;
 	color: #222;
 	overflow-x: clip;
+}
+.home > .nais-jul {
+	display: none;
 }
 a {
 	color: inherit;

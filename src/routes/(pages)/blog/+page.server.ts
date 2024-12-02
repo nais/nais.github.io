@@ -6,12 +6,14 @@ export async function load() {
 			title: string;
 			author: string;
 			description: string;
+			draft?: boolean;
 		};
 	}>("./posts/*/+page.md", { eager: true });
 
 	return {
 		posts: Object.entries(markdownFiles)
 			.map(([path, { metadata }]) => ({ metadata, slug: path.split("/").slice(2, 3).join("/") }))
+			.filter(({ metadata }) => new Date(metadata.date) < new Date() && !metadata.draft)
 			.sort((a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime()),
 	};
 }

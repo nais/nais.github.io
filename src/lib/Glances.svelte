@@ -66,6 +66,10 @@
 		z-index: -1;
 	}
 	.glances::after {
-		background: linear-gradient(to right, #ff91001d, #f768911a);
+		background: linear-gradient(
+			to right,
+			color-mix(in srgb, var(--color-spectrum-1) 11.4%, transparent),
+			color-mix(in srgb, var(--color-spectrum-2) 10%, transparent)
+		);
 	}
 </style>

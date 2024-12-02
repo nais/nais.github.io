@@ -39,7 +39,11 @@
 		z-index: -1;
 	}
 	.section::after {
-		background: linear-gradient(to right, #3381a53e, #6ee5c125);
+		background: linear-gradient(
+			to right,
+			color-mix(in srgb, var(--color-spectrum-4) 24.3%, transparent),
+			color-mix(in srgb, var(--color-spectrum-5) 14.5%, transparent)
+		);
 	}
 	.users {
 		font-size: 3rem;

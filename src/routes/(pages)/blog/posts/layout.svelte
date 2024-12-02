@@ -10,17 +10,18 @@
 		title?: string;
 		author?: string;
 		date?: string;
+		theme?: string;
 		children: Snippet;
 	}
 
-	let { title, date, author, children }: Props = $props();
+	let { title, date, author, theme, children }: Props = $props();
 </script>
 
 <svelte:head>
 	<title>{title} — Nais blog</title>
 </svelte:head>
 
-<div class="article">
+<div class={["article", theme].filter(Boolean).join(" ")}>
 	<h1>{title}</h1>
 	{#if date && author}
 		<p class="byline">{format(date, "MMMM d, yyyy")} by {author}</p>

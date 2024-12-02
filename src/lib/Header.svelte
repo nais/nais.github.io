@@ -1,6 +1,7 @@
 <script>
 	import { page } from "$app/stores";
 	import Nais from "./icons/Nais.svelte";
+	import NaisJul from "./icons/Nais-jul.svelte";
 
 	const isActive = (/** @type {string} */ path) => $page.url.pathname.startsWith(`/${path}`);
 	let isOpen = $state(false);
@@ -9,7 +10,8 @@
 <header class="header">
 	<h1 class="heading">
 		<a class="home" href="/">
-			<Nais />
+			<Nais class="nais" />
+			<NaisJul class="nais-jul" />
 			<span class="name">Nais</span>
 		</a>
 	</h1>
@@ -90,11 +92,20 @@
 	}
 	.header::before {
 		transform: translate(-75%, -60%);
-		background: linear-gradient(to right, #ff91004f, #f768914b, #6200ff40);
+		background: linear-gradient(
+			to right,
+			color-mix(in srgb, var(--color-spectrum-1) 31%, transparent),
+			color-mix(in srgb, var(--color-spectrum-2) 29.4%, transparent),
+			color-mix(in srgb, var(--color-spectrum-3) 25%, transparent)
+		);
 	}
 	.header::after {
 		transform: translate(0, -60%);
-		background: linear-gradient(to right, #3381a535, #6ee5c125);
+		background: linear-gradient(
+			to right,
+			color-mix(in srgb, var(--color-spectrum-4) 20.8%, transparent),
+			color-mix(in srgb, var(--color-spectrum-5) 14.5%, transparent)
+		);
 	}
 	.heading {
 		margin: 0;
