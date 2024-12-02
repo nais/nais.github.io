@@ -18,16 +18,22 @@ const feed = new Feed({
 });
 const path = "./src/routes/(pages)/log/posts";
 const items = fs.readdirSync(path);
-const files = [];
+const feedItem = []
 for (const filename of items) {
 	if (filename.endsWith(".md")) {
 		const fileContents = fs.readFileSync(`${path}/${filename}`, "utf8");
-		const { metadata, content } = parseMD(fileContents);
+		const { metadata } = parseMD(fileContents);
+		feedItem.push({metadata, link:`https://nais.io/log#${filename.match(/([^\/]+)\.md$/)?.[1]}`})
+	}
+}
+// sort feedItems by date
+feedItem.sort((a, b) => new Date(b.metadata.date) - new Date(a.metadata.date))
 
+feedItem.forEach(({metadata, link}) => {
 		feed.addItem({
 			title: metadata.title,
 			description: metadata.title,
-			link: `https://nais.io/log#${filename.match(/([^\/]+)\.md$/)?.[1]}`,
+			link: link,
 			date: new Date(metadata.date),
 			author: [
 				{
@@ -35,8 +41,9 @@ for (const filename of items) {
 				},
 			],
 		});
-	}
-}
+})
+
+
 
 fs.mkdirSync("build/log", { recursive: true });
 fs.writeFileSync("build/log/rss.xml", feed.rss2());
