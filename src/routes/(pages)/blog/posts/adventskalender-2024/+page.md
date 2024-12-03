@@ -5,7 +5,6 @@ date: 2024-12-01T22:10:00+02:00
 author: Naissen
 tags: []
 theme: advent
-language: nb
 ---
 
 La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver arbeidsdag legge ut et tips til hvordan du kan bruke Nais-plattformen.

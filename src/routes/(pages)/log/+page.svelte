@@ -12,14 +12,16 @@
 	{#if i > 0}
 		<hr />
 	{/if}
-	<h2 class="heading" id={slug}><a class="anchorLink" href="#{slug}">{metadata.title}</a></h2>
-	<div class="byline">
-		{metadata.language === "en"
-			? `${format(metadata.date, "MMMM d, yyyy")} by ${metadata.author}`
-			: `${format(metadata.date, "d. MMMM yyyy", { locale: nb })} av ${metadata.author}`}
-	</div>
-	<div class="post">
-		<Post />
+	<div lang={metadata.language}>
+		<h2 class="heading" id={slug}><a class="anchorLink" href="#{slug}">{metadata.title}</a></h2>
+		<div class="byline">
+			{metadata.language === "en"
+				? `${format(metadata.date, "MMMM d, yyyy")} by ${metadata.author}`
+				: `${format(metadata.date, "d. MMMM yyyy", { locale: nb })} av ${metadata.author}`}
+		</div>
+		<div class="post">
+			<Post />
+		</div>
 	</div>
 {/each}
 

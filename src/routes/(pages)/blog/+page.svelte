@@ -8,7 +8,7 @@
 
 <ul class="list">
 	{#each data.posts as post}
-		<li class="item">
+		<li class="item" lang={post.metadata.language}>
 			<h2 class="heading">
 				<a class="link" href={`/blog/posts/${post.slug}`}>
 					{post.metadata.title}
