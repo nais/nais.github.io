@@ -8,7 +8,10 @@
 
 <i>Her poster Naisteamet informasjon om nyheter, endringer eller hendelser i plattformen.</i>
 
-{#each data.posts as { metadata, slug, default: Post }}
+{#each data.posts as { metadata, slug, default: Post }, i}
+	{#if i > 0}
+		<hr />
+	{/if}
 	<h2 class="heading" id={slug}><a class="anchorLink" href="#{slug}">{metadata.title}</a></h2>
 	<div class="byline">
 		{metadata.language === "en"
@@ -21,6 +24,10 @@
 {/each}
 
 <style>
+	hr {
+		margin-block: min(calc(32vw / 2), 6rem);
+		border: 1px solid rgb(204, 204, 204);
+	}
 	.heading {
 		margin-top: 1.75em;
 		margin-bottom: 0.5em;
