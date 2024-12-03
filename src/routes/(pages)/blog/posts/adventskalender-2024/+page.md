@@ -67,7 +67,7 @@ Har man lyst til å ta i et tak, så er appens ressursbruk og glemte databaser l
 
 --- -->
 
-<!-- <img class="number" src="./images/tredje.svg">
+<img class="number" src="./images/tredje.svg">
 
 ## 3. desember
 
@@ -81,7 +81,7 @@ Du kan lese mer om tracing og Tempo på https://docs.nais.io/observability/traci
 
 <img class="illustration" src="./images/reinsdyr.svg">
 
---- -->
+---
 
 <img class="number" src="./images/andre.svg">
 
