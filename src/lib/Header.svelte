@@ -1,7 +1,6 @@
 <script>
 	import { page } from "$app/stores";
 	import Nais from "./icons/Nais.svelte";
-	import NaisJul from "./icons/Nais-jul.svelte";
 
 	const isActive = (/** @type {string} */ path) => $page.url.pathname.startsWith(`/${path}`);
 	let isOpen = $state(false);
@@ -10,8 +9,7 @@
 <header class="header">
 	<h1 class="heading">
 		<a class="home" href="/">
-			<Nais class="nais" />
-			<NaisJul class="nais-jul" />
+			<Nais />
 			<span class="name">Nais</span>
 		</a>
 	</h1>
@@ -112,6 +110,7 @@
 	}
 	.home {
 		text-decoration: none;
+		transition: color 50ms;
 		color: var(--color-primary);
 		display: grid;
 		grid-template-columns: auto 1fr;
@@ -170,6 +169,7 @@
 		font-size: 1.15rem;
 	}
 	.main-menu-item.isActive {
+		transition: color 50ms;
 		color: var(--color-primary);
 	}
 	.github-link {

@@ -13,13 +13,11 @@
 	--color-spectrum-5: #6ee5c1;
 }
 body {
+	transition: background-color 50ms;
 	font-family: Poppins, sans-serif;
 	background-color: #fdf9fc;
 	color: #222;
 	overflow-x: clip;
-}
-.home > .nais-jul {
-	display: none;
 }
 a {
 	color: inherit;

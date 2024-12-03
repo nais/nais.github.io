@@ -8,13 +8,7 @@
 	--color-spectrum-5: transparent;
 }
 :root:has(.article.advent) body {
-	background: #d3cdb6;
-}
-:root:has(.article.advent) .home > .nais {
-	display: none;
-}
-:root:has(.article.advent) .home > .nais-jul {
-	display: initial;
+	background-color: #d3cdb6;
 }
 :root:has(.article.advent) hr {
 	--size: 8px;
