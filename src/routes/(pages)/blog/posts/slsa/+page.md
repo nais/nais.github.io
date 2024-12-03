@@ -4,18 +4,19 @@ description: "Spice up your supply chain"
 date: 2022-06-20T22:10:00+02:00
 draft: false
 author: Jan-Kåre Solbakken
-tags: [slsa,sikkerhet,supplychain]
+tags: [slsa, sikkerhet, supplychain]
+language: en
 ---
 
 ![salsa](./images/salsa.webp)
 
-"Software supply chain" is a term describing everything that happens to code from the time it leaves the developers fingers until it runs in production. The code needs to be compiled, tested, packaged and deployed, and these steps take place in a variety of systems and use lots of complex third party solutions. Our apps also depend on an increasing number of third party libraries and frameworks that we often know next to nothing about. 
+"Software supply chain" is a term describing everything that happens to code from the time it leaves the developers fingers until it runs in production. The code needs to be compiled, tested, packaged and deployed, and these steps take place in a variety of systems and use lots of complex third party solutions. Our apps also depend on an increasing number of third party libraries and frameworks that we often know next to nothing about.
 
 ![dependencies](./images/react-hello-world-deps.png)
 
 Every step in the supply chain represents a possible attack vector. If a malicious actor is able to compromise one or more parts of the chain it is trivial to inject any kind of malware into our products. Why use loads of resources trying to circumvent all the security measures in production when you can quietly insert all the backdoors you need beforehand? The steady [rise](https://www.enisa.europa.eu/news/enisa-news/understanding-the-increase-in-supply-chain-security-attacks) in supply chain attacks show that more and more threat actors are embracing this way of doing business.
 
-There are several steps we can take to maintain the integrity of our supply chains. The first and most obvious one is to put as much care into securing our build and development pipelines as we do our production environments. Anyone with a few years experience in this industry has seen far to many unpatched and misconfigured Jenkins servers loaded with crappy plugins that store secrets in plain text. Not that it makes a huge difference anyway since the same secrets are readily available in the company-wide Slack and haven't been rotated in 5 years. 2FA, proper handling of secrets and configuration, regular patching, all that good stuff must also be applied to the dev side of the house. 
+There are several steps we can take to maintain the integrity of our supply chains. The first and most obvious one is to put as much care into securing our build and development pipelines as we do our production environments. Anyone with a few years experience in this industry has seen far to many unpatched and misconfigured Jenkins servers loaded with crappy plugins that store secrets in plain text. Not that it makes a huge difference anyway since the same secrets are readily available in the company-wide Slack and haven't been rotated in 5 years. 2FA, proper handling of secrets and configuration, regular patching, all that good stuff must also be applied to the dev side of the house.
 
 ![unpatched jenkins](./images/jenkins-security-warnings.png)
 
@@ -34,9 +35,9 @@ The framework defines four levels of increasing assurance defined by best practi
 | 3     | Extra resistance to specific threats   | Security controls on host, non-falsifiable provenance |
 | 4     | Highest levels of confidence and trust | Two-party review + hermetic builds                    |
 
-Level 4 is not feasible for most organizations unless their software is powering missiles or nuclear reactors. Level 2 or 3, on the other hand, is very much achievable. The Kubernetes project is [aiming](https://github.com/kubernetes/enhancements/issues/3027) for level 3-compliance in version 1.25. 
+Level 4 is not feasible for most organizations unless their software is powering missiles or nuclear reactors. Level 2 or 3, on the other hand, is very much achievable. The Kubernetes project is [aiming](https://github.com/kubernetes/enhancements/issues/3027) for level 3-compliance in version 1.25.
 
-A series of of tools and services to ease the implementations of frameworks like SLSA are also starting to appear. Cryptographic signing and verification is hard to do right, but [the Sigstore project](https://www.sigstore.dev/) makes it a whole lot easier with their "Cosign" tool. Cosign can sign artifacts using ephemeral keys generated on the fly, or you can bring your own keys. 
+A series of of tools and services to ease the implementations of frameworks like SLSA are also starting to appear. Cryptographic signing and verification is hard to do right, but [the Sigstore project](https://www.sigstore.dev/) makes it a whole lot easier with their "Cosign" tool. Cosign can sign artifacts using ephemeral keys generated on the fly, or you can bring your own keys.
 
 "Det skal være lett å gjøre det rett" (doing the right thing should be easy) is at the heart of our mission here at nais. We have therefore started to build some tooling to make it easier for any of our teams that want to dip their toes in salsa. The first iteration of this is a [GitHub Action](https://github.com/nais/salsa) (currently in beta) that generates a provenance for the repo, signs it using Cosign and uploads it to the Docker registry. It can also be used to verify previously signed artifacts. The signing is done using our [Google KMS](https://cloud.google.com/security-key-management). In order to create a provenance (which is basically the same as a SBOM) we need to figure out the dependency tree of the app. For that we currently support JVM-stuff (built with Maven or Gradle), JavaScript (built with npm or Yarn), Go (by parsing go.sum) and PHP with Composer (but without checksums). Other platforms may be added later should the need arise.
 

@@ -7,6 +7,7 @@ export async function load() {
 			date: string;
 			title: string;
 			author: string;
+			language?: string;
 		};
 	}>("./posts/*.md", { eager: true });
 

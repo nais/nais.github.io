@@ -5,13 +5,14 @@ date: 2020-09-29T11:37:43+02:00
 draft: false
 author: Frode Sundby
 tags: [sikkerhet, zero-trust]
+language: en
 ---
 
 ## Background
-Firewalls and zones have been our primary defense mechanism for years. This model defines a strict perimeter around our applications. 
+
+Firewalls and zones have been our primary defense mechanism for years. This model defines a strict perimeter around our applications.
 The perimiter is designed to keep potential attackers on the outside, but also to be able to control the flow of data out of the perimiter.
 ![Firewall](./images/zero-trust-1.png)
-
 
 The challenge with this model in a containerized world, is that our applications has become more distributed, which leaves us with more components and thus additional attack surfaces.
 ![Firewall](./images/zero-trust-2.png)
@@ -37,8 +38,8 @@ Following this methodology, the inevitable conclusion will be to have a network 
 
 Once each application has its own perimeter, the next thing to address is:
 
-* What if the network itself is compromised?
-* Are there attackers on the inside that can listen to or spoof traffic?
+- What if the network itself is compromised?
+- Are there attackers on the inside that can listen to or spoof traffic?
 
 We know this is the case on unsafe networks like the Internet, but we can still transfer sensitive data, like bank transactions, safely thanks to encryption.
 It is no longer a safe assumption that there are no attackers in our own data centers, our private cloud or in the public cloud, so we should encrypt communication even here.
@@ -50,13 +51,16 @@ cryptographic identity in form of a certificate to prove their identity. This gi
 control service to service communication based on identity.
 
 ## Implementation
+
 ### Network policies
+
 _Kubernetes network policy lets us enforce which network traffic is allowed using rules. In essence creating a firewall around each workload_
 Kubernetes pods can be treated much like VMs or hosts (they all have unique IP addresses), and the containers within pods very much like processes running within a VM or host (they run in the same network namespace and share an IP address)
 In a team's namespace, the underlying [network infrastructure](https://www.projectcalico.org/) will deny all traffic both to and from all pods unless explicit network policies have been applied.
-Given an example architechture where application `a` needs to communicate with application `b`,  both appliations  will have to apply network policies to allow this traffic:
+Given an example architechture where application `a` needs to communicate with application `b`, both appliations will have to apply network policies to allow this traffic:
 
 #### A allows utgoing traffic to B
+
 ```yaml
 kind: NetworkPolicy
 apiVersion: networking.k8s.io/v1
@@ -68,14 +72,16 @@ spec:
     matchLabels:
       app: a
   egress:
-  - to:
-    - podSelector:
-        matchLabels:
-          app: b
-    ports:
-      - port: 80
+    - to:
+        - podSelector:
+            matchLabels:
+              app: b
+      ports:
+        - port: 80
 ```
+
 #### B allows incoming traffic from A
+
 ```yaml
 kind: NetworkPolicy
 apiVersion: networking.k8s.io/v1
@@ -87,16 +93,16 @@ spec:
     matchLabels:
       app: b
   ingress:
-  - from:
-    - podSelector:
-        matchLabels:
-          app: a
-    ports:
-      - port: 80
-
+    - from:
+        - podSelector:
+            matchLabels:
+              app: a
+      ports:
+        - port: 80
 ```
 
 ### Istio Authorization Policy
+
 _Istio Authorization Policy enables access control on workloads in the mesh and ensures traffic is encrypted using mTLS._
 In the same way that network policies by default denies traffic on the IP layer, authorization policies will deny traffic on the transport layer by default.
 There are no outbound authorization policies, so only application `b` will have to apply an authorization policy to allow traffic from application `a`.
@@ -110,20 +116,21 @@ metadata:
   namespace: default
 spec:
   rules:
-  - from:
-    - source:
-        principals:
-        - cluster.local/ns/istio-system/sa/a-service-account
-    to:
-    - operation:
-        paths:
-        - '*'
+    - from:
+        - source:
+            principals:
+              - cluster.local/ns/istio-system/sa/a-service-account
+      to:
+        - operation:
+            paths:
+              - "*"
   selector:
     matchLabels:
       app: b
 ```
 
 ## Abstraction
+
 Admittedly, adding these features leads to added complexity which in turn demands that developers have an unnecessarily deep understanding of infrastructure functionality.
 What developers should really be concerned with, is which applications they want to communicate with, and which applications they want communicating with them. Not the minute details of how.
 Which is why we've implemented an abstraction in the [NAIS application manifest](https://doc.nais.io/nais-application/access-policy), that allows developers to do exactly that.
@@ -145,6 +152,7 @@ spec:
 ```
 
 While the related application spec for application `b` will create both a network policy allowing inbound traffic from `a`, and an authorization policy that authorize applicaiton `a`
+
 ```yaml
 apiVersion: "nais.io/v1alpha1"
 kind: "Application"
@@ -158,4 +166,3 @@ spec:
       rules:
         - app: a
 ```
-

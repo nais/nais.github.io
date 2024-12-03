@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { format } from "date-fns";
 	import type { PageData } from "./$types";
+	import { nb } from "date-fns/locale";
 
 	let { data }: { data: PageData } = $props();
 </script>
@@ -14,7 +15,9 @@
 				</a>
 			</h2>
 			<div class="byline">
-				{format(post.metadata.date, "MMMM d, yyyy")} by {post.metadata.author}
+				{post.metadata.language === "en"
+					? `${format(post.metadata.date, "MMMM d, yyyy")} by ${post.metadata.author}`
+					: `${format(post.metadata.date, "d. MMMM yyyy", { locale: nb })} av ${post.metadata.author}`}
 			</div>
 			<div class="description">{post.metadata.description}</div>
 		</li>

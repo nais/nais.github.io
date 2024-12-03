@@ -5,9 +5,10 @@ date: 2022-10-31T18:42:03+01:00
 draft: false
 author: Jan-Kåre Solbakken
 tags: ["remote", "hybrid"]
+language: en
 ---
 
-![hybrid](./images/hybrid.png) 
+![hybrid](./images/hybrid.png)
 
 In this post we will share how the NAIS team works and how the pandemic shaped the way we go about our business. This is by no means a recipe for how to do things, merely a summary of the things we have found to work well for us. YMMV.
 
@@ -19,7 +20,7 @@ As society slowly started opening up again, NAV IT found ourselves facing a diff
 
 ## The NAIS way
 
-The most important thing for a hybrid team is to avoid it splitting into two groups, those at the office and those at home. Our way of countering this is to center everything we do around a Zoom room affectionally known as "the Froom lobby" (named after Frode, the original owner of the room). This room is open for everyone 24/7, and everyone on the team has access to the host key. The first person to show up in the morning creates breakout rooms (as Zoom forgets them overnight and doesn't have an API to automate their creation), and names them according to a theme of their choosing. As our team mates emerge from slumber they join the Froom for their morning coffee and chit-chat. 
+The most important thing for a hybrid team is to avoid it splitting into two groups, those at the office and those at home. Our way of countering this is to center everything we do around a Zoom room affectionally known as "the Froom lobby" (named after Frode, the original owner of the room). This room is open for everyone 24/7, and everyone on the team has access to the host key. The first person to show up in the morning creates breakout rooms (as Zoom forgets them overnight and doesn't have an API to automate their creation), and names them according to a theme of their choosing. As our team mates emerge from slumber they join the Froom for their morning coffee and chit-chat.
 
 Next, people team up in the breakout rooms to get on with their tasks. We practice pair or mob programming as much as possible, so a breakout room will typically host anything from 2 to 4 or 5 people. There are two main benefits to this approach. First, when a task is completed it is already peer reviewed and can go straight to `main` and into production. No extra pull requests or reviews required. Second, the knowledge of whatever the group was working on is distributed and thus avoiding unnecessary knowledge gaps.
 

@@ -5,6 +5,7 @@ date: 2020-09-10T20:55:53+02:00
 draft: false
 author: Jan-Kåre Solbakken
 tags: ["oauth", "oidc", "sikkerhet"]
+language: en
 ---
 
 <!-- ![OAuth2](/blog/images/oauth2.png)  -->
@@ -23,15 +24,15 @@ Håndtering av identiteter og autorisering av brukere er vanskelig å gjøre rik
 
 For å forstå OAuth er det viktig å ha kontroll på terminologien som brukes:
 
-| Begrep                     | Betydning  
-| -------------------------- | -----------------------
-| resource owner             | Den som eier ressursene som skal aksesseres. Kan være et menneske eller et datasystem.
-| resource server            | Datamaskinen som tilbyr den etterspurte ressursen (API-et man ønsker å kalle på vegne av resource owner).
-| client                     | Applikasjonen som ønsker å aksessere ressurser på vegne av resource owner.
-| id-provider (idp)          | Den som autentiserer resource owner og utsteder tokens.
-| grant/flow                 | Metoden (“flyten”) som brukes.
-| scope                      | Hvilke(n) type(r) informasjon det bes om tilgang til, varierer mellom ulike tjenester. Slack har f.eks. scopes som “channels:read” mens GitHub har “repo:status”.
-| jwt                        | JSON Web Token. [Standard](https://tools.ietf.org/html/rfc7519) som definerer et format for å representere “claims” (påstander om personen eller applikasjonen som tokenet omhandler).
+| Begrep            | Betydning                                                                                                                                                                              |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| resource owner    | Den som eier ressursene som skal aksesseres. Kan være et menneske eller et datasystem.                                                                                                 |
+| resource server   | Datamaskinen som tilbyr den etterspurte ressursen (API-et man ønsker å kalle på vegne av resource owner).                                                                              |
+| client            | Applikasjonen som ønsker å aksessere ressurser på vegne av resource owner.                                                                                                             |
+| id-provider (idp) | Den som autentiserer resource owner og utsteder tokens.                                                                                                                                |
+| grant/flow        | Metoden (“flyten”) som brukes.                                                                                                                                                         |
+| scope             | Hvilke(n) type(r) informasjon det bes om tilgang til, varierer mellom ulike tjenester. Slack har f.eks. scopes som “channels:read” mens GitHub har “repo:status”.                      |
+| jwt               | JSON Web Token. [Standard](https://tools.ietf.org/html/rfc7519) som definerer et format for å representere “claims” (påstander om personen eller applikasjonen som tokenet omhandler). |
 
 OAuth-flytene krever at client og id-provider kjenner til hverandre på forhånd. Klienten får tildelt en “client id” (kan tenkes på som et brukernavn) når den registreres, og partene utveksler en “client secret” (kan tenkes på som et passord) og/eller client sin public key på forhånd via andre kanaler.
 
@@ -45,9 +46,9 @@ Denne flyten brukes for maskin til maskin-kommunikasjon. Client og resource owne
 
 <!-- ![client credentials flow](/blog/images/client_creds.png)  -->
 
-* Klienten sender `client_id` og `client_secret` til authorization server
-* Serveren sender et access token i retur
-* Dette access tokenet sendes deretter med hver request (typisk som en Bearer header) til resource server som validerer det og sender den forespurte ressursen i retur.
+- Klienten sender `client_id` og `client_secret` til authorization server
+- Serveren sender et access token i retur
+- Dette access tokenet sendes deretter med hver request (typisk som en Bearer header) til resource server som validerer det og sender den forespurte ressursen i retur.
 
 ### Authorization code flow
 
@@ -55,11 +56,11 @@ Dette er den vanligste flyten, og benyttes for webapps som har en egen backend. 
 
 <!-- ![authorization code flow](/blog/images/auth_code.png)  -->
 
-* Bruker initierer login.
-Klienten sender en autentiserings-request til id-provider med ønskede scopes og et `state`-parameter. Dette er en random verdi som bør være vanskelig å gjette. Verdien sendes tilbake til klienten og brukes til å forhindre [XSRF-angrep](https://en.wikipedia.org/wiki/Cross-site_request_forgery).
-* Bruker logger inn og godtar at klienten skal få tilgang til de forespurte scopes.
-* id-provider redirecter til `redirect_uri` med en engangs `authorization code` og state som den fikk i pkt 2. For å unngå [open redirect-angrep](https://www.sans.org/blog/linkedin-oauth-open-redirect-disclosure/) bør man kun tillate redirect til forhåndsgodkjente URL-er.
-* Klienten veksler `authorization_code` og `client_secret` (eller et signert JWT) med et access token som så kan brukes (typisk som Bearer header) i videre kommunikasjon. Hvis man ba om scopes som gjør at id-token (ifm OIDC, mer om dette straks) også returneres vil tokenet inneholde nonce fra steg 2, dette for å lettere kunne forhindre [replay attacks](https://en.wikipedia.org/wiki/Replay_attack). Tokenets “issuer” og “audience” må også valideres (mer om disse i avsnittet om JWT litt senere).
+- Bruker initierer login.
+  Klienten sender en autentiserings-request til id-provider med ønskede scopes og et `state`-parameter. Dette er en random verdi som bør være vanskelig å gjette. Verdien sendes tilbake til klienten og brukes til å forhindre [XSRF-angrep](https://en.wikipedia.org/wiki/Cross-site_request_forgery).
+- Bruker logger inn og godtar at klienten skal få tilgang til de forespurte scopes.
+- id-provider redirecter til `redirect_uri` med en engangs `authorization code` og state som den fikk i pkt 2. For å unngå [open redirect-angrep](https://www.sans.org/blog/linkedin-oauth-open-redirect-disclosure/) bør man kun tillate redirect til forhåndsgodkjente URL-er.
+- Klienten veksler `authorization_code` og `client_secret` (eller et signert JWT) med et access token som så kan brukes (typisk som Bearer header) i videre kommunikasjon. Hvis man ba om scopes som gjør at id-token (ifm OIDC, mer om dette straks) også returneres vil tokenet inneholde nonce fra steg 2, dette for å lettere kunne forhindre [replay attacks](https://en.wikipedia.org/wiki/Replay_attack). Tokenets “issuer” og “audience” må også valideres (mer om disse i avsnittet om JWT litt senere).
 
 Både sluttbrukeren (resource owner) og klienten må altså identifisere seg til id-provideren, og sluttbrukeren må eksplisitt godkjenne at den forespurte informasjonen kan utleveres. En uærlig tjenestetilbyder kan dermed ikke gjøre uautoriserte forespørsler på egen hånd.
 
@@ -91,32 +92,29 @@ Payloaden inneholder `claims`. Et eksempel på en payload:
 }
 ```
 
-| Felt      | Betydning  
-| --------- | ----------
-| iss       | Issuer (utsteder)
-| sub       | Subject (hvem tokenet omhandler)
-| aud       | Audience (tiltenkt mottaker/bruker av tokenet)
-| exp       | Expiry/expiration (utløpstidspunkt)
-
+| Felt | Betydning                                      |
+| ---- | ---------------------------------------------- |
+| iss  | Issuer (utsteder)                              |
+| sub  | Subject (hvem tokenet omhandler)               |
+| aud  | Audience (tiltenkt mottaker/bruker av tokenet) |
+| exp  | Expiry/expiration (utløpstidspunkt)            |
 
 Alle tidspunkter er i sekunder siden “the epoch” (1. Januar 1970).
 
-Før tokenet sendes “på linja” serialiseres det på formatet 
+Før tokenet sendes “på linja” serialiseres det på formatet
 
 `<Base64 encoded header>.<Base64 encoded claims>.<Base64 encoded signatur>`
 
 Hver del base64-encodes altså hver for seg og settes deretter sammen med punktum mellom.
 
-Nedenfor er et eksempel, for å dekode det kan det limes inn på f.eks. [jwt.io](https://jwt.io). 
+Nedenfor er et eksempel, for å dekode det kan det limes inn på f.eks. [jwt.io](https://jwt.io).
 
 ```javascript
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+	.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ
+	.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c;
 ```
 
 ## OAuth/OIDC i NAV
 
 I NAV har vi valgt å bruke [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc) som provider for interne brukere og [ID-porten](https://difi.github.io/felleslosninger/oidc_guide_idporten.html) for sluttbrukerne ute på weben. Provisjonering av “clients” for din applikasjon skjer automatisk når du legger til de nødvendige besvergelser i din [Nais YAML](https://doc.nais.io/addons/oauth2-openidconnect), og nødvendige hemmeligheter tilgjengeliggjøres for appen din som miljøvariabler eller filer slik at mennesker aldri trenger å se dem. Hemmelighetene vil i tillegg roteres automatisk hver gang appen deployes. For de nyskjerrige som vil vite mer om hvordan dette gjøres i praksis kan de ta en titt på våre custom Kubernetes-operatorer [Azureator](https://github.com/nais/azurerator) og [Digdirator](https://github.com/nais/digdirator) (fordi IDPorten er et produkt fra Digitaliseringsdirektoratet).
-
-
-
-

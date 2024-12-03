@@ -6,6 +6,7 @@ draft: false
 author: Hans Kristian Flaatten
 tags: [observability, opentelemetry, tracing]
 featuredImage: ./images/otel-rappids-and-rivers.png
+language: en
 ---
 
 This is the (long) story of how we adopted [OpenTelemetry][otel] at the Norwegian Labour and Welfare Administration (NAV). We will cover the journey from the first commits to real traces in production. We will also share some of the challenges we faced along the way and how we overcame them.
@@ -38,6 +39,7 @@ Doesn't sound too hard, right? Let's start with the storage backend.
 OpenTelemetry is a vendor-neutral project, so you can choose any storage backend you like. The most popular choices are Jaeger, Zipkin, and Tempo. We chose [Grafana Tempo][grafana-tempo] because it is a scalable, cost-effective, and open source solution that integrates seamlessly with Grafana that we already use for metrics and dashboards.
 
 [grafana-tempo]: https://grafana.com/oss/tempo/
+
 ![Grafana Tempo](./images/otel-tempo.png)
 
 We have written extensively about how to get started with Grafana Tempo in our [documentation][nav-tempo] as well as a reference guide for the query language used in Tempo called [TraceQL][nav-traceql].
@@ -56,7 +58,7 @@ The hard part would be to get the developers to instrument their applications...
 
 ## Instrumenting the applications
 
-From the very beginning, we knew that the key to success was to make the developers understand the value and benefit of good observability and make it as easy as possible for the developers to instrument their applications. With over 1.600 applications in production, we couldn't afford to spend weeks or months on each one. A solution that *required* manual configuration for each application was a non-starter.
+From the very beginning, we knew that the key to success was to make the developers understand the value and benefit of good observability and make it as easy as possible for the developers to instrument their applications. With over 1.600 applications in production, we couldn't afford to spend weeks or months on each one. A solution that _required_ manual configuration for each application was a non-starter.
 
 With most of our backend services written in Kotlin and Java, we started by testing the [OpenTelemetry Java Agent][otel-java-agent]. A java agent is a small piece of software that runs alongside your application and can modify the bytecode as it is loaded into the JVM. This allows it to automatically instrument your application without any changes to the source code.
 
@@ -92,11 +94,11 @@ spec:
 This is a very powerful abstraction that have allowed us to add new features to the platform with as little effort on the developer's part as possible. We added a new field to `nais.yaml` called `observability` that allows the developers to enable tracing for their applications with only four lines of yaml configuration:
 
 ```yaml
-...
-  observability:
-    autoInstrument:
-      enabled: true
-      runtime: "java"
+---
+observability:
+  autoInstrument:
+    enabled: true
+    runtime: "java"
 ```
 
 When naiserator sees this field, it sets the required OpenTelemetry Operator annotations to get the correct OpenTelemetry configuration and agent according to the runtime. We currently support auto-instrumenting `java`, `nodejs` and `python`. This way, the developers don't have to worry about how to set up tracing in their applications, they just have to enable it in the manifest. This is a huge win for us! 🎉
@@ -199,7 +201,7 @@ const response = await fetch(someUrl, {
 });
 ```
 
- Support for Node.js fetch was added in [auto-instrumentations-node-v0.45.0](https://github.com/open-telemetry/opentelemetry-js-contrib/releases/tag/auto-instrumentations-node-v0.46.0) with the introduction of the `@opentelemetry/instrumentation-undici` package.
+Support for Node.js fetch was added in [auto-instrumentations-node-v0.45.0](https://github.com/open-telemetry/opentelemetry-js-contrib/releases/tag/auto-instrumentations-node-v0.46.0) with the introduction of the `@opentelemetry/instrumentation-undici` package.
 
 ### Unwanted logs - the sensitive information problem
 
@@ -255,4 +257,5 @@ Later this year we will host the first ever Public Sector Observability Day wher
 We are super excited about the future of OpenTelemetry at NAV, and we can't wait to see what use cases the developers will solve using this data! 🚀 As you can see from the graph below, we are generating more traces week by week, and we are confident that this is just the beginning.
 
 [nav-otel]: https://docs.nais.io/observability/tracing/
+
 ![Span Rate](./images/otel-span-rate.png)

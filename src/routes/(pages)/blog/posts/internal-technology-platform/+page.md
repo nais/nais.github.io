@@ -5,8 +5,8 @@ date: 2021-08-13T09:27:57+02:00
 draft: false
 author: Bente Lønnquist Busch
 tags: []
+language: en
 ---
-
 
 Not too long ago, one of the major pain points in running a digital operation was infrastructure. The waiting time to get a new server, the e-commerce sites on Black Friday crashing, and the headache of estimating your hardware and license needs for the next 3 years. These issues have diminished with the emergence of hyperscale cloud vendors offering an ever evolving portfolio of managed technical infrastructure and services. The products have amazing breadth, depth and quality, and at the same time, the pricing model is fair as you only pay for what you use.
 
@@ -46,24 +46,22 @@ Services supporting the actual platform products are documentation, support, pro
 
 There are several major benefits to providing a technology platform in an organisation like NAV. Not only because of the scale of our digital operation, but also in order to comply with regulatory demands.
 
-* **Supporting speed, adaptability and learning:** As many other organisations, we are striving for high speed in our digital operation. The ability to learn and adapt faster is necessary in this ever faster changing environment. One proxy to measure this is the number of deployments made to production, since our ability to push code to production indicates how long it will take to fix a mistake, and will in turn increase our willingness to test and experiment. This graph shows how NAV has evolved from 6 big releases every year in 2012, to 1,250 deployments per week so far in 2021:
+- **Supporting speed, adaptability and learning:** As many other organisations, we are striving for high speed in our digital operation. The ability to learn and adapt faster is necessary in this ever faster changing environment. One proxy to measure this is the number of deployments made to production, since our ability to push code to production indicates how long it will take to fix a mistake, and will in turn increase our willingness to test and experiment. This graph shows how NAV has evolved from 6 big releases every year in 2012, to 1,250 deployments per week so far in 2021:
 
 ![Graph of number of deployments to production per week in NAV](./images/deployments-per-week.png)
 
-* **Cognitive load:** The platform products allow our product teams to use their mental capacity on the end-user, and not spend time on under-the-hood stuff like infrastructure or choosing an accessible colour palette.
+- **Cognitive load:** The platform products allow our product teams to use their mental capacity on the end-user, and not spend time on under-the-hood stuff like infrastructure or choosing an accessible colour palette.
 
-* **Autonomy vs alignment:** From a corporate perspective, one effect of high autonomy is losing alignment. At NAV, we see that building in certain compliance and security measures in the platform to provide the product teams with guardrails. For example, all use of third-party solutions like open source libraries, cloud platforms and SaaS products, are compliant in terms of procurement regulations. All icons and design elements are compliant in terms of universal accessible design. Our platform services available in public cloud are set up restricted to EU data centers in order to stay compliant to GDPR and conform to the [Zero Trust Security model](https://nais.io/blog/posts/zero-trust-networking-in-gcp/).
+- **Autonomy vs alignment:** From a corporate perspective, one effect of high autonomy is losing alignment. At NAV, we see that building in certain compliance and security measures in the platform to provide the product teams with guardrails. For example, all use of third-party solutions like open source libraries, cloud platforms and SaaS products, are compliant in terms of procurement regulations. All icons and design elements are compliant in terms of universal accessible design. Our platform services available in public cloud are set up restricted to EU data centers in order to stay compliant to GDPR and conform to the [Zero Trust Security model](https://nais.io/blog/posts/zero-trust-networking-in-gcp/).
 
-* **Competence and knowledge sharing:** When the internal technology platform is perceived as a compelling product, it is widely adopted and used. In turn, everyone has competence on how to use the platforms. There are several benefits: For one, it lowers the "cost" (e.g. time to get up and running) of people switching product teams, since the tool stack and methodology is more or less the same. Secondly, it further supports and enforces the strategy of loose coupling, autonomy and distributed responsibility, as it facilitates a forum for knowledge sharing. If a software developer in one team posts a question on Slack on how to perform a specific operation on NAIS, a software developer from another teams is just as likely to answer as the NAIS team members themselves.
-
+- **Competence and knowledge sharing:** When the internal technology platform is perceived as a compelling product, it is widely adopted and used. In turn, everyone has competence on how to use the platforms. There are several benefits: For one, it lowers the "cost" (e.g. time to get up and running) of people switching product teams, since the tool stack and methodology is more or less the same. Secondly, it further supports and enforces the strategy of loose coupling, autonomy and distributed responsibility, as it facilitates a forum for knowledge sharing. If a software developer in one team posts a question on Slack on how to perform a specific operation on NAIS, a software developer from another teams is just as likely to answer as the NAIS team members themselves.
 
 ## To conclude:
 
 As you probably have guessed, NAV has great benefits from our internal technology platforms. However, I do not believe that it is the right solution for everyone. A start-up or scale-up with 5 or less digital product teams are likely fully capable of sharing practices and learnings between each other without standardisation of platforms. You should only consider a common platform when you start feeling the pain of everyone having to use a significant amount of their mental capacity on lower-level stuff. Then, you should start small and keep high attention to the user, and avoid falling in love with the technology buzz word of the month. That, of course, is the rule of thumb in all product development.
 
-
 On a final note, I wish to share some of our main sources of inspiration:
 
-* [Team topologies](https://teamtopologies.com/?gclid=EAIaIQobChMIhqPEpeKr8gIVzOd3Ch08nQTAEAAYASAAEgKp4vD_BwE), for categorisation of teams and the purpose of platform teams
-* [Thoughtworks, for the rationale behind internal technology platforms ](https://www.thoughtworks.com/perspectives/edition4-platform-strategy/article)as well as the concept [Data Mesh](https://www.thoughtworks.com/what-we-do/data-and-ai/data-mesh)
-* The books [Inspired](https://svpg.com/inspired-how-to-create-products-customers-love/) and [Empowered](https://svpg.com/empowered-ordinary-people-extraordinary-products/) by Marty Cagan, for a true product mindset
+- [Team topologies](https://teamtopologies.com/?gclid=EAIaIQobChMIhqPEpeKr8gIVzOd3Ch08nQTAEAAYASAAEgKp4vD_BwE), for categorisation of teams and the purpose of platform teams
+- [Thoughtworks, for the rationale behind internal technology platforms ](https://www.thoughtworks.com/perspectives/edition4-platform-strategy/article)as well as the concept [Data Mesh](https://www.thoughtworks.com/what-we-do/data-and-ai/data-mesh)
+- The books [Inspired](https://svpg.com/inspired-how-to-create-products-customers-love/) and [Empowered](https://svpg.com/empowered-ordinary-people-extraordinary-products/) by Marty Cagan, for a true product mindset

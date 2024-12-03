@@ -5,6 +5,7 @@ date: 2023-10-02T09:34:04+02:00
 author: "Jan-Kåre Solbakken"
 tags: ["sikkerhet"]
 draft: false
+language: en
 ---
 
 ![hacker](./images/hacker.jpg)
