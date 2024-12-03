@@ -44,6 +44,9 @@
 		background-color: color-mix(in srgb, var(--color-primary) 10%, white);
 		margin: 0;
 	}
+	.article :global(img) {
+		margin-inline: auto;
+	}
 	.byline {
 		font-style: italic;
 		font-size: 1rem;
