@@ -34,6 +34,7 @@
 		margin-bottom: 1rem;
 	}
 	.article :global(pre) {
+		border-radius: 0.5rem;
 		overflow-x: auto;
 		padding: 1rem;
 	}

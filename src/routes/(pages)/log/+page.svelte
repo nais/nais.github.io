@@ -33,4 +33,13 @@
 		color: inherit;
 		text-decoration: none;
 	}
+	.post :global(pre) {
+		border-radius: 0.5rem;
+		overflow-x: auto;
+		padding: 1rem;
+	}
+	.post :global(.illustration) {
+		margin-inline: auto;
+		margin-block: 1rem;
+	}
 </style>

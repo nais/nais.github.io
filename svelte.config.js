@@ -22,7 +22,6 @@ const config = {
 			remarkPlugins: [remarkCustomEmojis, remarkRelativeImages],
 			layout: {
 				log: "/src/routes/(pages)/log/post.svelte",
-				logposts: "/src/routes/(pages)/log/posts/layout.svelte",
 				blog: "/src/routes/(pages)/blog/posts/layout.svelte",
 				_: "/src/routes/(pages)/blog/posts/layout.svelte",
 			},
