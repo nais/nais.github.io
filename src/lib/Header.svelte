@@ -168,6 +168,7 @@
 	.main-menu-item.isActive {
 		transition: color 50ms;
 		color: var(--color-primary);
+		text-decoration: underline;
 	}
 	.github-link {
 		font-size: 1.5rem;
