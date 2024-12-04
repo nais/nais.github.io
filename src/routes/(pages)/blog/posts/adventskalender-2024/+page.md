@@ -11,7 +11,7 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
-<!-- <img class="number" src="./images/femte.svg">
+<!-- <img class="number" src="./images/femte.svg" alt="">
 
 ## 5. desember
 
@@ -34,20 +34,20 @@ kubectl scale --replicas=5 deployment/julenissen
 Noen ganger har man behov for at en app er skalert ned over lang tid, og da er det nok best å endre det direkte i nais.yaml.
 
 <div class="nisser">
-<img class="illustration" src="./images/nisse.svg">
+<img class="illustration" src="./images/nisse.svg" alt="">
 
-<img class="illustration" src="./images/nisse.svg">
+<img class="illustration" src="./images/nisse.svg" alt="">
 
-<img class="illustration" src="./images/nisse.svg">
+<img class="illustration" src="./images/nisse.svg" alt="">
 
-<img class="illustration" src="./images/nisse.svg">
+<img class="illustration" src="./images/nisse.svg" alt="">
 
-<img class="illustration" src="./images/nisse.svg">
+<img class="illustration" src="./images/nisse.svg" alt="">
 </div>
 
 --- -->
 
-<img class="number" src="./images/fjerde.svg">
+<img class="number" src="./images/fjerde.svg" alt="">
 
 ## 4. desember
 
@@ -63,11 +63,11 @@ Av de glemte kostnadene vil vi nevnte Artifact Registry (der alle dine Docker im
 
 Har man lyst til å ta i et tak, så er appens ressursbruk og glemte databaser lavthengende julegaver.
 
-<img class="illustration" src="./images/ring.svg">
+<img class="illustration" src="./images/ring.svg" alt="">
 
 ---
 
-<img class="number" src="./images/tredje.svg">
+<img class="number" src="./images/tredje.svg" alt="">
 
 ## 3. desember
 
@@ -79,11 +79,11 @@ Hvis du bruker Loki som vi snakket om i forrige luke, så kan du logge med trace
 
 Du kan lese mer om tracing og Tempo på https://docs.nais.io/observability/tracing/.
 
-<img class="illustration" src="./images/reinsdyr.svg">
+<img class="illustration" src="./images/reinsdyr.svg" alt="">
 
 ---
 
-<img class="number" src="./images/andre.svg">
+<img class="number" src="./images/andre.svg" alt="">
 
 ## 2. desember
 
@@ -91,7 +91,7 @@ I første luke finner vi Loki! Grafana Loki er et loggaggregeringssystem inspire
 
 Du kan lese mer om logging og Loki i https://docs.nais.io/observability/logging/
 
-<img class="illustration" src="./images/ett-lys.svg">
+<img class="illustration" src="./images/ett-lys.svg" alt="">
 
 ---
 
