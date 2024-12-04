@@ -6,32 +6,32 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
-<ul class="list">
+<div class="articles">
 	{#each data.posts as post}
-		<li class="item" lang={post.metadata.language}>
-			<h2 class="heading">
+		<article lang={post.metadata.language}>
+			<h1 class="heading">
 				<a class="link" href={`/blog/posts/${post.slug}`}>
 					{post.metadata.title}
 				</a>
-			</h2>
+			</h1>
 			<div class="byline">
 				{post.metadata.language === "en"
 					? `${format(post.metadata.date, "MMMM d, yyyy")} by ${post.metadata.author}`
 					: `${format(post.metadata.date, "d. MMMM yyyy", { locale: nb })} av ${post.metadata.author}`}
 			</div>
 			<div class="description">{post.metadata.description}</div>
-		</li>
+		</article>
 	{/each}
-</ul>
+</div>
 
 <style>
 	.byline {
 		font-style: italic;
 		font-size: 1rem;
 	}
-	.list {
+	.articles {
 		margin: 0;
-		margin-top: 1.34em;
+		margin-top: 3em;
 		list-style: none;
 		margin-inline: auto;
 		display: flex;
@@ -49,7 +49,7 @@
 	.link:hover {
 		text-decoration: none;
 	}
-	.item {
+	article {
 		display: flex;
 		flex-direction: column;
 		align-items: start;

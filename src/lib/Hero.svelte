@@ -3,9 +3,9 @@
 
 <div class="hero">
 	<div class="content">
-		<h2 class="heading">
+		<h1 class="heading">
 			En plattform laget av Nav for å gi fart og flyt til utviklerne av det offentlige Norge
-		</h2>
+		</h1>
 		<p class="text">
 			Vi mener at det skal være lett å gjøre rett. Utviklere bør kunne fokusere på det som betyr noe
 			- å lage gode applikasjoner.
@@ -35,6 +35,7 @@
 		max-width: 55ch;
 	}
 	.heading {
+		font-size: 1.5em;
 		margin: 0;
 	}
 	.cloud {

@@ -7,12 +7,10 @@
 </script>
 
 <header class="header">
-	<h1 class="heading">
-		<a class="home" href="/">
-			<Nais />
-			<span class="name">Nais</span>
-		</a>
-	</h1>
+	<a class="home" href="/">
+		<Nais />
+		<span class="name">Nais</span>
+	</a>
 	<button class="main-menu-toggle" class:isOpen onclick={() => (isOpen = !isOpen)}>
 		<svg
 			class="open-icon"
@@ -105,9 +103,6 @@
 			color-mix(in srgb, var(--color-spectrum-5) 14.5%, transparent)
 		);
 	}
-	.heading {
-		margin: 0;
-	}
 	.home {
 		text-decoration: none;
 		transition: color 50ms;
@@ -116,10 +111,12 @@
 		grid-template-columns: auto 1fr;
 		gap: 4px;
 		align-items: baseline;
+		font-size: 2rem;
 	}
 	.name {
 		font-size: 2.3rem;
 		color: var(--color-black);
+		font-weight: bold;
 	}
 	.main-menu-toggle {
 		grid-area: button;
