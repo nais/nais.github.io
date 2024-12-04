@@ -20,5 +20,9 @@
 	}
 </script>
 
+<svelte:head>
+	<title>nais.io</title>
+</svelte:head>
+
 <Header />
 <slot />
