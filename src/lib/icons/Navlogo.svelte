@@ -4,11 +4,10 @@
 	xmlns="http://www.w3.org/2000/svg"
 	fill="none"
 	viewBox="0 0 64 20"
-	focusable="false"
 	role="img"
-	aria-labelledby="logo-svg-title"
+	aria-labelledby="nav-logo-svg-title"
 	style="display: inline">
-	<title id="logo-svg-title">Nav</title>
+	<title id="nav-logo-svg-title">Nav</title>
 	<path
 		fill-rule="evenodd"
 		clip-rule="evenodd"

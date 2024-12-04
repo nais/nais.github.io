@@ -19,9 +19,9 @@
 			height="1em"
 			fill="none"
 			viewBox="0 0 24 24"
-			focusable="false"
-			role="img">
-			<title>Åpne meny</title>
+			role="img"
+			aria-labelledby="open-icon-title">
+			<title id="open-icon-title">Åpne meny</title>
 			<path
 				fill="currentColor"
 				fill-rule="evenodd"
@@ -36,9 +36,9 @@
 			height="1em"
 			fill="none"
 			viewBox="0 0 24 24"
-			focusable="false"
-			role="img">
-			<title>Lukk meny</title>
+			role="img"
+			aria-labelledby="close-icon-title">
+			<title id="close-icon-title">Lukk meny</title>
 			<path
 				fill="currentColor"
 				d="M6.53 5.47a.75.75 0 0 0-1.06 1.06L10.94 12l-5.47 5.47a.75.75 0 1 0 1.06 1.06L12 13.06l5.47 5.47a.75.75 0 1 0 1.06-1.06L13.06 12l5.47-5.47a.75.75 0 0 0-1.06-1.06L12 10.94z">
@@ -52,8 +52,15 @@
 			<li><a class="main-menu-item" class:isActive={isActive("log")} href="/log">Logg</a></li>
 			<li><a class="main-menu-item" href="mailto:nais@nav.no">Kontakt oss</a></li>
 		</ul>
-		<a class="github-link" href="https://github.com/nais" aria-label="Nais på Github">
-			<svg width="1em" height="1em" viewBox="0 0 98 98" xmlns="http://www.w3.org/2000/svg">
+		<a class="github-link" href="https://github.com/nais">
+			<svg
+				width="1em"
+				height="1em"
+				viewBox="0 0 98 98"
+				xmlns="http://www.w3.org/2000/svg"
+				aria-labelledby="github-icon-title"
+				role="img">
+				<title id="github-icon-title">Nais på Github</title>
 				<path
 					fill-rule="evenodd"
 					clip-rule="evenodd"
