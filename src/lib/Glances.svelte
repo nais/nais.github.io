@@ -80,8 +80,8 @@
 	.glances::after {
 		background: linear-gradient(
 			to right,
-			color-mix(in srgb, var(--color-spectrum-1) 11.4%, transparent),
-			color-mix(in srgb, var(--color-spectrum-2) 10%, transparent)
+			color-mix(in srgb, var(--color-spectrum-1) 11%, transparent),
+			color-mix(in srgb, var(--color-spectrum-2) 11%, transparent)
 		);
 	}
 </style>

@@ -90,17 +90,17 @@
 		transform: translate(-75%, -60%);
 		background: linear-gradient(
 			to right,
-			color-mix(in srgb, var(--color-spectrum-1) 31%, transparent),
-			color-mix(in srgb, var(--color-spectrum-2) 29.4%, transparent),
-			color-mix(in srgb, var(--color-spectrum-3) 25%, transparent)
+			color-mix(in srgb, var(--color-spectrum-1) 14%, transparent),
+			color-mix(in srgb, var(--color-spectrum-2) 14%, transparent),
+			color-mix(in srgb, var(--color-spectrum-3) 14%, transparent)
 		);
 	}
 	.header::after {
 		transform: translate(0, -60%);
 		background: linear-gradient(
 			to right,
-			color-mix(in srgb, var(--color-spectrum-4) 20.8%, transparent),
-			color-mix(in srgb, var(--color-spectrum-5) 14.5%, transparent)
+			color-mix(in srgb, var(--color-spectrum-4) 14%, transparent),
+			color-mix(in srgb, var(--color-spectrum-5) 14%, transparent)
 		);
 	}
 	.home {
@@ -156,7 +156,7 @@
 	.main-menu-list {
 		margin: 0;
 		list-style: none;
-		padding: 0;
+		padding: 0.5rem 2rem;
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;

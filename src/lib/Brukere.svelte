@@ -41,8 +41,8 @@
 	.section::after {
 		background: linear-gradient(
 			to right,
-			color-mix(in srgb, var(--color-spectrum-4) 24.3%, transparent),
-			color-mix(in srgb, var(--color-spectrum-5) 14.5%, transparent)
+			color-mix(in srgb, var(--color-spectrum-4) 11%, transparent),
+			color-mix(in srgb, var(--color-spectrum-5) 11%, transparent)
 		);
 	}
 	.users {
