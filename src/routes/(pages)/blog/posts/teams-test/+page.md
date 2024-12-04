@@ -24,7 +24,7 @@ The first one out is [Teams](https://github.com/nais/teams-backend) (no, not tha
 These resources include stuff like projects and groups in Google Cloud, GitHub and Azure.
 Maintaining these manually for hundreds of teams would have been extremely error prone as well as being a major pain.
 
-So without further ado, [here](/20230925_mnemonic_NAV_penetration_test_report_Pub1.1.pdf) is the report.
+So without further ado, [here is the report](/20230925_mnemonic_NAV_penetration_test_report_Pub1.1.pdf).
 We have chosen to leave the auth-less endpoints as is since they don't disclose any sensitive information, and this info can just as easily be found in our source code.
 The TLS issues are being dealt with in our load balancers.
 
