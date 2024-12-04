@@ -44,10 +44,6 @@
 	}
 	.link {
 		display: inline-block;
-		color: var(--color-primary);
-	}
-	.link:hover {
-		text-decoration: none;
 	}
 	article {
 		display: flex;

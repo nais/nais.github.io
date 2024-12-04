@@ -162,8 +162,12 @@
 		gap: 0.5rem;
 	}
 	.main-menu-item {
+		color: inherit;
 		text-decoration: none;
 		font-size: 1.15rem;
+	}
+	.main-menu-item:hover {
+		color: var(--color-primary);
 	}
 	.main-menu-item.isActive {
 		transition: color 50ms;
@@ -171,6 +175,7 @@
 		text-decoration: underline;
 	}
 	.github-link {
+		color: inherit;
 		font-size: 1.5rem;
 		padding-block: 2px;
 	}

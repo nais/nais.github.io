@@ -42,6 +42,9 @@
 		color: inherit;
 		text-decoration: none;
 	}
+	.anchorLink:hover {
+		text-decoration: underline;
+	}
 	.post :global(pre) {
 		border-radius: 0.5rem;
 		overflow-x: auto;
