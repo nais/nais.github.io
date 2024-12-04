@@ -21,6 +21,6 @@ Link til tracing-dashboard dukker opp som et GitHub step summary når deploy-job
 
 Kom gjerne med tilbakemeldinger på om dette er nyttig for deg eller hva som kunne gjort det bedre :smile:
 
-<img class="illustration" src="./images/2024-09-18-tracing-i-nais-deploy-1.png" alt=""/>
+<img class="illustration" src="./images/2024-09-18-tracing-i-nais-deploy-1.png" alt="Grensesnitt med overskrift 'Build and release summary', med detaljer om et bygg hvor det lenkes til 'Detailed trace'." />
 
-<img class="illustration" src="./images/2024-09-18-tracing-i-nais-deploy-2.png" alt=""/>
+<img class="illustration" src="./images/2024-09-18-tracing-i-nais-deploy-2.png" alt="Skjembilde av graf som viser fordeling av tidsbruk for bygg og deploy." />
