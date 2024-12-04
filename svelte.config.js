@@ -27,7 +27,7 @@ const config = {
 			},
 			highlight: {
 				highlighter: async (code, lang = "text") => {
-					const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
+					const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme, tabindex: -1 }));
 					return `{@html \`${html}\` }`;
 				},
 			},
