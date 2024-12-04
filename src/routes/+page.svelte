@@ -4,6 +4,10 @@
 	import Hero from "$lib/Hero.svelte";
 </script>
 
+<svelte:head>
+	<title>Nais</title>
+</svelte:head>
+
 <main>
 	<Hero />
 	<Glances />

@@ -19,7 +19,7 @@
 </script>
 
 <svelte:head>
-	<title>{title} — Nais blog</title>
+	<title>{title} — Nais</title>
 </svelte:head>
 
 <div class={["article", theme].filter(Boolean).join(" ")} lang={language}>

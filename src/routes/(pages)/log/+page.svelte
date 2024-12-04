@@ -6,6 +6,10 @@
 	const { data }: { data: PageData } = $props();
 </script>
 
+<svelte:head>
+	<title>Logg — Nais</title>
+</svelte:head>
+
 <i>Her poster Naisteamet informasjon om nyheter, endringer eller hendelser i plattformen.</i>
 
 {#each data.posts as { metadata, slug, default: Post }, i}

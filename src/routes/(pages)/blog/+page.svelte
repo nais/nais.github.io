@@ -6,6 +6,10 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
+<svelte:head>
+	<title>Artikler — Nais</title>
+</svelte:head>
+
 <div class="articles">
 	{#each data.posts as post}
 		<article lang={post.metadata.language}>
