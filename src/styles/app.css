@@ -21,7 +21,6 @@ body {
 }
 a {
 	color: inherit;
-	color: var(--color-primary);
 }
 a:hover {
 	text-decoration: none;

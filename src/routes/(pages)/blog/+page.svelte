@@ -43,7 +43,7 @@
 		margin: 0;
 	}
 	.link {
-		display: inline-block;
+		color: var(--color-primary);
 	}
 	article {
 		display: flex;
