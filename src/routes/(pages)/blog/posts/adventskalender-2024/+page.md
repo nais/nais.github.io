@@ -47,7 +47,7 @@ Noen ganger har man behov for at en app er skalert ned over lang tid, og da er d
 
 --- -->
 
-<!-- <img class="number" src="./images/fjerde.svg">
+<img class="number" src="./images/fjerde.svg">
 
 ## 4. desember
 
@@ -65,7 +65,7 @@ Har man lyst til å ta i et tak, så er appens ressursbruk og glemte databaser l
 
 <img class="illustration" src="./images/ring.svg">
 
---- -->
+---
 
 <img class="number" src="./images/tredje.svg">
 
