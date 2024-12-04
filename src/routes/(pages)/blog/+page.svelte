@@ -31,7 +31,7 @@
 	}
 	.articles {
 		margin: 0;
-		margin-top: 3em;
+		margin-top: 1.34em;
 		list-style: none;
 		margin-inline: auto;
 		display: flex;
