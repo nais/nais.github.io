@@ -11,7 +11,7 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
-<!-- <img class="number" src="./images/femte.svg" alt="">
+<img class="number" src="./images/femte.svg" alt="">
 
 ## 5. desember
 
@@ -21,13 +21,13 @@ Noen ganger har man behov for å skalere en app helt ned for litt vedlikehold. O
 
 Hvis du har en app som heter julenissen kan du bruke følgende kommando for å skalere den ned:
 
-```
+```shell
 kubectl scale --replicas=0 deployment/julenissen
 ```
 
 Når så julaften nærmer seg må julenissen skaleres opp, så han kan levere gaver til hele verden:
 
-```
+```shell
 kubectl scale --replicas=5 deployment/julenissen
 ```
 
@@ -45,13 +45,13 @@ Noen ganger har man behov for at en app er skalert ned over lang tid, og da er d
 <img class="illustration" src="./images/nisse.svg" alt="">
 </div>
 
---- -->
+---
 
 <img class="number" src="./images/fjerde.svg" alt="">
 
 ## 4. desember
 
-I denne luken skal vi ta en titt på kostnader knyttet til Nais-plattformen. De beste tingene i livet er ofte gratis, men dessverre ikke Nais. Når man tar i bruk Nais er det ganske mange kostnader man setter i gang. For å kjøre en enkel app trenger man både CPU og minne, hvor CPU er den dyreste delen. Ellers er Postgres den største utgiften Nais har utenom app-ressurser.
+Det er gratis med luker i Nais sin adventskalender, men det som ikke er gratis er kostnader knyttet til Nais-plattformen. De beste tingene i livet er ofte gratis, men dessverre ikke Nais. Når man tar i bruk Nais er det ganske mange kostnader man setter i gang. For å kjøre en enkel app trenger man både CPU og minne, hvor CPU er den dyreste delen. Ellers er Postgres den største utgiften Nais har utenom app-ressurser.
 
 Det er flere steder hvor man kan lære mer om kostnader knyttet til plattformen, og ditt teams bruk. For en overordnet oversikt anbefaler vi å ta en titt på Kostnader i sky i Metabase, når du først er inne i Metabase anbefaler vi deg å ta en titt på Teamkostnader i sky som foreløpig gir deg den beste oversikten over dine kostnader. Vi jobber med å vise de samme kostnadene direkte i Nais Console, og hvis du til ditt team, og under Cost.
 
@@ -87,9 +87,9 @@ Du kan lese mer om tracing og Tempo på https://docs.nais.io/observability/traci
 
 ## 2. desember
 
-I første luke finner vi Loki! Grafana Loki er et loggaggregeringssystem inspirert av Prometheus og integrert med Grafana. Dette gjør at du kan ha logger og app-metrikker i samme grensesnitt, og kan lage dashboard med begge deler!
+I første luke finner vi Loki! Grafana Loki er et loggaggregeringssystem inspirert av Prometheus og integrert med Grafana. Dette gjør at du kan ha logger og app-metrikker i samme grensesnitt. Ikke overraskende kan du lage dashboard med begge deler!
 
-Du kan lese mer om logging og Loki i https://docs.nais.io/observability/logging/
+Du kan lese mer om logging og Loki på https://docs.nais.io/observability/logging/.
 
 <img class="illustration" src="./images/ett-lys.svg" alt="">
 
