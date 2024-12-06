@@ -11,6 +11,52 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
+<img class="number" src="./images/sjette.svg" alt="">
+
+Dagens luke er merket med advent, og vet du hva annet som kan merkes, Kubernetes ressurser!
+
+Alle ressurser som blir opprettet i Kubernetes har støtte for noe som kalles `labels`, `labels` er en måte å merke og kategorisere forskjellige ressurser slik at man senere kan filtrere på de med det som kalles _label selector_.
+
+Når du oppretter en Nais app så blir `app`-ressursen merket med `team=nordpolen`, og hver ressurs som blir opprettet for Nais appen din blir merket med `app=julenissen`.
+
+Så hvis du ønsker å se alle\* ressurser opprettet så kan du bruke `--selector` (eller forkortelsen `-l`):
+
+```shell
+$ kubectl get all --selector app=julenissen
+NAME                                              READY   STATUS    RESTARTS   AGE
+pod/julenissen-6dd78c8b9d-4slwh                   2/2     Running   0          8d
+
+NAME                                 TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)   AGE
+service/julenissen                   ClusterIP   192.168.88.129   <none>        80/TCP    147d
+
+NAME                                         READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/julenissen                   1/1     1            1           147d
+
+NAME                                                    DESIRED   CURRENT   READY   AGE
+replicaset.apps/julenissen-5464d666f7                   0         0         0       41d
+replicaset.apps/julenissen-56bcd8dbd8                   0         0         0       10d
+replicaset.apps/julenissen-6dd78c8b9d                   1         1         1       8d
+replicaset.apps/julenissen-7454cdb546                   0         0         0       41d
+```
+
+\* the list was intended to be “these are the things you’re likely to mess with” as opposed to “the list of all things”, se [Github/#28955](https://github.com/kubernetes/kubernetes/pull/28955) for mer.
+
+Man kan også liste opp labels ved bruk av `--label-columns` (forkortet til `-L`):
+
+```shell
+k get sqlinstance -L=app
+NAME          AGE    READY   STATUS     STATUS AGE   APP
+gavelister    160d   True    UpToDate   155d         sekken
+oppskrifter   420d   True    UpToDate   71d          grøt
+reinsdyr      417d   True    UpToDate   11d          sleden
+```
+
+Har du lyst til å lese mer om labels anbefaler vi Kubernetes.io sin egen dokumentasjon, Labels and selectors.
+
+<img class="illustration" src="./images/advent-lapp.svg" alt="">
+
+---
+
 <img class="number" src="./images/femte.svg" alt="">
 
 ## 5. desember
