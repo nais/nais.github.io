@@ -138,7 +138,7 @@ applications and is proactive in addressing them. To achieve this, we plan to:
 
 * Require all applications to include an SBOM.
 * Block deployments of images without an SBOM.
-* Provide teams with [more tools](#nais-to-have) to prepare for the next zero-day.
+* Provide teams with more tools to prepare for the next zero-day.
 * Enforce stricter deployment restrictions for applications with critical vulnerabilities.
 
 ## Conclusion
