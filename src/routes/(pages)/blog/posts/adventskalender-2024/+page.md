@@ -11,7 +11,33 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
+<img class="number" src="./images/niende.svg" alt="">
+
+## 9. desember
+
+Det er ingen hemmelighet at vi åpner luke nummer seks i dag, men det som er hemmelig er passordene appen din trenger!
+
+Det er flere måter å opprette hemmeligheter i Nais, men i denne luka vil vi fortelle om hemmeligheter i Nais Console.
+
+I Console går du til ditt team, og under `Secrets` kan du administrere dine hemmeligheter. Hemmeligheter er knyttet til spesifikt miljø, dette for å gjøre det lettere for deg å skille mellom hva en app trenger per miljø.
+
+Man kan også importere hemmeligheter man allerede har i et Kubernetes cluster ved å legge til følgende `label`: `nais.io/managed-by=console`.
+
+```shell
+kubectl label secret julegave nais.io/managed-by=console
+```
+
+Du kan lese mer om hemmeligheter på https://docs.nais.io/services/secrets/.
+
+PS: Hemmeligheter eid/opprettet av plattformen kan ikke importere inn i Console.
+
+<img class="illustration" src="./images/adventslys-2.svg" alt="">
+
+---
+
 <img class="number" src="./images/sjette.svg" alt="">
+
+## 6. desember
 
 Dagens luke er merket med advent, og vet du hva annet som kan merkes, Kubernetes ressurser!
 
