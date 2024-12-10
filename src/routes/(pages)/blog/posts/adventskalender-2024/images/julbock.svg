@@ -1,0 +1,809 @@
+<svg width="128" height="144" viewBox="0 0 128 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_170_17391)">
+<path d="M0 24L8 32" stroke="#E19263" stroke-width="2.5"/>
+<path d="M0 32L8 24" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip1_170_17391)">
+<path d="M8 24L16 32" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M8 32L16 24" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip2_170_17391)">
+<path d="M0 16L8 24" stroke="#E19263" stroke-width="2.5"/>
+<path d="M0 24L8 16" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip3_170_17391)">
+<path d="M8 16L16 24" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M8 24L16 16" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip4_170_17391)">
+<path d="M16 16L24 24" stroke="#E19263" stroke-width="2.5"/>
+<path d="M16 24L24 16" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip5_170_17391)">
+<path d="M16 24L24 32" stroke="#E19263" stroke-width="2.5"/>
+<path d="M16 32L24 24" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip6_170_17391)">
+<path d="M24 0L32 8" stroke="#E19263" stroke-width="2.5"/>
+<path d="M24 8L32 2.73828e-07" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip7_170_17391)">
+<path d="M48 80L56 88" stroke="#E19263" stroke-width="2.5"/>
+<path d="M48 88L56 80" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip8_170_17391)">
+<path d="M56 72L64 80" stroke="#E19263" stroke-width="2.5"/>
+<path d="M56 80L64 72" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip9_170_17391)">
+<path d="M96 72L104 80" stroke="#E19263" stroke-width="2.5"/>
+<path d="M96 80L104 72" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip10_170_17391)">
+<path d="M96 88L104 96" stroke="#E19263" stroke-width="2.5"/>
+<path d="M96 96L104 88" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip11_170_17391)">
+<path d="M80 80L88 88" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M80 88L88 80" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip12_170_17391)">
+<path d="M88 80L96 88" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M88 88L96 80" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip13_170_17391)">
+<path d="M104 120L112 128" stroke="#E19263" stroke-width="2.5"/>
+<path d="M104 128L112 120" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip14_170_17391)">
+<path d="M96 120L104 128" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M96 128L104 120" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip15_170_17391)">
+<path d="M80 96L88 104" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M80 104L88 96" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip16_170_17391)">
+<path d="M88 96L96 104" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M88 104L96 96" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip17_170_17391)">
+<path d="M104 136L112 144" stroke="#E19263" stroke-width="2.5"/>
+<path d="M104 144L112 136" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip18_170_17391)">
+<path d="M96 136L104 144" stroke="#E19263" stroke-width="2.5"/>
+<path d="M96 144L104 136" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip19_170_17391)">
+<path d="M32 0L40 8" stroke="#E19263" stroke-width="2.5"/>
+<path d="M32 8L40 2.73828e-07" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip20_170_17391)">
+<path d="M56 80L64 88" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M56 88L64 80" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip21_170_17391)">
+<path d="M64 72L72 80" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M64 80L72 72" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip22_170_17391)">
+<path d="M104 72L112 80" stroke="#E19263" stroke-width="2.5"/>
+<path d="M104 80L112 72" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip23_170_17391)">
+<path d="M104 88L112 96" stroke="#E19263" stroke-width="2.5"/>
+<path d="M104 96L112 88" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip24_170_17391)">
+<path d="M96 80L104 88" stroke="#E19263" stroke-width="2.5"/>
+<path d="M96 88L104 80" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip25_170_17391)">
+<path d="M96 96L104 104" stroke="#E19263" stroke-width="2.5"/>
+<path d="M96 104L104 96" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip26_170_17391)">
+<path d="M96 104L104 112" stroke="#E19263" stroke-width="2.5"/>
+<path d="M96 112L104 104" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip27_170_17391)">
+<path d="M56 0.00195312L48 8.00195" stroke="#E19263" stroke-width="2.5"/>
+<path d="M48 0L56 8" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip28_170_17391)">
+<path d="M64 0.00195312L56 8.00195" stroke="#E19263" stroke-width="2.5"/>
+<path d="M56 0L64 8" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip29_170_17391)">
+<path d="M72 40.002L64 48.002" stroke="#E19263" stroke-width="2.5"/>
+<path d="M64 40L72 48" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip30_170_17391)">
+<path d="M24 120L32 128" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M24 128L32 120" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip31_170_17391)">
+<path d="M32 120L40 128" stroke="#E19263" stroke-width="2.5"/>
+<path d="M32 128L40 120" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip32_170_17391)">
+<path d="M96 16.002L88 24.002" stroke="#E19263" stroke-width="2.5"/>
+<path d="M88 16L96 24" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip33_170_17391)">
+<path d="M80 40.002L72 48.002" stroke="#E19263" stroke-width="2.5"/>
+<path d="M72 40L80 48" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip34_170_17391)">
+<path d="M24 136L32 144" stroke="#E19263" stroke-width="2.5"/>
+<path d="M24 144L32 136" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip35_170_17391)">
+<path d="M32 136L40 144" stroke="#E19263" stroke-width="2.5"/>
+<path d="M32 144L40 136" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip36_170_17391)">
+<path d="M24 112L32 120" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M24 120L32 112" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip37_170_17391)">
+<path d="M32 112L40 120" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M32 120L40 112" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip38_170_17391)">
+<path d="M88 40.002L80 48.002" stroke="#E19263" stroke-width="2.5"/>
+<path d="M80 40L88 48" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip39_170_17391)">
+<path d="M24 128L32 136" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M24 136L32 128" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip40_170_17391)">
+<path d="M32 128L40 136" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M32 136L40 128" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip41_170_17391)">
+<path d="M48 96L56 104" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M48 104L56 96" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip42_170_17391)">
+<path d="M96 32.002L88 40.002" stroke="#E19263" stroke-width="2.5"/>
+<path d="M88 32L96 40" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip43_170_17391)">
+<path d="M96 24.002L88 32.002" stroke="#E19263" stroke-width="2.5"/>
+<path d="M88 24L96 32" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip44_170_17391)">
+<path d="M64 32.002L56 40.002" stroke="#E19263" stroke-width="2.5"/>
+<path d="M56 32L64 40" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip45_170_17391)">
+<path d="M88 8.00195L80 16.002" stroke="#E19263" stroke-width="2.5"/>
+<path d="M80 8L88 16" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip46_170_17391)">
+<path d="M72 0.00195312L64 8.00195" stroke="#E19263" stroke-width="2.5"/>
+<path d="M64 0L72 8" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip47_170_17391)">
+<path d="M80 0.00195312L72 8.00195" stroke="#E19263" stroke-width="2.5"/>
+<path d="M72 0L80 8" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip48_170_17391)">
+<path d="M24 72L32 80" stroke="#E19263" stroke-width="2.5"/>
+<path d="M24 80L32 72" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip49_170_17391)">
+<path d="M24 40L32 48" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M24 48L32 40" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip50_170_17391)">
+<path d="M24 32L32 40" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M24 40L32 32" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip51_170_17391)">
+<path d="M24 56L32 64" stroke="#E19263" stroke-width="2.5"/>
+<path d="M24 64L32 56" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip52_170_17391)">
+<path d="M64 88L72 96" stroke="#E19263" stroke-width="2.5"/>
+<path d="M64 96L72 88" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip53_170_17391)">
+<path d="M40 80L48 88" stroke="#E19263" stroke-width="2.5"/>
+<path d="M40 88L48 80" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip54_170_17391)">
+<path d="M48 72L56 80" stroke="#E19263" stroke-width="2.5"/>
+<path d="M48 80L56 72" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip55_170_17391)">
+<path d="M80 72L88 80" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M80 80L88 72" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip56_170_17391)">
+<path d="M88 72L96 80" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M88 80L96 72" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip57_170_17391)">
+<path d="M104 112L112 120" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M104 120L112 112" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip58_170_17391)">
+<path d="M96 112L104 120" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M96 120L104 112" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip59_170_17391)">
+<path d="M80 88L88 96" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M80 96L88 88" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip60_170_17391)">
+<path d="M88 88L96 96" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M88 96L96 88" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip61_170_17391)">
+<path d="M104 128L112 136" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M104 136L112 128" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip62_170_17391)">
+<path d="M96 128L104 136" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M96 136L104 128" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip63_170_17391)">
+<path d="M40 0L48 8" stroke="#E19263" stroke-width="2.5"/>
+<path d="M40 8L48 2.73828e-07" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip64_170_17391)">
+<path d="M64 80L72 88" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M64 88L72 80" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip65_170_17391)">
+<path d="M72 72L80 80" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M72 80L80 72" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip66_170_17391)">
+<path d="M72 88L80 96" stroke="#E19263" stroke-width="2.5"/>
+<path d="M72 96L80 88" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip67_170_17391)">
+<path d="M112 72L120 80" stroke="#E19263" stroke-width="2.5"/>
+<path d="M112 80L120 72" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip68_170_17391)">
+<path d="M104 80L112 88" stroke="#E19263" stroke-width="2.5"/>
+<path d="M104 88L112 80" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip69_170_17391)">
+<path d="M104 96L112 104" stroke="#E19263" stroke-width="2.5"/>
+<path d="M104 104L112 96" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip70_170_17391)">
+<path d="M104 104L112 112" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M104 112L112 104" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip71_170_17391)">
+<path d="M112 64L120 72" stroke="#E19263" stroke-width="2.5"/>
+<path d="M112 72L120 64" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip72_170_17391)">
+<path d="M120 64L128 72" stroke="#E19263" stroke-width="2.5"/>
+<path d="M120 72L128 64" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip73_170_17391)">
+<path d="M120 56L128 64" stroke="#E19263" stroke-width="2.5"/>
+<path d="M120 64L128 56" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip74_170_17391)">
+<path d="M24 16L32 24" stroke="#E19263" stroke-width="2.5"/>
+<path d="M24 24L32 16" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip75_170_17391)">
+<path d="M24 8L32 16" stroke="#E19263" stroke-width="2.5"/>
+<path d="M24 16L32 8" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip76_170_17391)">
+<path d="M48 88L56 96" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M48 96L56 88" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip77_170_17391)">
+<path d="M24 80L32 88" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M24 88L32 80" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip78_170_17391)">
+<path d="M24 48L32 56" stroke="#E19263" stroke-width="2.5"/>
+<path d="M24 56L32 48" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip79_170_17391)">
+<path d="M24 64L32 72" stroke="#E19263" stroke-width="2.5"/>
+<path d="M24 72L32 64" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip80_170_17391)">
+<path d="M32 72L40 80" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M32 80L40 72" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip81_170_17391)">
+<path d="M32 40L40 48" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M32 48L40 40" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip82_170_17391)">
+<path d="M32 32L40 40" stroke="#E19263" stroke-width="2.5"/>
+<path d="M32 40L40 32" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip83_170_17391)">
+<path d="M40 40L48 48" stroke="#E19263" stroke-width="2.5"/>
+<path d="M40 48L48 40" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip84_170_17391)">
+<path d="M40 32L48 40" stroke="#E19263" stroke-width="2.5"/>
+<path d="M40 40L48 32" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip85_170_17391)">
+<path d="M32 56L40 64" stroke="#E19263" stroke-width="2.5"/>
+<path d="M32 64L40 56" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip86_170_17391)">
+<path d="M40 56L48 64" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M40 64L48 56" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip87_170_17391)">
+<path d="M32 24L40 32" stroke="#E19263" stroke-width="2.5"/>
+<path d="M32 32L40 24" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip88_170_17391)">
+<path d="M40 24L48 32" stroke="#E19263" stroke-width="2.5"/>
+<path d="M40 32L48 24" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip89_170_17391)">
+<path d="M72 80L80 88" stroke="#E19263" stroke-width="2.5"/>
+<path d="M72 88L80 80" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip90_170_17391)">
+<path d="M72 96L80 104" stroke="#E19263" stroke-width="2.5"/>
+<path d="M72 104L80 96" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip91_170_17391)">
+<path d="M56 96L64 104" stroke="#E19263" stroke-width="2.5"/>
+<path d="M56 104L64 96" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip92_170_17391)">
+<path d="M24 88L32 96" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M24 96L32 88" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip93_170_17391)">
+<path d="M32 96L40 104" stroke="#E19263" stroke-width="2.5"/>
+<path d="M32 104L40 96" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip94_170_17391)">
+<path d="M40 88L48 96" stroke="#E19263" stroke-width="2.5"/>
+<path d="M40 96L48 88" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip95_170_17391)">
+<path d="M40 96L48 104" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M40 104L48 96" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip96_170_17391)">
+<path d="M32 104L40 112" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M32 112L40 104" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip97_170_17391)">
+<path d="M24 104L32 112" stroke="#E19263" stroke-width="2.5"/>
+<path d="M24 112L32 104" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip98_170_17391)">
+<path d="M24 96L32 104" stroke="#E19263" stroke-width="2.5"/>
+<path d="M24 104L32 96" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip99_170_17391)">
+<path d="M32 88L40 96" stroke="#E19263" stroke-width="2.5"/>
+<path d="M32 96L40 88" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip100_170_17391)">
+<path d="M32 8L40 16" stroke="#E19263" stroke-width="2.5"/>
+<path d="M32 16L40 8" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip101_170_17391)">
+<path d="M40 8L48 16" stroke="#E19263" stroke-width="2.5"/>
+<path d="M40 16L48 8" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip102_170_17391)">
+<path d="M56 88L64 96" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M56 96L64 88" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip103_170_17391)">
+<path d="M32 80L40 88" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M32 88L40 80" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip104_170_17391)">
+<path d="M32 48L40 56" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M32 56L40 48" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip105_170_17391)">
+<path d="M40 48L48 56" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M40 56L48 48" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip106_170_17391)">
+<path d="M32 64L40 72" stroke="#E19263" stroke-width="2.5"/>
+<path d="M32 72L40 64" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip107_170_17391)">
+<path d="M40 64L48 72" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M40 72L48 64" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip108_170_17391)">
+<path d="M40 72L48 80" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M40 80L48 72" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip109_170_17391)">
+<path d="M24 24L32 32" stroke="#E19263" stroke-width="2.5"/>
+<path d="M24 32L32 24" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip110_170_17391)">
+<path d="M64 96L72 104" stroke="#E19263" stroke-width="2.5"/>
+<path d="M64 104L72 96" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip111_170_17391)">
+<path d="M8 8L16 16" stroke="#D0242A" stroke-width="2.5"/>
+<path d="M8 16L16 8" stroke="#D0242A" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip112_170_17391)">
+<path d="M16 8L24 16" stroke="#E19263" stroke-width="2.5"/>
+<path d="M16 16L24 8" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip113_170_17391)">
+<path d="M32 16L40 24" stroke="#E19263" stroke-width="2.5"/>
+<path d="M32 24L40 16" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<g clip-path="url(#clip114_170_17391)">
+<path d="M40 16L48 24" stroke="#E19263" stroke-width="2.5"/>
+<path d="M40 24L48 16" stroke="#E19263" stroke-width="2.5"/>
+</g>
+<defs>
+<clipPath id="clip0_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(0 24)"/>
+</clipPath>
+<clipPath id="clip1_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(8 24)"/>
+</clipPath>
+<clipPath id="clip2_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(0 16)"/>
+</clipPath>
+<clipPath id="clip3_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(8 16)"/>
+</clipPath>
+<clipPath id="clip4_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(16 16)"/>
+</clipPath>
+<clipPath id="clip5_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(16 24)"/>
+</clipPath>
+<clipPath id="clip6_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24)"/>
+</clipPath>
+<clipPath id="clip7_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(48 80)"/>
+</clipPath>
+<clipPath id="clip8_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(56 72)"/>
+</clipPath>
+<clipPath id="clip9_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(96 72)"/>
+</clipPath>
+<clipPath id="clip10_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(96 88)"/>
+</clipPath>
+<clipPath id="clip11_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(80 80)"/>
+</clipPath>
+<clipPath id="clip12_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(88 80)"/>
+</clipPath>
+<clipPath id="clip13_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(104 120)"/>
+</clipPath>
+<clipPath id="clip14_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(96 120)"/>
+</clipPath>
+<clipPath id="clip15_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(80 96)"/>
+</clipPath>
+<clipPath id="clip16_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(88 96)"/>
+</clipPath>
+<clipPath id="clip17_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(104 136)"/>
+</clipPath>
+<clipPath id="clip18_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(96 136)"/>
+</clipPath>
+<clipPath id="clip19_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32)"/>
+</clipPath>
+<clipPath id="clip20_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(56 80)"/>
+</clipPath>
+<clipPath id="clip21_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(64 72)"/>
+</clipPath>
+<clipPath id="clip22_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(104 72)"/>
+</clipPath>
+<clipPath id="clip23_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(104 88)"/>
+</clipPath>
+<clipPath id="clip24_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(96 80)"/>
+</clipPath>
+<clipPath id="clip25_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(96 96)"/>
+</clipPath>
+<clipPath id="clip26_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(96 104)"/>
+</clipPath>
+<clipPath id="clip27_170_17391">
+<rect width="8" height="8" fill="white" transform="matrix(0 1 -1 0 56 0)"/>
+</clipPath>
+<clipPath id="clip28_170_17391">
+<rect width="8" height="8" fill="white" transform="matrix(0 1 -1 0 64 0)"/>
+</clipPath>
+<clipPath id="clip29_170_17391">
+<rect width="8" height="8" fill="white" transform="matrix(0 1 -1 0 72 40)"/>
+</clipPath>
+<clipPath id="clip30_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 120)"/>
+</clipPath>
+<clipPath id="clip31_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 120)"/>
+</clipPath>
+<clipPath id="clip32_170_17391">
+<rect width="8" height="8" fill="white" transform="matrix(0 1 -1 0 96 16)"/>
+</clipPath>
+<clipPath id="clip33_170_17391">
+<rect width="8" height="8" fill="white" transform="matrix(0 1 -1 0 80 40)"/>
+</clipPath>
+<clipPath id="clip34_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 136)"/>
+</clipPath>
+<clipPath id="clip35_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 136)"/>
+</clipPath>
+<clipPath id="clip36_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 112)"/>
+</clipPath>
+<clipPath id="clip37_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 112)"/>
+</clipPath>
+<clipPath id="clip38_170_17391">
+<rect width="8" height="8" fill="white" transform="matrix(0 1 -1 0 88 40)"/>
+</clipPath>
+<clipPath id="clip39_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 128)"/>
+</clipPath>
+<clipPath id="clip40_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 128)"/>
+</clipPath>
+<clipPath id="clip41_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(48 96)"/>
+</clipPath>
+<clipPath id="clip42_170_17391">
+<rect width="8" height="8" fill="white" transform="matrix(0 1 -1 0 96 32)"/>
+</clipPath>
+<clipPath id="clip43_170_17391">
+<rect width="8" height="8" fill="white" transform="matrix(0 1 -1 0 96 24)"/>
+</clipPath>
+<clipPath id="clip44_170_17391">
+<rect width="8" height="8" fill="white" transform="matrix(0 1 -1 0 64 32)"/>
+</clipPath>
+<clipPath id="clip45_170_17391">
+<rect width="8" height="8" fill="white" transform="matrix(0 1 -1 0 88 8)"/>
+</clipPath>
+<clipPath id="clip46_170_17391">
+<rect width="8" height="8" fill="white" transform="matrix(0 1 -1 0 72 0)"/>
+</clipPath>
+<clipPath id="clip47_170_17391">
+<rect width="8" height="8" fill="white" transform="matrix(0 1 -1 0 80 0)"/>
+</clipPath>
+<clipPath id="clip48_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 72)"/>
+</clipPath>
+<clipPath id="clip49_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 40)"/>
+</clipPath>
+<clipPath id="clip50_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 32)"/>
+</clipPath>
+<clipPath id="clip51_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 56)"/>
+</clipPath>
+<clipPath id="clip52_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(64 88)"/>
+</clipPath>
+<clipPath id="clip53_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(40 80)"/>
+</clipPath>
+<clipPath id="clip54_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(48 72)"/>
+</clipPath>
+<clipPath id="clip55_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(80 72)"/>
+</clipPath>
+<clipPath id="clip56_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(88 72)"/>
+</clipPath>
+<clipPath id="clip57_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(104 112)"/>
+</clipPath>
+<clipPath id="clip58_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(96 112)"/>
+</clipPath>
+<clipPath id="clip59_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(80 88)"/>
+</clipPath>
+<clipPath id="clip60_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(88 88)"/>
+</clipPath>
+<clipPath id="clip61_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(104 128)"/>
+</clipPath>
+<clipPath id="clip62_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(96 128)"/>
+</clipPath>
+<clipPath id="clip63_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(40)"/>
+</clipPath>
+<clipPath id="clip64_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(64 80)"/>
+</clipPath>
+<clipPath id="clip65_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(72 72)"/>
+</clipPath>
+<clipPath id="clip66_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(72 88)"/>
+</clipPath>
+<clipPath id="clip67_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(112 72)"/>
+</clipPath>
+<clipPath id="clip68_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(104 80)"/>
+</clipPath>
+<clipPath id="clip69_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(104 96)"/>
+</clipPath>
+<clipPath id="clip70_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(104 104)"/>
+</clipPath>
+<clipPath id="clip71_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(112 64)"/>
+</clipPath>
+<clipPath id="clip72_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(120 64)"/>
+</clipPath>
+<clipPath id="clip73_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(120 56)"/>
+</clipPath>
+<clipPath id="clip74_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 16)"/>
+</clipPath>
+<clipPath id="clip75_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 8)"/>
+</clipPath>
+<clipPath id="clip76_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(48 88)"/>
+</clipPath>
+<clipPath id="clip77_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 80)"/>
+</clipPath>
+<clipPath id="clip78_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 48)"/>
+</clipPath>
+<clipPath id="clip79_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 64)"/>
+</clipPath>
+<clipPath id="clip80_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 72)"/>
+</clipPath>
+<clipPath id="clip81_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 40)"/>
+</clipPath>
+<clipPath id="clip82_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 32)"/>
+</clipPath>
+<clipPath id="clip83_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(40 40)"/>
+</clipPath>
+<clipPath id="clip84_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(40 32)"/>
+</clipPath>
+<clipPath id="clip85_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 56)"/>
+</clipPath>
+<clipPath id="clip86_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(40 56)"/>
+</clipPath>
+<clipPath id="clip87_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 24)"/>
+</clipPath>
+<clipPath id="clip88_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(40 24)"/>
+</clipPath>
+<clipPath id="clip89_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(72 80)"/>
+</clipPath>
+<clipPath id="clip90_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(72 96)"/>
+</clipPath>
+<clipPath id="clip91_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(56 96)"/>
+</clipPath>
+<clipPath id="clip92_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 88)"/>
+</clipPath>
+<clipPath id="clip93_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 96)"/>
+</clipPath>
+<clipPath id="clip94_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(40 88)"/>
+</clipPath>
+<clipPath id="clip95_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(40 96)"/>
+</clipPath>
+<clipPath id="clip96_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 104)"/>
+</clipPath>
+<clipPath id="clip97_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 104)"/>
+</clipPath>
+<clipPath id="clip98_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 96)"/>
+</clipPath>
+<clipPath id="clip99_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 88)"/>
+</clipPath>
+<clipPath id="clip100_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 8)"/>
+</clipPath>
+<clipPath id="clip101_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(40 8)"/>
+</clipPath>
+<clipPath id="clip102_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(56 88)"/>
+</clipPath>
+<clipPath id="clip103_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 80)"/>
+</clipPath>
+<clipPath id="clip104_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 48)"/>
+</clipPath>
+<clipPath id="clip105_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(40 48)"/>
+</clipPath>
+<clipPath id="clip106_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 64)"/>
+</clipPath>
+<clipPath id="clip107_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(40 64)"/>
+</clipPath>
+<clipPath id="clip108_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(40 72)"/>
+</clipPath>
+<clipPath id="clip109_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(24 24)"/>
+</clipPath>
+<clipPath id="clip110_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(64 96)"/>
+</clipPath>
+<clipPath id="clip111_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(8 8)"/>
+</clipPath>
+<clipPath id="clip112_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(16 8)"/>
+</clipPath>
+<clipPath id="clip113_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(32 16)"/>
+</clipPath>
+<clipPath id="clip114_170_17391">
+<rect width="8" height="8" fill="white" transform="translate(40 16)"/>
+</clipPath>
+</defs>
+</svg>

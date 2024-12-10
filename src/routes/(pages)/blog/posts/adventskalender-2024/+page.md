@@ -11,6 +11,32 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
+<img class="number" src="./images/tiende.svg" alt="">
+
+## 10. desember
+
+I dagens luke finner vi Unleash, et kraftig verktøy for feature toggling i Nais plattformen!
+
+Unleash lar deg aktivere eller deaktivere funksjonalitet i applikasjonen din uten å måtte deployere ny kode. Dette er spesielt nyttig for å eksperimentere med nye funksjoner, rulle ut endringer gradvis, eller raskt deaktivere funksjonalitet som skaper problemer.
+
+Slik konfigurerer du Unleash i Nais:
+
+Gå til Console, velg ditt team og trykk på fanen for Unleash
+
+Opprett din egent Unleash server ved å trykke på knappen
+
+Konfigurer applikasjonen din til å bruke Unleash SDK for å hente status på feature toggles.
+
+Bruk toggles i koden din for å kontrollere når og hvor funksjonaliteten skal aktiveres.
+
+Du kan lese mer om Unleash og hvordan du konfigurerer det i Nais på https://docs.nais.io/services/feature-toggling/
+
+God jul og lykke til med feature toggling!
+
+<img class="illustration" src="./images/julbock.svg" alt="">
+
+---
+
 <img class="number" src="./images/niende.svg" alt="">
 
 ## 9. desember
