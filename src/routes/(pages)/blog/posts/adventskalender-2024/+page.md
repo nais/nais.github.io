@@ -51,7 +51,7 @@ Når vi utvikler applikasjoner, står vi overfor flere risikoer i forsyningskjed
 
 📖 Les mer om risikoer i forsyningskjeden: [SLSA Threats Overview](https://slsa.dev/spec/v1.0/threats-overview)
 
-<img class="illustration" src="./images/julbock.svg" alt="">
+<img class="illustration" src="./images/advent-pakke-1.svg" alt="">
 
 ---
 
