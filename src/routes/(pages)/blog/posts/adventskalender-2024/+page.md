@@ -11,6 +11,50 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
+<img class="number" src="./images/ellevte.svg" alt="">
+
+## 11. desember
+
+Når vi utvikler applikasjoner, står vi overfor flere risikoer i forsyningskjeden, fra commit til kjørende kode. Verktøy som [SLSA](https://slsa.dev/spec/v1.0/about) og NAIS Console hjelper oss med å identifisere og håndtere trusler på en effektiv måte.
+
+### 🔍 Men det er flere trusler i forsyningskjeden som lurer!
+
+1. **Kildekoden**: Risiko for uautorisert tilgang eller endringer, ofte via sårbare versjonskontroll systemer(GithHub) eller upålitelige avhengigheter.
+
+   - Sikre tilgangskontroll til repositorier.
+   - Aktiver Dependabot for å overvåke og oppdatere avhengigheter.
+   - Bruk tofaktorautentisering (2FA) for økt sikkerhet.
+   - Krev godkjenning av pull-forespørsler før merging.
+   - Bruk signerte commits for å autentisere endringshistorikk.
+   - Vurder kilden til tredjepartsbiblioteker og overvåk endringer i eierskap.
+   - Begrens bruken av personlige tilgangstokens (PATs), og sørg for minimal tilgang der de brukes.
+
+2. **Byggprosessen**: Manipulasjon av byggeverktøy eller bygdefiler kan kompromittere programvaren.\*
+
+   - Sikre byggeprosessen med [nais/docker-build-push](https://docs.nais.io/services/vulnerabilities/how-to/sbom/).
+
+3. **Distribusjon**: Uautoriserte eller skadelige artifakter kan infiltrere uten riktige signerings- og valideringsrutiner.\*
+
+   - Implementer robuste signerings- og valideringsprosedyrer med [nais/docker-build-push](https://docs.nais.io/services/vulnerabilities/how-to/sbom/).
+
+### 🔧 Hvordan NAIS Console hjelper med sårbarheter
+
+- Automatisert skanning: Oppdager sårbare avhengigheter ved hjelp av SBOM (Software Bill of Materials).
+- Detaljerte rapporter: Identifiserer avhengigheter som trenger oppdatering.
+- Proaktiv håndtering: Gir teamene mulighet til å prioritere og adressere sårbarheter raskt.
+
+### ✨ Slik bruker du NAIS Console for sikkerhet
+
+1. Generer SBOM for applikasjonene dine.
+2. Analyser sårbarhetene i NAIS Console.
+3. Oppdater sårbare avhengigheter basert på rapportene.
+
+📖 Les mer om risikoer i forsyningskjeden: [SLSA Threats Overview](https://slsa.dev/spec/v1.0/threats-overview)
+
+<img class="illustration" src="./images/julbock.svg" alt="">
+
+---
+
 <img class="number" src="./images/tiende.svg" alt="">
 
 ## 10. desember
