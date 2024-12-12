@@ -11,6 +11,47 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
+<img class="number" src="./images/tolvte.svg" alt="">
+
+## 12. desember
+
+En av de mest fornuftige tingene som har skjedd de siste tiårene er :advent-12: -factor apps. Den har aldrets like bra som gode råd gjør - hvilket betyr at etter :advent-13: år bør vi vurdere flere å gjøre ting litt annerledes. Folkene hos IBM introduserte :advent-15: factor apps for noen år siden som legger til telemetri, API-først og Authnz som ytterligere faktorer for en app.
+
+Ytterliggere factors fikser ikke min største moderne innvending mot :advent-12: factor apps som er “put config in envs“.
+
+Ikke legg konfigurasjon i envs, ikke legg secrets i envs. I stedet, når du driver med modern config managment, legg konfigurasjonen i en fil. Det gir deg konfigurasjon som kode og er del av en populær bevegelse med ting-som-kode.
+
+Filer:
+
+- Er i git
+- Code reviews og sporing
+- Validering i ci
+- Filer har kommentarer!
+
+Alt du må sørge for er at det finnes en måte å laste inn konfigurasjonen på nytt uten å bygge på nytt. Du kan for eksempel starte applikasjonen på nytt.
+
+Hvis vi skulle legge til den manglende hemmelighetsdelen av :advent-12: factor apps, ville det sett slik ut:
+
+### :advent-12: - Hemmeligheter
+
+a. Ha ikkje secrets. Gå alltid for den identitetsfederasjonsløsningen som er tilgjengelig for deg. Dette er ting som K8s tjenestekontoer, GCP tjenestekontoer, SPIFFE osv.
+
+b. Hvis du integrerer mot en tjeneste som ikke støtter disse mønstrene og du absolutt trenger en hemmelighet, kan du legge den i en fil. Denne hemmeligheten bør lages ved hjelp av trinn (a).
+
+Vurder:
+
+1. Du har en webserver og den trenger et sertifikat. Du kan betale for problemet med å glemme å fornye det hvert år eller bruke Lets Encrypt. Velg sistnevnte, Nais bruker sistnevnte når det er mulig.
+2. Du vil deploye fra Github actions, velger du langtlevende tokens eller bruker du service accounts? Nais har valgt service accounts for deg (når det er mulig).
+3. Du vil koble til en database, legger du bruker/passord-ting i en miljøvariabel eller lar du Nais håndtere det for deg? Velg Nais!
+
+Remember, the first part of :advent-12: factos apps is “use source control”.
+
+It is dated.
+
+<img class="illustration" src="./images/advent-trommer.svg" alt="">
+
+---
+
 <img class="number" src="./images/ellevte.svg" alt="">
 
 ## 11. desember
