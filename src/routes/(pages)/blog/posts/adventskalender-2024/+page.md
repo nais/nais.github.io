@@ -11,6 +11,26 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
+<img class="number" src="./images/trettende.svg" alt="">
+
+## 13. desember
+
+Lurer du på hvordan man faktisk sletter en app som kjører på Nais-plattformen bør du ta en titt i dagens luke!
+
+Når en app har passert sin levetid må man huske å rydde opp etter seg, og når man bruker Nais-plattformen så er det `app`-ressursen man skal slette (ikke `deployment`).
+
+Bruk følgende kommando, og alle ressurser opprettet via Nais vil bli slettet!
+
+```shell
+kubectl delete app julenissen
+```
+
+Hvis `app`-ressursen ikke virker til å forsvinne kan det være noe rusk i systemet, og man må dykke ned i alle julegavene for å finne synderen. For eksempel kan man ikke slette en Nais-`app` som har blitt ugyldig, så hvis den er så gammel at den ikke fungerer lengre så må det rettes opp i før den slettes.
+
+<img class="illustration" src="./images/advent-kost.svg" alt="">
+
+---
+
 <img class="number" src="./images/tolvte.svg" alt="">
 
 ## 12. desember
