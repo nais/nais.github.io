@@ -15,17 +15,27 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ## 13. desember
 
-Lurer du på hvordan man faktisk sletter en app som kjører på Nais-plattformen bør du ta en titt i dagens luke!
+Lurer du på hvordan man faktisk sletter en app eller Naisjob som kjører på Nais-plattformen bør du ta en titt i dagens luke!
 
 Når en app har passert sin levetid må man huske å rydde opp etter seg, og når man bruker Nais-plattformen så er det `app`-ressursen man skal slette (ikke `deployment`).
 
-Bruk følgende kommando, og alle ressurser opprettet via Nais vil bli slettet!
+Det enkleste er faktisk å gjøre det direkte fra Nais Console! Gå til din app eller Naisjob og trykk `Delete` nederst. Her må du bekrefte ved å skrive `miljø/appnavn`.
+
+Hvis du er en kommandolinjenisse så kan de også slettes med `kubectl`!
+
+For apper:
 
 ```shell
 kubectl delete app julenissen
 ```
 
-Hvis `app`-ressursen ikke virker til å forsvinne kan det være noe rusk i systemet, og man må dykke ned i alle julegavene for å finne synderen. For eksempel kan man ikke slette en Nais-`app` som har blitt ugyldig, så hvis den er så gammel at den ikke fungerer lengre så må det rettes opp i før den slettes.
+For Naisjob holder det ikke bare å slette `job`-ressursen, man må slette `Naisjob`-ressursen:
+
+```shell
+kubectl delete naisjob julenissen
+```
+
+Hvis ressursen ikke virker til å forsvinne kan det være noe rusk i systemet, og man må dykke ned i alle julegavene for å finne synderen. For eksempel kan man ikke slette en Nais-`app` som har blitt ugyldig, så hvis den er så gammel at den ikke fungerer lengre så må det rettes opp i før den slettes.
 
 <img class="illustration" src="./images/advent-kost.svg" alt="">
 
