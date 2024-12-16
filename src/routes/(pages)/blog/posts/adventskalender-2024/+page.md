@@ -11,6 +11,70 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
+<img class="number" src="./images/tjuende.svg" alt="">
+
+## 20. desember
+
+I dagens luke ser vi på histogrammer i Prometheus, et kraftig verktøy for å overvåke og analysere ytelse i applikasjoner. Histogrammer er en type metrikk som brukes til å samle inn data om fordelinger, for eksempel responstider, størrelser på forespørsler, eller hvor ofte en hendelse skjer i visse intervaller.
+
+### Hva er et histogram?
+
+Et histogram i Prometheus samler inn data ved å gruppere målinger i forhåndsdefinerte “buckets” (intervaller). Dette gjør det enklere å analysere distribusjonen av data, spesielt for å finne:
+
+- Hvor mange forespørsler som er raskere enn et visst nivå.
+- Gjennomsnittlige responstider.
+- Maksimumsverdi og prosentiler som P50, P90 og P99.
+
+Histogrammer er spesielt nyttige for å overvåke ytelse i systemer hvor responstid og lastfordeling er kritiske faktorer.
+
+### Hvordan fungerer et histogram?
+
+La oss ta utgangspunkt i dette histogrammet fra en Java/Kotlin applikasjon.
+
+```kotlin
+// Definer et nytt histogram
+val callLatency = Histogram.build()
+    .name("api_call_latency_seconds")
+    .help("Latency for API calls in seconds.")
+    .buckets(0.1, 0.5, 1.0, 2.0)
+    .register()
+
+// Bruk histogram til å måle tiden til et eksternt kall
+val timer = callLatency.startTimer() // Start måling
+try {
+    someExternalCall()
+} finally {
+    timer.observeDuration() // Logg tiden til histogrammet
+}
+```
+
+Histogram består av tre typer målepunkter:
+
+- `api_call_latency_seconds_bucket{le=“<bucket-value>“}`: Teller antall verdier mindre enn eller lik en bestemt grense.
+- `api_call_latency_seconds_count`: Totalt antall observasjoner.
+- `api_call_latency_seconds_sum`: Summen av alle observerte verdier.
+
+### Hvordan analyserer jeg et histogram?
+
+Med disse tre kan man analysere fordelinger og prosentiler i Prometheus-spørringer. Hver bucket er merket med en grenseverdi (`le`) for hvor lang tid kallet tok.
+
+PromQL-spørring for P90 (90. percentil):
+
+```kotlin
+histogram_quantile(0.90, rate(api_call_latency_seconds_bucket[5m]))
+```
+
+Du kan bruke samme logikk for andre prosentiler, som P50 eller P99:
+
+```kotlin
+histogram_quantile(0.50, rate(api_call_latency_seconds_bucket[5m]))
+histogram_quantile(0.99, rate(api_call_latency_seconds_bucket[5m]))
+```
+
+<img class="illustration" src="./images/adventslys-3.svg" alt="">
+
+---
+
 <img class="number" src="./images/trettende.svg" alt="">
 
 ## 13. desember

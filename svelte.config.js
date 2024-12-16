@@ -8,7 +8,7 @@ import remarkCustomEmojis from "./remark-custom-emojis.js";
 const theme = "github-dark";
 const highlighter = await createHighlighter({
 	themes: [theme],
-	langs: ["javascript", "typescript", "yaml", "bash", "ts", "elm", "sh", "shell"],
+	langs: ["javascript", "typescript", "yaml", "bash", "ts", "elm", "sh", "shell", "kotlin"],
 });
 
 /** @type {import('@sveltejs/kit').Config} */
