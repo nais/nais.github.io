@@ -11,9 +11,9 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
-<img class="number" src="./images/tjuende.svg" alt="">
+<img class="number" src="./images/sekstende.svg" alt="">
 
-## 20. desember
+## 16. desember
 
 I dagens luke ser vi på histogrammer i Prometheus, et kraftig verktøy for å overvåke og analysere ytelse i applikasjoner. Histogrammer er en type metrikk som brukes til å samle inn data om fordelinger, for eksempel responstider, størrelser på forespørsler, eller hvor ofte en hendelse skjer i visse intervaller.
 
