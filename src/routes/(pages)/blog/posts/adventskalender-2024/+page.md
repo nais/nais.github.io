@@ -11,6 +11,35 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
+<img class="number" src="./images/syttende.svg" alt="">
+
+## 17. desember
+
+Hallo i luken. Hvorfor gikk det ikke å deploye i dag?
+
+Nais deploy dytter hver dag ut tusenvis av deploys. Rundt lunchtider er vi som regel oppe i 1-2 produksjonssettinger hvert eneste sekund! Men selv om deployen starter, kan det gå galt noen ganger.
+
+Deploy har den kjedelige jobben med å videreformidle feil fra Nais-clusteret. Her er noen vanlige situasjoner som kan gi deg feil på deploy:
+
+- Appen din er ikke konfigurert riktig, dette forårsaker at appen blir stående i CrashLoopBackoff, eller feiler på readiness og/eller health checks.
+- Appen bruker for lang tid på å starte; dette ender med at man får en feil som sier at access-tokenet har gått ut.
+- Underliggende systemer i Nais-clusteret har bugs eller feilsituasjoner som gjør at secrets for Azure, databaser og liknende ikke blir lastet inn i tide.
+
+Mange av feilene som oppstår kan man debugge på egen hånd, men det kan være utfordrende å skjønne hvor man skal begynne å lete. Derfor har vi lagt inn tracing i deploy slik at man enkelt kan se hvor lang tid de forskjellige stegene tar. Oversikt og linker finner du i bunnen av din Github workflow.
+
+Tracingen vår har også en skjult ekstra funksjon: vi kan vise deg hvor lang tid de forskjellige stegene i bygget ditt tar. Det eneste du trenger gjøre er å legge inn en ekstra variabel i deploy-jobben din. Stikk innom [nais-dokumentasjonen](https://doc.nais.io/build/how-to/tracing) for detaljene, her er et eksempel:
+
+```yaml
+- name: Deploy to NAIS
+  uses: nais/deploy/actions/deploy@v2
+  env:
+    TELEMETRY: ${{ steps.docker-build-push.outputs.telemetry }}
+```
+
+<img class="illustration" src="./images/julekurv.svg" alt="">
+
+---
+
 <img class="number" src="./images/sekstende.svg" alt="">
 
 ## 16. desember
