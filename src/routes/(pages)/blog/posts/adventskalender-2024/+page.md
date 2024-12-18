@@ -11,6 +11,32 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
+<img class="number" src="./images/attende.svg" alt="">
+
+## 18. desember
+
+Har du noen gang irritert deg at du må huske alt som finnes i Nais-manifestet? Heldigvis finner du et hjelpemiddel i dagens luke. For vi tilbyr to JSON skjemaer for å hjelpe din editor med auto complete, dokumentasjon, og validering.
+
+For kun Nais sine ressurser kan du bruke følgende skjema:
+
+```
+https://storage.googleapis.com/nais-json-schema-2c91/nais-all.json
+```
+
+Hvis du trenger alle skjemaer som vi bruker i vår plattform kan du bruke følgende:
+
+```
+https://storage.googleapis.com/nais-json-schema-2c91/nais-k8s-all.json
+```
+
+Hvordan man tar disse i bruk er avhengig av editoren du bruker, og vi har dokumentert VSCode og Intellij.
+
+Hvis du kun ønsker å validere Nais-manifestet så kan du også bruke `nais validate`!
+
+<img class="illustration" src="./images/advent-json.svg" alt="">
+
+---
+
 <img class="number" src="./images/syttende.svg" alt="">
 
 ## 17. desember
