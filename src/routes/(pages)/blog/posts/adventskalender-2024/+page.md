@@ -11,6 +11,70 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
+<img class="number" src="./images/nittende.svg" alt="">
+
+## 19. desember
+
+Tenk om julenissen ikke visste noe om hvem som hadde skrevet ønskelistene?
+
+Autentisering av både mennesker og maskiner er en viktig del av mange applikasjoner. Ofte involverer det bruk av OAuth og JWT, men som utvikler er det ikke alltid like lett å holde tunga rett i munnen når man navigerer dette landskapet.
+
+Derfor har vi laget Texas (kort for token exchange as a service). Denne abstraherer vekk detaljene bak et enkelt API slik at det blir lekende lett å lage sikre applikasjoner.
+
+Som konsument er det å få tak i et token så enkelt som å gjøre en HTTP POST med et par parametere. Her illustrert med `curl`:
+
+```shell
+curl $NAIS_TOKEN_ENDPOINT \
+  -X POST \
+  -d 'identity_provider=maskinporten' \
+  -d 'target=krr:global/kontaktinformasjon.read'
+```
+
+eller for å bytte inn et token med brukerkontekst for et nytt token:
+
+```shell
+curl $NAIS_TOKEN_EXCHANGE_ENDPOINT \
+  -X POST \
+  -d 'identity_provider=tokenx' \
+  -d 'target=<cluster>:<namespace>:<target-app>' \
+  -d 'user_token=eyJra...'
+```
+
+Som mottaker er det tilsvarende like enkelt å validere et token:
+
+```shell
+curl $NAIS_TOKEN_INTROSPECTION_ENDPOINT \
+  -X POST \
+  -d 'identity_provider=tokenx' \
+  -d 'token=eyJra...'
+```
+
+og her får du også returnert claimene fra tokenet, ferdig dekodet:
+
+```json
+{
+    "active": true,
+    "exp": 1730980893,
+    "iat": 1730977293,
+    ...
+}
+```
+
+Texas er en byggekloss som gir mange fordeler:
+
+- agnostisk til programmeringsspråk og rammeverk (gitt at det kan snakke HTTP)
+- innebygget best practices — caching av tokens og validering av det viktigste
+- ingen kodeavhengigheter — du slipper å dra inn ekstern kode som må gjennomgås og holdes ved like, i tillegg til å redusere antall kilder for sårbarheter (som vi så på i luke 8)
+- ingen hemmeligheter — du slipper å forholde deg til hemmeligheter i applikasjonskode (som vi så litt på i luke 9 om 12-faktor-apps)
+
+Texas er foreløpig i beta for et utvalg identity providere.
+
+Les mer i dokumentasjonen: https://doc.nais.io/auth/explanations/#texas
+
+<img class="illustration" src="./images/advent-pakker-2.svg" alt="">
+
+---
+
 <img class="number" src="./images/attende.svg" alt="">
 
 ## 18. desember
