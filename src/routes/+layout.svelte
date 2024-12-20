@@ -16,6 +16,7 @@
 			serverUrl: "https://amplitude.nav.no/collect",
 			serverZone: "EU",
 			defaultTracking: true,
+			identityStorage: "localStorage",
 		});
 	}
 </script>
