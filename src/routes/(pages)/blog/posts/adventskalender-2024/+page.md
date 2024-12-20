@@ -11,6 +11,35 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
+<img class="number" src="./images/tjuende.svg" alt="">
+
+## 20. desember
+
+> Big whorls have little whorls,  
+> That feed on their velocity;  
+> And little whorls have lesser whorls,  
+> And so on to viscosity.  
+> ― Lewis Fry Richardson
+
+### En ryddig julavslutning - Livet til en pod
+
+Poder har en livssyklus, de blir opprettet, startet, kjører og avsluttes. Avslutningen har også en livssyklus. Det begynner med at poden settes i `terminating stat`e. I `terminating state` blir poden fjernet fra listen over `endpoints` i Kubernetes og slutter å motta nye kall. Etter det blir `prestopHook` kjørt og deretter får appen din (eller `PID 1`!) `SIGTERM`. Etter at `SIGTERM` er sendt, vil Kubernetes vente på grace period, som er 30 sekunder som standard, før den sender `SIGKILL`. Dette innebærer at oppryddingen må ta under 30 sekunder.
+
+Når du mottar et `SIGTERM`, bør du vurdere:
+
+- lukke database connections på riktig måte
+- fullføre behandling av in-flight messages
+- avslutte alle aktive http connections
+- lagre nødvendig state (og nøye vurdere om du er på riktig punkt i design spacet for skyapplikasjoner!)
+
+fullføre pending transactions
+
+Det er bra om applikasjonen er forberedt på sine siste øyeblikk og håndterer `SIGTERM`. Avhengig av språket ditt, rammeverk og hvordan du starter appen din kan dette variere. Om opprydding er viktig for din applikasjon så kan det finnes anledning at fundere over om signaler propageres og hvilken prosess som er `PID 1` i din container.
+
+<img class="illustration" src="./images/advent-pakker-3.svg" alt="">
+
+---
+
 <img class="number" src="./images/nittende.svg" alt="">
 
 ## 19. desember

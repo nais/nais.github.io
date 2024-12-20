@@ -56,8 +56,8 @@
 <path d="M48 184L56 176" stroke="#D6B743" stroke-width="2.5"/>
 </g>
 <g clip-path="url(#clip14_179_16666)">
-<path d="M40 169L48 177" stroke="#FEDB59" stroke-width="2.5"/>
-<path d="M40 177L48 169" stroke="#FEDB59" stroke-width="2.5"/>
+<path d="M40 168L48 176" stroke="#FEDB59" stroke-width="2.5"/>
+<path d="M40 176L48 168" stroke="#FEDB59" stroke-width="2.5"/>
 </g>
 <g clip-path="url(#clip15_179_16666)">
 <path d="M16 152L24 160" stroke="#D6B743" stroke-width="2.5"/>
@@ -108,8 +108,8 @@
 <path d="M48 192L56 184" stroke="#FEDB59" stroke-width="2.5"/>
 </g>
 <g clip-path="url(#clip27_179_16666)">
-<path d="M40 177L48 185" stroke="#FEDB59" stroke-width="2.5"/>
-<path d="M40 185L48 177" stroke="#FEDB59" stroke-width="2.5"/>
+<path d="M40 176L48 184" stroke="#FEDB59" stroke-width="2.5"/>
+<path d="M40 184L48 176" stroke="#FEDB59" stroke-width="2.5"/>
 </g>
 <g clip-path="url(#clip28_179_16666)">
 <path d="M16 160L24 168" stroke="#FEDB59" stroke-width="2.5"/>
@@ -296,8 +296,8 @@
 <path d="M48 176L56 168" stroke="#FEDB59" stroke-width="2.5"/>
 </g>
 <g clip-path="url(#clip74_179_16666)">
-<path d="M40 161L48 169" stroke="#FEDB59" stroke-width="2.5"/>
-<path d="M40 169L48 161" stroke="#FEDB59" stroke-width="2.5"/>
+<path d="M40 160L48 168" stroke="#FEDB59" stroke-width="2.5"/>
+<path d="M40 168L48 160" stroke="#FEDB59" stroke-width="2.5"/>
 </g>
 <g clip-path="url(#clip75_179_16666)">
 <path d="M40 152L48 160" stroke="#FEDB59" stroke-width="2.5"/>
@@ -308,8 +308,8 @@
 <path d="M48 200L56 192" stroke="#FEDB59" stroke-width="2.5"/>
 </g>
 <g clip-path="url(#clip77_179_16666)">
-<path d="M40 185L48 193" stroke="#D6B743" stroke-width="2.5"/>
-<path d="M40 193L48 185" stroke="#D6B743" stroke-width="2.5"/>
+<path d="M40 184L48 192" stroke="#D6B743" stroke-width="2.5"/>
+<path d="M40 192L48 184" stroke="#D6B743" stroke-width="2.5"/>
 </g>
 <g clip-path="url(#clip78_179_16666)">
 <path d="M32 176L40 184" stroke="#FEDB59" stroke-width="2.5"/>
@@ -527,7 +527,7 @@
 <rect width="8" height="8" fill="white" transform="translate(48 176)"/>
 </clipPath>
 <clipPath id="clip14_179_16666">
-<rect width="8" height="8" fill="white" transform="translate(40 169)"/>
+<rect width="8" height="8" fill="white" transform="translate(40 168)"/>
 </clipPath>
 <clipPath id="clip15_179_16666">
 <rect width="8" height="8" fill="white" transform="translate(16 152)"/>
@@ -566,7 +566,7 @@
 <rect width="8" height="8" fill="white" transform="translate(48 184)"/>
 </clipPath>
 <clipPath id="clip27_179_16666">
-<rect width="8" height="8" fill="white" transform="translate(40 177)"/>
+<rect width="8" height="8" fill="white" transform="translate(40 176)"/>
 </clipPath>
 <clipPath id="clip28_179_16666">
 <rect width="8" height="8" fill="white" transform="translate(16 160)"/>
@@ -707,7 +707,7 @@
 <rect width="8" height="8" fill="white" transform="translate(48 168)"/>
 </clipPath>
 <clipPath id="clip74_179_16666">
-<rect width="8" height="8" fill="white" transform="translate(40 161)"/>
+<rect width="8" height="8" fill="white" transform="translate(40 160)"/>
 </clipPath>
 <clipPath id="clip75_179_16666">
 <rect width="8" height="8" fill="white" transform="translate(40 152)"/>
@@ -716,7 +716,7 @@
 <rect width="8" height="8" fill="white" transform="translate(48 192)"/>
 </clipPath>
 <clipPath id="clip77_179_16666">
-<rect width="8" height="8" fill="white" transform="translate(40 185)"/>
+<rect width="8" height="8" fill="white" transform="translate(40 184)"/>
 </clipPath>
 <clipPath id="clip78_179_16666">
 <rect width="8" height="8" fill="white" transform="translate(32 176)"/>

@@ -43,8 +43,9 @@
 		border-left: 0.5rem solid var(--color-primary);
 		display: flex;
 		padding-inline: min(4vw, 2rem);
-		background-color: color-mix(in srgb, var(--color-primary) 10%, white);
+		background-color: color-mix(in srgb, var(--color-primary) 15%, white);
 		margin: 0;
+		width: fit-content;
 	}
 	.article :global(img) {
 		margin-inline: auto;
