@@ -11,6 +11,30 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
+<img class="number" src="./images/tjuefjerde.svg" alt="">
+
+Er kanskje ikke mange som jobber i dag, men i dagens luke finner du Naisvakt, som er tilgjengelig 24/7 for å passe på at Nais er oppe og går! Naisvakt er et roterende vaktlag som bytter hver mandag morgen. Vi følger med på alerts i [#naas-alerts](https://nav-it.slack.com/archives/C046C0RA8AF) og kan nåes via `@nais-vakt` eller direkte på `91 64 37 31`. I arbeidstiden (kl08-17) vil vi helst at dere bruker `@nais_team` for å nå hele teamet.
+
+Ellers anbefaler vi også at du følger med på [#nais-announcements](https://nav-it.slack.com/archives/C01DE3M9YBV) for annonseringer relatert til Nais, og [#produksjonshendelser](https://nav-it.slack.com/archives/C9P60F4F3) for hendelser som treffer hele Nav.
+
+God jul, og husk å sett ut grøt til vakta!
+
+<img class="illustration" src="./images/juletre.svg" alt="">
+
+---
+
+<img class="number" src="./images/tjuetredje.svg" alt="">
+
+Nå som julen nærmer seg kan det være vanskelig å komme seg ut av sengen for å jobbe de siste timene før man tar ferie. Applikasjoner kan også ha problemer med å komme i gang, derfor finner du startup probes i dagens luke!
+
+Startup probes er Kubernetes måte å vite om applikasjonen din har kommet i gang, i stedet for å være avhengig av liveness og readiness checks. Hvis man før har satt lange liveness og readiness checks for å holde en pod i live under oppstart av appen sin, så er det mye bedre å bytte til startup probes, så kan de andre sjekkene bli skreddersydd til det faktisk brukes til (som navnene deres tilsier).
+
+Vi har dokumentert hvordan man tar dette i bruk i [application spec/startup](https://docs.nais.io/workloads/application/reference/application-spec/#startup).
+
+<img class="illustration" src="./images/adventslys-4.svg" alt="">
+
+---
+
 <img class="number" src="./images/tjuende.svg" alt="">
 
 ## 20. desember
