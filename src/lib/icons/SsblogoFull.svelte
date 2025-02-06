@@ -2,7 +2,7 @@
 	data-name="Layer 1"
 	xmlns="http://www.w3.org/2000/svg"
 	height="0.9em"
-	viewBox="0 0 499.43 91.43"
+	viewBox="0 0 500 92"
 	fill="currentColor"
 	role="img"
 	aria-labelledby="ssb-logo-title"
