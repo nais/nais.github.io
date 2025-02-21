@@ -3,13 +3,12 @@ import fs from "fs";
 import parseMD from "parse-md";
 
 const feed = new Feed({
-	title: "nais log",
+	title: "Nais log",
 	description:
-		"Her poster Naisteamet informasjon om nyheter, endringer eller hendelser i plattformen.",
+		"Her poster Nais-teamet informasjon om nyheter, endringer eller hendelser i plattformen.",
 	id: "https://nais.io/log/",
 	link: "https://nais.io/log/",
 	language: "no",
-	favicon: "https://nais.io/favicon.ico",
 	copyright: `Copyright ${new Date().getFullYear().toString()}, nais.io`,
 	feedLinks: {
 		rss: "https://nais.io/log/rss.xml",
