@@ -1,6 +1,6 @@
 ---
 title: "Sanering av nais/deploy/actions/spa-deploy/v2"
-date: 2025-02-20T09:45:45+02:00
+date: 2025-02-20T09:46:45+02:00
 author: Kyrre Havik
 tags: [github, action, spa, deploy]
 layout: log
