@@ -21,8 +21,8 @@ const feedItem = [];
 for (const filename of items) {
 	if (filename.endsWith(".md")) {
 		const fileContents = fs.readFileSync(`${path}/${filename}`, "utf8");
-		const { metadata } = parseMD(fileContents);
-		feedItem.push({metadata, link:`https://nais.io/log#${filename.match(/([^\/]+)\.md$/)?.[1]}`})
+		const { metadata, content } = parseMD(fileContents);
+		feedItem.push({ metadata, content, link: `https://nais.io/log#${filename.split(".md")[0]}` });
 	}
 }
 // sort feedItems by date
@@ -32,6 +32,7 @@ feedItem.forEach(({ metadata, content, link }) => {
 	feed.addItem({
 		title: metadata.title,
 		description: metadata.title,
+		content: content,
 		link: link,
 		date: new Date(metadata.date),
 		author: [
