@@ -10,7 +10,6 @@ Vi ser at vi `ikke` har fått til det vi ønsket med spa-deploy, og for å lette
 Dette vil ikke påvirke tjenestene som allerede bruker action, og ingressene som har blir opprettet vil ikke bli ryddet bort.
 Vi fjerner kun selve Github action, så hvis du er et av de 10 teamene som bruker den, må dere gjøre en liten migrering vekk fra spa-deploy, over til cdn-upload.
 
-
 ```yaml
 - uses: nais/deploy/actions/spa-deploy/v2@master
   with:

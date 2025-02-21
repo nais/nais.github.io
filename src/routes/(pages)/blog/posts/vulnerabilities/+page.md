@@ -4,7 +4,7 @@ description: "Strengthening Supply Chain Security on Nais"
 date: 2024-12-08T14:12:01+02:00
 draft: false
 author: Youssef Bel Mekki
-tags: [ slsa, security, supplychain, vulnerabilities ]
+tags: [slsa, security, supplychain, vulnerabilities]
 language: en
 ---
 
@@ -52,10 +52,10 @@ easier for teams to take action. It might not have been exactly like that, but t
 In June 2021, Google introduced the [SLSA](https://slsa.dev/) (Supply-chain Levels for Software Artifacts) framework.
 Inspired by this, we focused on three key goals:
 
-* Automated Image Signing: Automatically sign container images in the CI/CD pipeline.
-* Vulnerability Scanning: Scan the Software Bill of Materials ([SBOM](https://www.cisa.gov/sbom)) to detect
+- Automated Image Signing: Automatically sign container images in the CI/CD pipeline.
+- Vulnerability Scanning: Scan the Software Bill of Materials ([SBOM](https://www.cisa.gov/sbom)) to detect
   vulnerabilities.
-* Searchable Vulnerability Visibility: Enable teams to easily find and view vulnerabilities in their applications.
+- Searchable Vulnerability Visibility: Enable teams to easily find and view vulnerabilities in their applications.
 
 ## The journey
 
@@ -89,10 +89,10 @@ workloads in clusters and their vulnerabilities.
 To further enhance security, we developed slsa-verde, a Kubernetes cluster monitor inspired by the SLSA framework. Its
 key responsibilities include:
 
-* Monitoring Workloads: Actively tracks container images used in Kubernetes clusters.
-* Verifying Image Attestations: Ensures images are signed by trusted entities.
-* Integrating with Dependency-Track: Extracts SBOMs from images, submits them for analysis.
-* Data Synchronization: Maintains real-time records of active images and aligns them with Kubernetes applications.
+- Monitoring Workloads: Actively tracks container images used in Kubernetes clusters.
+- Verifying Image Attestations: Ensures images are signed by trusted entities.
+- Integrating with Dependency-Track: Extracts SBOMs from images, submits them for analysis.
+- Data Synchronization: Maintains real-time records of active images and aligns them with Kubernetes applications.
 
 This tool ensures that vulnerability data is accurate, up-to-date, and actionable, helping teams respond quickly to
 potential threats.
@@ -101,33 +101,32 @@ potential threats.
 
 ![img.png](./images/img.png)
 
-* Nais developers push their code to GitHub.
-* A [Nais action](https://github.com/nais/docker-build-push) builds the code, creates an SBOM, and signs the container
+- Nais developers push their code to GitHub.
+- A [Nais action](https://github.com/nais/docker-build-push) builds the code, creates an SBOM, and signs the container
   image.
-* The attestation can be tracked in the [Rekor transparency log](https://docs.sigstore.dev/logging/overview/).
-* The container image and SBOM are uploaded to the container registry.
-* The workload is deployed to the Nais platform.
-* SLSA-verde watches for new workloads in the cluster.
-* SLSA-verde verifies the image signature, checks its source, and extracts the SBOM.
-* SLSA-verde sends the SBOM to Dependency-Track for analysis.
+- The attestation can be tracked in the [Rekor transparency log](https://docs.sigstore.dev/logging/overview/).
+- The container image and SBOM are uploaded to the container registry.
+- The workload is deployed to the Nais platform.
+- SLSA-verde watches for new workloads in the cluster.
+- SLSA-verde verifies the image signature, checks its source, and extracts the SBOM.
+- SLSA-verde sends the SBOM to Dependency-Track for analysis.
 
 Developers can view vulnerabilities directly in the Nais Console. The entire process, from pushing code to seeing
 vulnerability insights, takes only a few minutes, depending on the size of the image and the actions performed.
 
 ## Nais to have
 
-* Visualize historical data to monitor vulnerabilities over time.
+- Visualize historical data to monitor vulnerabilities over time.
 
+- Track data from the commit where the vulnerability was introduced.
 
-* Track data from the commit where the vulnerability was introduced.
-    * Record when the vulnerability was fixed.
-    * Measure lead time for resolving vulnerabilities.
-    * Track when the vulnerability was first deployed.
+  - Record when the vulnerability was fixed.
+  - Measure lead time for resolving vulnerabilities.
+  - Track when the vulnerability was first deployed.
 
-
-* Provide alerts and notifications management in the Nais Console.
-    * Enable filtering of alerts by cluster and severity.
-    * Deliver alerts to preferred channels (e.g., Slack, email, etc.).
+- Provide alerts and notifications management in the Nais Console.
+  - Enable filtering of alerts by cluster and severity.
+  - Deliver alerts to preferred channels (e.g., Slack, email, etc.).
 
 ## Next step
 
@@ -136,10 +135,10 @@ This is not always so simple due to a large number of applications and teams, in
 We are working on improving our communication channels to ensure that teams are aware of the vulnerabilities in their
 applications and is proactive in addressing them. To achieve this, we plan to:
 
-* Require all applications to include an SBOM.
-* Block deployments of images without an SBOM.
-* Provide teams with more tools to prepare for the next zero-day.
-* Enforce stricter deployment restrictions for applications with critical vulnerabilities.
+- Require all applications to include an SBOM.
+- Block deployments of images without an SBOM.
+- Provide teams with more tools to prepare for the next zero-day.
+- Enforce stricter deployment restrictions for applications with critical vulnerabilities.
 
 ## Conclusion
 

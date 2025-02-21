@@ -18,7 +18,7 @@ const feed = new Feed({
 });
 const path = "./src/routes/(pages)/log/posts";
 const items = fs.readdirSync(path);
-const feedItem = []
+const feedItem = [];
 for (const filename of items) {
 	if (filename.endsWith(".md")) {
 		const fileContents = fs.readFileSync(`${path}/${filename}`, "utf8");
@@ -27,23 +27,21 @@ for (const filename of items) {
 	}
 }
 // sort feedItems by date
-feedItem.sort((a, b) => new Date(b.metadata.date) - new Date(a.metadata.date))
+feedItem.sort((a, b) => new Date(b.metadata.date) - new Date(a.metadata.date));
 
-feedItem.forEach(({metadata, link}) => {
-		feed.addItem({
-			title: metadata.title,
-			description: metadata.title,
-			link: link,
-			date: new Date(metadata.date),
-			author: [
-				{
-					name: metadata.author,
-				},
-			],
-		});
-})
-
-
+feedItem.forEach(({ metadata, content, link }) => {
+	feed.addItem({
+		title: metadata.title,
+		description: metadata.title,
+		link: link,
+		date: new Date(metadata.date),
+		author: [
+			{
+				name: metadata.author,
+			},
+		],
+	});
+});
 
 fs.mkdirSync("build/log", { recursive: true });
 fs.writeFileSync("build/log/rss.xml", feed.rss2());
