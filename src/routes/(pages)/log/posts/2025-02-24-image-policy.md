@@ -17,3 +17,5 @@ Det er to hovedgrunner til at dette nå blir håndhevet:
 Den enkleste måten å sikre at imagene havner riktig sted er å bruke [Nais' github actions](https://docs.nais.io/build/how-to/build-and-deploy/) i workflowet sitt. Da trenger man ikke ha et aktivt forhold til hvor imaget ligger lagret, og alt går av seg selv. 
 
 Console vil fra nå og frem til 1. april gi en advarsel om dette.
+
+Les mer om image repositories i [Nais-dokumentasjonen](https://docs.nais.io/workloads/explanations/imagerepository/).
