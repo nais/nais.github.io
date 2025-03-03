@@ -24,7 +24,7 @@ const customEmojis = await web.emoji
 					value: `<img src='${src.replace(
 						/'/gu,
 						"%27",
-					)}' style='height: 1em;display:inline;' title='${name.replace(/'/gu, "&apos;")}'/>`,
+					)}' style='height: 1em;display:inline;' title='${name.replace(/'/gu, "&apos;")}' alt='${name.replace(/'/gu, "&apos;")}'/>`,
 				});
 			}
 		});

@@ -11,7 +11,7 @@ La oss gjøre adventstiden mer nais med en Nais adventskalender! Her vil vi hver
 
 ---
 
-<img class="number" src="./images/tjuefjerde.svg" alt="">
+<img class="number" src="./images/tjuefjerde.svg" alt="Tallet 24 brodert i et hjerte">
 
 Er kanskje ikke mange som jobber i dag, men i dagens luke finner du Naisvakt, som er tilgjengelig 24/7 for å passe på at Nais er oppe og går! Naisvakt er et roterende vaktlag som bytter hver mandag morgen. Vi følger med på alerts i [#naas-alerts](https://nav-it.slack.com/archives/C046C0RA8AF) og kan nåes via `@nais-vakt` eller direkte på `91 64 37 31`. I arbeidstiden (kl08-17) vil vi helst at dere bruker `@nais_team` for å nå hele teamet.
 
@@ -19,11 +19,11 @@ Ellers anbefaler vi også at du følger med på [#nais-announcements](https://na
 
 God jul, og husk å sett ut grøt til vakta!
 
-<img class="illustration" src="./images/juletre.svg" alt="">
+<img class="illustration" src="./images/juletre.svg" alt="Et pyntet brodert juletre">
 
 ---
 
-<img class="number" src="./images/tjuetredje.svg" alt="">
+<img class="number" src="./images/tjuetredje.svg" alt="Tallet 23 brodert i et hjerte">
 
 Nå som julen nærmer seg kan det være vanskelig å komme seg ut av sengen for å jobbe de siste timene før man tar ferie. Applikasjoner kan også ha problemer med å komme i gang, derfor finner du startup probes i dagens luke!
 
@@ -31,11 +31,11 @@ Startup probes er Kubernetes måte å vite om applikasjonen din har kommet i gan
 
 Vi har dokumentert hvordan man tar dette i bruk i [application spec/startup](https://docs.nais.io/workloads/application/reference/application-spec/#startup).
 
-<img class="illustration" src="./images/adventslys-4.svg" alt="">
+<img class="illustration" src="./images/adventslys-4.svg" alt="Fire broderte stearinlys">
 
 ---
 
-<img class="number" src="./images/tjuende.svg" alt="">
+<img class="number" src="./images/tjuende.svg" alt="Tallet 20 brodert i et hjerte">
 
 ## 20. desember
 
@@ -60,11 +60,11 @@ fullføre pending transactions
 
 Det er bra om applikasjonen er forberedt på sine siste øyeblikk og håndterer `SIGTERM`. Avhengig av språket ditt, rammeverk og hvordan du starter appen din kan dette variere. Om opprydding er viktig for din applikasjon så kan det finnes anledning at fundere over om signaler propageres og hvilken prosess som er `PID 1` i din container.
 
-<img class="illustration" src="./images/advent-pakker-3.svg" alt="">
+<img class="illustration" src="./images/advent-pakker-3.svg" alt="Tre julegaver brodert">
 
 ---
 
-<img class="number" src="./images/nittende.svg" alt="">
+<img class="number" src="./images/nittende.svg" alt="Tallet 19 brodert i et hjerte">
 
 ## 19. desember
 
@@ -124,11 +124,11 @@ Texas er foreløpig i beta for et utvalg identity providere.
 
 Les mer i dokumentasjonen: https://doc.nais.io/auth/explanations/#texas
 
-<img class="illustration" src="./images/advent-pakker-2.svg" alt="">
+<img class="illustration" src="./images/advent-pakker-2.svg" alt="To julegaver brodert">
 
 ---
 
-<img class="number" src="./images/attende.svg" alt="">
+<img class="number" src="./images/attende.svg" alt="Tallet 18 brodert i et hjerte">
 
 ## 18. desember
 
@@ -150,11 +150,11 @@ Hvordan man tar disse i bruk er avhengig av editoren du bruker, og vi har dokume
 
 Hvis du kun ønsker å validere Nais-manifestet så kan du også bruke `nais validate`!
 
-<img class="illustration" src="./images/advent-json.svg" alt="">
+<img class="illustration" src="./images/advent-json.svg" alt="JSON-logoen brodert">
 
 ---
 
-<img class="number" src="./images/syttende.svg" alt="">
+<img class="number" src="./images/syttende.svg" alt="Tallet 17 brodert i et hjerte">
 
 ## 17. desember
 
@@ -179,11 +179,11 @@ Tracingen vår har også en skjult ekstra funksjon: vi kan vise deg hvor lang ti
     TELEMETRY: ${{ steps.docker-build-push.outputs.telemetry }}
 ```
 
-<img class="illustration" src="./images/julekurv.svg" alt="">
+<img class="illustration" src="./images/julekurv.svg" alt="En brodert kurv formet som et hjerte">
 
 ---
 
-<img class="number" src="./images/sekstende.svg" alt="">
+<img class="number" src="./images/sekstende.svg" alt="Tallet 16 brodert i et hjerte">
 
 ## 16. desember
 
@@ -243,11 +243,11 @@ histogram_quantile(0.50, rate(api_call_latency_seconds_bucket[5m]))
 histogram_quantile(0.99, rate(api_call_latency_seconds_bucket[5m]))
 ```
 
-<img class="illustration" src="./images/adventslys-3.svg" alt="">
+<img class="illustration" src="./images/adventslys-3.svg" alt="Tre broderte stearinlys">
 
 ---
 
-<img class="number" src="./images/trettende.svg" alt="">
+<img class="number" src="./images/trettende.svg" alt="Tallet 13 brodert i et hjerte">
 
 ## 13. desember
 
@@ -273,11 +273,11 @@ kubectl delete naisjob julenissen
 
 Hvis ressursen ikke virker til å forsvinne kan det være noe rusk i systemet, og man må dykke ned i alle julegavene for å finne synderen. For eksempel kan man ikke slette en Nais-`app` som har blitt ugyldig, så hvis den er så gammel at den ikke fungerer lengre så må det rettes opp i før den slettes.
 
-<img class="illustration" src="./images/advent-kost.svg" alt="">
+<img class="illustration" src="./images/advent-kost.svg" alt="En brodert kost">
 
 ---
 
-<img class="number" src="./images/tolvte.svg" alt="">
+<img class="number" src="./images/tolvte.svg" alt="Tallet 12 brodert i et hjerte">
 
 ## 12. desember
 
@@ -314,11 +314,11 @@ Remember, the first part of :advent-12: factos apps is “use source control”.
 
 It is dated.
 
-<img class="illustration" src="./images/advent-trommer.svg" alt="">
+<img class="illustration" src="./images/advent-trommer.svg" alt="En brodert tromme med to trommestikker">
 
 ---
 
-<img class="number" src="./images/ellevte.svg" alt="">
+<img class="number" src="./images/ellevte.svg" alt="Tallet 11 brodert i et hjerte">
 
 ## 11. desember
 
@@ -358,11 +358,11 @@ Når vi utvikler applikasjoner, står vi overfor flere risikoer i forsyningskjed
 
 📖 Les mer om risikoer i forsyningskjeden: [SLSA Threats Overview](https://slsa.dev/spec/v1.0/threats-overview)
 
-<img class="illustration" src="./images/advent-pakke-1.svg" alt="">
+<img class="illustration" src="./images/advent-pakke-1.svg" alt="En brodert innpakket julegave">
 
 ---
 
-<img class="number" src="./images/tiende.svg" alt="">
+<img class="number" src="./images/tiende.svg" alt="Tallet 10 brodert i et hjerte">
 
 ## 10. desember
 
@@ -384,11 +384,11 @@ Du kan lese mer om Unleash og hvordan du konfigurerer det i Nais på https://doc
 
 God jul og lykke til med feature toggling!
 
-<img class="illustration" src="./images/julbock.svg" alt="">
+<img class="illustration" src="./images/julbock.svg" alt="En brodert julebock">
 
 ---
 
-<img class="number" src="./images/niende.svg" alt="">
+<img class="number" src="./images/niende.svg" alt="Tallet 9 brodert i et hjerte">
 
 ## 9. desember
 
@@ -408,11 +408,11 @@ Du kan lese mer om hemmeligheter på https://docs.nais.io/services/secrets/.
 
 PS: Hemmeligheter eid/opprettet av plattformen kan ikke importere inn i Console.
 
-<img class="illustration" src="./images/adventslys-2.svg" alt="">
+<img class="illustration" src="./images/adventslys-2.svg" alt="To broderte stearinlys">
 
 ---
 
-<img class="number" src="./images/sjette.svg" alt="">
+<img class="number" src="./images/sjette.svg" alt="Tallet 6 brodert i et hjerte">
 
 ## 6. desember
 
@@ -456,11 +456,11 @@ reinsdyr      417d   True    UpToDate   11d          sleden
 
 Har du lyst til å lese mer om labels anbefaler vi Kubernetes.io sin egen dokumentasjon, Labels and selectors.
 
-<img class="illustration" src="./images/advent-lapp.svg" alt="">
+<img class="illustration" src="./images/advent-lapp.svg" alt="En brodert merkelapp for julegaver">
 
 ---
 
-<img class="number" src="./images/femte.svg" alt="">
+<img class="number" src="./images/femte.svg" alt="Tallet 5 brodert i et hjerte">
 
 ## 5. desember
 
@@ -483,20 +483,20 @@ kubectl scale --replicas=5 deployment/julenissen
 Noen ganger har man behov for at en app er skalert ned over lang tid, og da er det nok best å endre det direkte i nais.yaml.
 
 <div class="nisser">
-<img class="illustration" src="./images/nisse.svg" alt="">
+<img class="illustration" src="./images/nisse.svg" alt="En brodert nisse med rød hatt og grønn jakke">
 
-<img class="illustration" src="./images/nisse.svg" alt="">
+<img class="illustration" src="./images/nisse.svg" alt="En brodert nisse med rød hatt og grønn jakke">
 
-<img class="illustration" src="./images/nisse.svg" alt="">
+<img class="illustration" src="./images/nisse.svg" alt="En brodert nisse med rød hatt og grønn jakke">
 
-<img class="illustration" src="./images/nisse.svg" alt="">
+<img class="illustration" src="./images/nisse.svg" alt="En brodert nisse med rød hatt og grønn jakke">
 
-<img class="illustration" src="./images/nisse.svg" alt="">
+<img class="illustration" src="./images/nisse.svg" alt="En brodert nisse med rød hatt og grønn jakke">
 </div>
 
 ---
 
-<img class="number" src="./images/fjerde.svg" alt="">
+<img class="number" src="./images/fjerde.svg" alt="Tallet 4 brodert i et hjerte">
 
 ## 4. desember
 
@@ -512,11 +512,11 @@ Av de glemte kostnadene vil vi nevnte Artifact Registry (der alle dine Docker im
 
 Har man lyst til å ta i et tak, så er appens ressursbruk og glemte databaser lavthengende julegaver.
 
-<img class="illustration" src="./images/ring.svg" alt="">
+<img class="illustration" src="./images/ring.svg" alt="En brodert ring i gull">
 
 ---
 
-<img class="number" src="./images/tredje.svg" alt="">
+<img class="number" src="./images/tredje.svg" alt="Tallet 3 brodert i et hjerte">
 
 ## 3. desember
 
@@ -528,11 +528,11 @@ Hvis du bruker Loki som vi snakket om i forrige luke, så kan du logge med trace
 
 Du kan lese mer om tracing og Tempo på https://docs.nais.io/observability/tracing/.
 
-<img class="illustration" src="./images/reinsdyr.svg" alt="">
+<img class="illustration" src="./images/reinsdyr.svg" alt="Ett brodert reinsdyr">
 
 ---
 
-<img class="number" src="./images/andre.svg" alt="">
+<img class="number" src="./images/andre.svg" alt="Tallet 2 brodert i et hjerte">
 
 ## 2. desember
 
@@ -540,7 +540,7 @@ I første luke finner vi Loki! Grafana Loki er et loggaggregeringssystem inspire
 
 Du kan lese mer om logging og Loki på https://docs.nais.io/observability/logging/.
 
-<img class="illustration" src="./images/ett-lys.svg" alt="">
+<img class="illustration" src="./images/ett-lys.svg" alt="Ett brodert stearinlys">
 
 ---
 
