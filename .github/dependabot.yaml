@@ -14,11 +14,11 @@ updates:
         patterns:
           - "*"
 
-  - package-ecosystem: "yarn"
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
     groups:
-      yarn:
+      npm:
         patterns:
           - "*"
