@@ -31,7 +31,7 @@ feedItem.sort((a, b) => new Date(b.metadata.date) - new Date(a.metadata.date));
 feedItem.forEach(({ metadata, content, link }) => {
 	feed.addItem({
 		title: metadata.title,
-	    content: content,
+		content: content,
 		link: link,
 		date: new Date(metadata.date),
 		author: [

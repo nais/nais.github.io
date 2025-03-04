@@ -14,7 +14,7 @@ export async function load() {
 	return {
 		posts: Object.entries(markdownFiles)
 			.map(([path, post]) => ({
-				slug: path.match(/([^\/]+)\.md$/)?.[1],
+				slug: path.match(/([^/]+)\.md$/)?.[1],
 				...post,
 			}))
 			.sort((a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime()),
