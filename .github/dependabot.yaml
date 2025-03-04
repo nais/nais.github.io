@@ -13,3 +13,12 @@ updates:
       gha:
         patterns:
           - "*"
+
+  - package-ecosystem: "yarn"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      yarn:
+        patterns:
+          - "*"
