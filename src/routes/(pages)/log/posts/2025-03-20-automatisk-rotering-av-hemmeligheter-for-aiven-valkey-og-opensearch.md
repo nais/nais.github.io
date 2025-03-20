@@ -2,7 +2,7 @@
 title: Automatisk rotering av hemmeligheter for Aiven Valkey og OpenSearch
 date: 2025-03-20T11:00:00+02:00
 author: Christian Chavez, Kyrre Havik
-tags: [aiven, nais, valkey, redis, opensearch, elasticsearch, elk]
+tags: [aiven, nais, valkey, redis, opensearch, elasticsearch, elk, naiserator]
 layout: log
 ---
 
