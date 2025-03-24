@@ -9,7 +9,7 @@ layout: log
 Vi har i dag lansert støtte for å kunne deploye endringer i Application/Naisjob uten å bygge et nytt Docker image. :tada:
 
 Frem til i dag har det vært nødvendig å bygge et nytt Docker image hvis du skal deploye endringer i Application/Naisjob, fordi spec'en krever et image og du har ikke det gamle lett tilgjengelig.
-Vi har nå gjort endringer som gjør at du ikke trenger å ha image i Application/Naisjob.
+Vi har nå gjort endringer som gjør at du ikke trenger å ha image i Application/Naisjob i det hele tatt.
 
 Hvis du deployer en Application/Naisjob uten at `image` er satt, så vil vi finne det forrige imaget du deployet og bruke det.
 Dette forutsetter at du har gjort en deploy tidligere med `WORKLOAD_IMAGE`-variabelen satt (se nedenfor).
