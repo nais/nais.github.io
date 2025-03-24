@@ -12,7 +12,7 @@ Frem til i dag har det vært nødvendig å bygge et nytt Docker image hvis du sk
 Vi har nå gjort endringer som gjør at du ikke trenger å ha image i Application/Naisjob.
 
 Hvis du deployer en Application/Naisjob uten at `image` er satt, så vil vi finne det forrige imaget du deployet og bruke det.
-Dette forutsatter at du har gjort en deploy tidligere med `WORKLOAD_IMAGE`-variabelen satt (se nedenfor).
+Dette forutsetter at du har gjort en deploy tidligere med `WORKLOAD_IMAGE`-variabelen satt (se nedenfor).
 
 Hvis du ikke trenger denne muligeheten er det *ikke nødvendig* å gjøre noen endringer.
 
