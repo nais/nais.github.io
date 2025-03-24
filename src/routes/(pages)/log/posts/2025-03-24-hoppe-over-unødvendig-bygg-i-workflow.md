@@ -6,12 +6,15 @@ tags: [nais, naiserator, deploy, github, workflow]
 layout: log
 ---
 
-Vi har i dag lansert støtte for å kunne deploye endringer i Application/Naisjob uten å bygge et nytt Docker image.
+Vi har i dag lansert støtte for å kunne deploye endringer i Application/Naisjob uten å bygge et nytt Docker image. :tada:
 
 Frem til i dag har det vært nødvendig å bygge et nytt Docker image hvis du skal deploye endringer i Application/Naisjob, fordi spec'en krever et image og du har ikke det gamle lett tilgjengelig.
 Vi har nå gjort endringer som gjør at du ikke trenger å ha image i Application/Naisjob.
-Hvis du deployer en Application/Naisjob uten at `image` er satt, så vil vi finne det forrige imaget du deployet og bruke
-det, forutsatt at du har gjort en deploy tidligere med `nais/deploy`-actionen og `WORKLOAD_IMAGE`-variabelen satt (se nedenfor). 
+
+Hvis du deployer en Application/Naisjob uten at `image` er satt, så vil vi finne det forrige imaget du deployet og bruke det.
+Dette forutsatter at du har gjort en deploy tidligere med `WORKLOAD_IMAGE`-variabelen satt (se nedenfor).
+
+Hvis du ikke trenger denne muligeheten er det *ikke nødvendig* å gjøre noen endringer.
 
 For at dette skal fungere er det noen endringer du må gjøre i workflowen din:
 
