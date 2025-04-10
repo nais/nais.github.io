@@ -1,6 +1,6 @@
 ---
 title: Veien videre for logg i Nais
-date: 2025-03-28T14:00:00+02:00
+date: 2025-04-10T14:00:00+02:00
 author: Hans Kristian Flaatten
 tags: [nais, logging, grafana, loki]
 layout: log
