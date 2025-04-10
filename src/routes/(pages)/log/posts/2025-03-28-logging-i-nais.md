@@ -8,13 +8,13 @@ layout: log
 
 De siste årene har det vært gjort en betydelig innsats for å forbedre observabilitet i Nais. Først frontend observabilitet med Faro, og så helhetlig sporing på tvers av applikasjoner med OpenTelemetry Tracing. Alt sammen har integret sømløst med Grafana, som er Nais sitt fortrukne observabilitetsverktøy.
 
-Det har i lengre tid vært mulig for teamene å sende applikasjonslogger til Grafana. Vi tar dette nå et skritt videre og gjør det til standard i Nais. Dette vil gi deg som utvikler en helhetlig oversikt over hva som skjer i applikasjonen din, og gjøre det enklere å feilsøke og forstå hva som skjer i systemet.
+Det har i lengre tid vært mulig for teamene i Nav å sende applikasjonslogger til Grafana i GCP, dette er nå mulig for applikasjoner i FSS fra og med i dag! Dette gir deg som utvikler en helhetlig oversikt over hva som skjer i applikasjonen din, og gjør det enklere å feilsøke og forstå hva som skjer i systemet uansett om applikasjonen din kjører i GCP eller FSS.
 
-## Hva er nytt?
+## Hva skjer videre?
 
-Fra og med XX april 2025 vil alle applikasjoner i Nais sende logger til Grafana som standard. Dette vil gi deg tilgang til en rekke nye funksjoner og muligheter for å analysere og visualisere loggene dine, ikke minst kunne integrere logger på en enkel måte inn i Grafana Dashboards.
+Dette er første skritt i retning for å samle all observabilitet for applikasjoner på Nais under ett tak i Grafana. Etter hvert kommer logging til Grafana Loki å bli satt som standard for alle applikasjoner. Vi kommer tilbake med mer informasjon om dette og eksakte datoer snart.
 
-I en overgangsperiode vil det være mulig å sende logger til både Grafana og Elastic for å sikre en smidig overgang.
+I en mellom-periode vil det være mulig å sende logger til både Grafana og Elastic for å sikre en smidig overgang før vi gradvis faser ut Elastic og Kibana fra Nais-plattformen.
 
 ## Hva må du gjøre?
 
@@ -32,6 +32,6 @@ Secure logs vil bli erstattet med en ny løsning som heter Team logs. Dette vil 
 
 [Google Cloud Logging](https://cloud.google.com/logging) er en del av Google Cloud Platform og bor i hvert enkelt team sitt Google Cloud prosjekt og gir deg muligheten til å lagre, søke og analysere loggene dine på en enkel måte. Dette er samme sted som mange av audit loggene fra Nais også blir lagret.
 
-## Hva skjer videre?
+## Jeg vil vite mer!
 
 Vi kommer til å sette opp flere informasjonsmøter og workshops for å hjelpe deg med å ta i bruk den nye loggfunksjonaliteten i Nais. Vi vil også oppdatere dokumentasjonen vår for å gjøre det enklere for deg å komme i gang.
