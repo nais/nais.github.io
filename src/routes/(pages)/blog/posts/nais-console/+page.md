@@ -31,7 +31,7 @@ However, as the platform has grown to support hundreds of teams and nearly 2,000
 
 <small>Timeline of various Nais interfaces and tools</small>
 
-In the summer of 2023, we took a big step in this direction by introducing Nais Console – a developer portal providing an overview of applications. Six months later, we added vulnerability and cost insights directly into the Console, eliminating the need for two separate tools. By 2024, API key management from Nais Deploy, team administration, and a complete view of external resources defined in Nais manifests were also integrated.
+In the summer of 2023, we took a big step in this direction by introducing Nais Console – a developer portal providing an overview of applications. Six months later, we added vulnerability and cost insights directly into the Console, eliminating the need for two separate tools. By 2024, Deploy key management from Nais Deploy, team administration, and a complete view of external resources defined in Nais manifests were also integrated.
 
 ## Nais Console Today
 
