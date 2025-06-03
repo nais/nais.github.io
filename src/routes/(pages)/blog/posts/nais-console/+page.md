@@ -92,7 +92,7 @@ This simplified example demonstrates how Svelte and Houdini work together to fet
 
 This example demonstrates how Houdini simplifies GraphQL queries and state management in the frontend. By leveraging Svelte’s reactivity and Houdini’s tools, the team can deliver a seamless and responsive user experience.
 
-This stack enables the team to build features quickly while maintaining a high degree of customization, ensuring that the Console remains a powerful and user-friendly tool for developers.
+This stack enables the Nais team to build features quickly while maintaining a high degree of customization, ensuring that the Console remains a powerful and user-friendly tool for developers.
 
 ### External Links
 
