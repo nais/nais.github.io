@@ -1,10 +1,13 @@
 <script lang="ts">
-	export let size = "1em";
-	export let fill = "currentColor";
+	let {
+		size = "1em",
+		fill = "currentColor",
+		...restProps
+	}: { size?: string; fill?: string; [key: string]: unknown } = $props();
 </script>
 
 <svg
-	{...$$restProps}
+	{...restProps}
 	width={size}
 	height={size}
 	xmlns="http://www.w3.org/2000/svg"

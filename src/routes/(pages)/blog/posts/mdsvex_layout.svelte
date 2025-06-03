@@ -1,11 +1,10 @@
 <script module>
-	import table from "./table.svelte";
-	export { table };
+	export { default as table } from "./table.svelte";
 </script>
 
 <script lang="ts">
-	import type { Snippet } from "svelte";
 	import { format } from "date-fns";
+	import type { Snippet } from "svelte";
 	interface Props {
 		title?: string;
 		author?: string;
