@@ -1,5 +1,9 @@
+<script lang="ts">
+	let { ...restProps }: { [key: string]: unknown } = $props();
+</script>
+
 <svg
-	{...$$restProps}
+	{...restProps}
 	height="0.9em"
 	viewBox="0 0 437 115"
 	xmlns="http://www.w3.org/2000/svg"
