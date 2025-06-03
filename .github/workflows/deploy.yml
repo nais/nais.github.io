@@ -28,9 +28,9 @@ jobs:
         uses: actions/configure-pages@v5
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
-      - run: yarn --frozen-lockfile
-      - run: yarn run build
+          node-version: 22
+      - run: npm --frozen-lockfile
+      - run: npm run build
         env:
           SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
       - name: Upload artifact
