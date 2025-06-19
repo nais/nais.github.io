@@ -13,11 +13,11 @@ Vi har nå fått to nye features relatert til Aiven inn i Console!
 Du kan nå se vedlikeholdsmeldinger for OpenSearch og Valkey instanser.
 Disse kommer i to varianter, anbefalt, og påkrevd vedlikehold.
 De påkrevde vil bli kjørt i neste vedlikeholdsvindu, mens de anbefalte vil bli liggende til det kommer et påkrevd vedlikehold.
-Man har også muligheten til å starte vedlikehold tidligere enn planlagt ved å trykke på `Start maintenance`.
+Man har også muligheten til å starte vedlikehold tidligere enn planlagt ved å trykke på `Run all maintenance`.
 
 ## Kafkakost
 
-Vi har lenge hatt lyst til å finne en måte å fordele kostnadene på Kafka til teamene, og nå lanserer vi første versjon.
+Vi har lenge hatt lyst til å finne en måte å bevisstgjøre kostnadene til Kafka for teamene, og nå lanserer vi første versjon.
 Siden vi kjører Kafka som en instans, så er det ikke noen direkte kobling mellom et teams bruk, og en kostnad.
 Derfor har vi laget vår egen forenklet fordeling, som vi tenker gir en pekepinne på hva slags kostnader et team har knyttet til Kafka.
 
