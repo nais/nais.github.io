@@ -17,3 +17,11 @@ Kjør:
 npm install
 npm run dev
 ```
+
+## Opprette announcement
+
+For å lett komme i gang med en ny announcement, er det laget en enkel mise task:
+
+```
+mise run announcement "En fengende tittel"
+```

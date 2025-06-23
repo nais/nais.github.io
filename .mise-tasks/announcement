@@ -1,0 +1,58 @@
+#!/usr/bin/env python
+#MISE description="Create new announcement"
+#USAGE arg "<title>" help="The title of the announcement"
+
+import getpass
+import os
+import pwd
+import re
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
+TEMPLATE = """\
+---
+title: "{title}"
+date: {timestamp}
+author: {author}
+tags: [TODO: ADD TAGS HERE]
+layout: log
+---
+
+*{title}*
+
+TODO: Write better content here
+TODO: Add tags in the frontmatter above
+
+Whooop whoop! A new announcement is here!
+"""
+
+TZ = ZoneInfo('Europe/Oslo')
+POSTS_PATH = "src/routes/(pages)/log/posts/"
+
+
+def slugify(text):
+    slug = text.lower()
+    slug = re.sub(r'[^a-zæøå0-9]+', '-', slug).strip('-')
+    slug = re.sub(r'[-]+', '-', slug)
+    return slug
+
+
+def main(title):
+    timestamp = datetime.now(tz=TZ).replace(second=0, microsecond=0)
+
+    user = pwd.getpwnam(getpass.getuser())
+    author = user.pw_gecos.split(',')[0] if user.pw_gecos else user.pw_name
+
+    content = TEMPLATE.format(title=title, timestamp=timestamp.isoformat(), author=author)
+    filename = f"{timestamp.strftime('%Y-%m-%d')}-{slugify(title)}.md"
+    print("CWD:", os.getcwd())
+    filepath = os.path.join(POSTS_PATH, filename)
+
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(content)
+    print(f"An announcement has been created at: {filepath}")
+
+
+if __name__ == '__main__':
+    title = os.getenv('usage_title', 'New Announcement')
+    main(title)
