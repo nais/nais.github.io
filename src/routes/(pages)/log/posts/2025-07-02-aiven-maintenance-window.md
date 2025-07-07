@@ -1,6 +1,6 @@
 ---
 title: Aiven maintenance window
-date: 2025-07-07T10:24:00+02:00
+date: 2025-07-02T10:24:00+02:00
 author: Kyrre Havik
 tags: [aiven, maintenance, console]
 layout: log
