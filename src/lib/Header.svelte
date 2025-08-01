@@ -1,7 +1,6 @@
 <script>
 	import { page } from "$app/stores";
 	import NaisPride from "./icons/NaisPride.svelte";
-	import Nais from "./icons/Nais.svelte";
 
 	const isActive = (/** @type {string} */ path) => $page.url.pathname.startsWith(`/${path}`);
 	let isOpen = $state(false);
@@ -52,6 +51,7 @@
 			<li><a class="main-menu-item" href="https://docs.nais.io">Dokumentasjon</a></li>
 			<li><a class="main-menu-item" class:isActive={isActive("log")} href="/log">Logg</a></li>
 			<li><a class="main-menu-item" href="mailto:nais@nav.no">Kontakt oss</a></li>
+			<li><a class="main-menu-item" href="https://console.nais.io">Console</a></li>
 		</ul>
 		<a class="github-link" href="https://github.com/nais">
 			<svg
