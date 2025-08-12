@@ -33,7 +33,6 @@
 		"vite": "^6.3.5"
 	},
 	"dependencies": {
-		"@amplitude/analytics-browser": "^2.17.6",
 		"@nais/ds-svelte-community": "^1.0.1",
 		"@slack/web-api": "^7.9.2",
 		"date-fns": "^4.1.0",
