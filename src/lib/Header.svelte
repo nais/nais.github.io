@@ -1,6 +1,6 @@
 <script>
 	import { page } from "$app/stores";
-	import NaisPride from "./icons/NaisPride.svelte";
+	import Nais from "./icons/Nais.svelte";
 
 	const isActive = (/** @type {string} */ path) => $page.url.pathname.startsWith(`/${path}`);
 	let isOpen = $state(false);
@@ -8,7 +8,7 @@
 
 <header class="header">
 	<a class="home" href="/">
-		<NaisPride />
+		<Nais />
 		<span class="name">Nais</span>
 	</a>
 	<button class="main-menu-toggle" class:isOpen onclick={() => (isOpen = !isOpen)}>
