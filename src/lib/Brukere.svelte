@@ -2,6 +2,7 @@
 	import Navlogo from "./icons/Navlogo.svelte";
 	import SsblogoFull from "./icons/SsblogoFull.svelte";
 	import Ldir from "./icons/Ldir.svelte";
+	import Atil from "./icons/Atil.svelte";
 </script>
 
 <div class="section">
@@ -10,6 +11,9 @@
 		<Navlogo />
 		<SsblogoFull />
 		<Ldir />
+		<div style="margin-bottom: -7px">
+			<Atil />
+		</div>
 	</div>
 	<div class="text">
 		<a class="mail" href="mailto:nais@nav.no">Snakk med oss</a>
