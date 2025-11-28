@@ -30,4 +30,4 @@ Disse kommer i to varianter, anbefalt, og påkrevd vedlikehold.
 De påkrevde vil bli kjørt i neste vedlikeholdsvindu, mens de anbefalte vil bli liggende til det kommer et påkrevd vedlikehold.
 Man har også muligheten til å starte vedlikehold tidligere enn planlagt ved å trykke på `Run all maintenance`.
 
-![](/log/opensearch-maintenance.png)
+![OpenSearch maintenance window showing recommended and required maintenance options](/log/opensearch-maintenance.png)
