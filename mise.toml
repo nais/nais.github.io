@@ -2,4 +2,5 @@
 pin = true
 
 [tools]
-node = "22.16.0"
+node = "24.11.0"
+pnpm = "10.24.0"
