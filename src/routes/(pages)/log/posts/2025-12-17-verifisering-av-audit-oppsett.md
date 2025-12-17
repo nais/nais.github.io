@@ -6,18 +6,31 @@ tags: [ cli, audit, cloudsql, postgres ]
 layout: log
 ---
 
-:naisely-done: nais cli støtter `verify-audit` for å sjekke om databasen er korrekt satt opp for auditlogging.
+*nais cli støtter `verify-audit` for å sjekke om databasen er korrekt satt opp for auditlogging.*
 
-Det er nå mulig å sjekke oppsettet i sin Cloud SQL Postgres database med kommandoen:
+Det er nå mulig å sjekke oppsettet i sin Cloud SQL Postgres database. 
+Det gjør det litt enklere å verifisere at nødvendige parametere er satt riktig. 
+
+Dette gjelder da spesielt for de som har applikasjoner som er underlagt krav om audit logging.
+
+*Hvordan gjøres det?*
 
 ```shell
-nais postgres verify-audit <appname>
+nais postgres verify-audit <appname> [-n team-namespace] [--context gcp-context]
 ```
+appname må benyttes og angir applikasjonen som eier databasen
 
-appname er applikasjonen som eier databasen.
+team-namespace og gcp-context er valgfrie parametere som spesifiserer hvilket namespace og GCP-cluster som skal benyttes.
 
-Kommandoen vil verifisere at nødvendige databaseflagg er satt, at pgaudit extension er installert og at applikasjonsbrukeren ikke har logging aktivert.
+*Hva gjør kommandoen?*
 
-Kjøring av kommando krever at man er logget inn med gcloud auth og er medlem av teamet som eier databasen.
+- Verifiserer nødvendige databaseflagg og viser verdien av disse
+- Verifiserer pgaudit extension
+- Verifiserer konfigurasjon for applikasjonsbrukerens logging
+
+*Hvilke forutsetninger gjelder?*
+
+- Innlogget bruker
+- Medlem av teamet som eier databasen
 
 👉 [Les mer og kom i gang i dokumentasjonen](https://doc.nais.io/operate/cli/reference/postgres#verify-audit)
