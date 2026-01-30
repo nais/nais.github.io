@@ -12,7 +12,7 @@ Denne kommandoen opprettet nødvendig servicebruker hos Aiven, men man måtte se
 - til én og enhver topic
 - manuelt selv
 
-For å kunne støtte oppunder utviklere som har behov for å for eksempel (ikke utømmende liste):
+For å kunne støtte oppunder utviklere som har behov for å for eksempel (ikke uttømmende liste):
 - manuelt flytte på `offset` til en Kafka topic tilbake i tid
 - resette topicene til en Kafka Stream
 
@@ -41,7 +41,7 @@ Global Flags:
 Use "nais aiven grant-access [command] --help" for more information about a command.
 ```
 
-Tenkt fremgangsmåte blir da at man benytter seg av følgende kommander i ca. slik rekkefølge
+En tenkt fremgangsmåte kan da være at man benytter seg av følgende kommandoer i denne rekkefølgen:
 ```
 $ nais aiven create kafka ...
 $ nais aiven get kafka ...
