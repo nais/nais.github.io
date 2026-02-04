@@ -14,11 +14,11 @@ De som ønsker å følge med på denne metrikken i Nais sin plattform pleier å 
 - [Prometheus metrikker] som tilhøre utviklerenes egne applikasjoner
 - en Prometheus metrikk tilbudt av Nais plattformen selv; [kafka-lag-exporter]
 
-Dessverre ser det ut til at [kafka-lag-exporter] ikke har mottatt hverken utvikling eller sikkerhetsfikser på nærmere 4 år.
+[kafka-lag-exporter] ikke har mottatt utvikling eller sikkerhetsfikser på nærmere 4 år.
 For å sikre stabilitet og sikkerhet i vår overvåkning av Kafka consumer lag, har vi besluttet å migrere fra [kafka-lag-exporter] til en løsning Aiven (som administrerer våre Kafka instanser) selv tilbyr, for å overvåke "Kafka consumer group lag".
 
 Denne migrasjonen betyr at `prometheusrules` brukt for alerts i Kubernetes samt grafana dashboards osv., må bytte ifra [kafka-lag-exporter] sine Prometheus metrikker til Aiven sine.
-Nedenfor beskriver vi hvordan å skrive de nye Prometheus metrikkene slik at de tilsvarer de gamle.
+Nedenfor beskriver vi hvordan de nye Prometheus metrikkene kan skrives slik at de tilsvarer de gamle.
 
 ## Migrasjonssteg
 1. **Identifiser eksisterende bruk/dashboards**
