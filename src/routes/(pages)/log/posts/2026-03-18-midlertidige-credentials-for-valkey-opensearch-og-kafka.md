@@ -6,7 +6,7 @@ tags: [cli, valkey, opensearch, kafka, aiven]
 layout: log
 ---
 
-Vi har lagt til tre nye kommandoer i nais CLI som gir deg midlertidige credentials for Valkey, OpenSearch og Kafka. Dette er nyttig for eksempel ved lokal utvikling eller feilsøking der du trenger direkte tilgang til en av disse tjenestene.
+Vi har lagt til tre nye kommandoer i Nais CLI som gir deg midlertidige credentials for Valkey, OpenSearch og Kafka. Dette er nyttig for eksempel ved lokal utvikling eller feilsøking der du trenger direkte tilgang til en av disse tjenestene.
 
 ## Nye kommandoer
 
@@ -22,6 +22,6 @@ Maksimal levetid er 30 dager. All bruk logges i aktivitetsloggen.
 
 ## Erstatter `nais aiven`
 
-Disse kommandoene erstatter de gamle `nais aiven create`-kommandoene, som er markert som deprecated. Den gamle flyten var avhengig av direkte tilgang til Kubernetes-hemmeligheter, noe som ikke lenger er tilgjengelig. De nye kommandoene går via nais API og krever kun at du er autentisert med `nais login`.
+Disse kommandoene erstatter de gamle `nais aiven create`-kommandoene, som er markert som deprecated. Den gamle flyten var avhengig av direkte tilgang til Kubernetes-hemmeligheter, noe som ikke lenger er tilgjengelig. De nye kommandoene går via Nais API og krever kun at du er autentisert med `nais login`.
 
-Oppdater til siste versjon av nais CLI for å ta i bruk de nye kommandoene.
+Oppdater til siste versjon av Nais CLI for å ta i bruk de nye kommandoene.
