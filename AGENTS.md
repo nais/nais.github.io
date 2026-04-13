@@ -11,7 +11,7 @@ Primary content language is Norwegian; some blog posts are in English.
 ## Prerequisites
 
 - **Node:** 24.11.0 (pinned in `mise.toml`)
-- **Package manager:** pnpm 10.24.0 (pinned in `mise.toml` and `package.json`)
+- **Package manager:** pnpm (pinned in `mise.toml`)
 - Install deps: `pnpm install --frozen-lockfile`
 
 ## Build / Lint / Check Commands
