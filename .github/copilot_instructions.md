@@ -26,7 +26,7 @@ These instructions are intended for anyone contributing content, documentation, 
   - Include code examples in fenced code blocks to demonstrate usage, configuration, or best practices. Keep code concise and directly related to the topic.
 
 ## Example
->
+
 > Today, Nais Console serves as a central tool for delivering relevant information to the right person at the right time. It integrates data from Kubernetes, Prometheus, and other sources, giving developers a comprehensive view of their application resources, costs, and vulnerabilities – all without switching between multiple tools. This enables better decision-making for application operations and improvements.
 
 ## When in Doubt

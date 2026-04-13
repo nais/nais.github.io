@@ -17,5 +17,5 @@ Nyeste major versjon av Postgres er 17.
 
 For å oppgradere kan man velge en av disse tilnærmingene:
 
-* Gjøre en enkel in-place oppgradering: https://docs.nais.io/persistence/postgres/how-to/upgrade-postgres/, eller
-* Gjøre en migrering til ny instans: https://docs.nais.io/persistence/postgres/how-to/migrate-to-new-instance/
+- Gjøre en enkel in-place oppgradering: https://docs.nais.io/persistence/postgres/how-to/upgrade-postgres/, eller
+- Gjøre en migrering til ny instans: https://docs.nais.io/persistence/postgres/how-to/migrate-to-new-instance/

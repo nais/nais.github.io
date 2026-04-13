@@ -1,7 +1,8 @@
 <script lang="ts">
+	import { resolve } from "$app/paths";
 	import { format } from "date-fns";
-	import type { PageData } from "./$types";
 	import { nb } from "date-fns/locale";
+	import type { PageData } from "./$types";
 
 	let { data }: { data: PageData } = $props();
 </script>
@@ -11,10 +12,10 @@
 </svelte:head>
 
 <div class="articles">
-	{#each data.posts as post}
+	{#each data.posts as post (post.slug)}
 		<article lang={post.metadata.language}>
 			<h1 class="heading">
-				<a class="link" href={`/blog/posts/${post.slug}`}>
+				<a class="link" href={resolve("/blog/posts/[slug]", { slug: post.slug })}>
 					{post.metadata.title}
 				</a>
 			</h1>

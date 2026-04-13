@@ -8,10 +8,10 @@ layout: log
 
 For å øke sikkerheten rundt håndtering av hemmeligheter i Nais, har vi gjort noen endringer i default-tilgangen til hemmeligheter.
 
-Der man tidligere hadde en permanent tilgang til alle hemmeligheter i sitt team, har vi nå innført en mer restriktiv policy. 
-Før man får lesetilgang til verdiene i en hemmelighet, må man i oppgi en begrunnelse. 
+Der man tidligere hadde en permanent tilgang til alle hemmeligheter i sitt team, har vi nå innført en mer restriktiv policy.
+Før man får lesetilgang til verdiene i en hemmelighet, må man i oppgi en begrunnelse.
 
-Tilgangen gis automatisk, loggføres og varer i 5 minutter. 
+Tilgangen gis automatisk, loggføres og varer i 5 minutter.
 
 ![Skjermbilde som viser popup-vindu for å oppgi begrunnelse for tilgang til hemmelighet](/log/hemmelighetsinnstramming.png)
 

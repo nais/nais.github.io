@@ -327,7 +327,6 @@ Når vi utvikler applikasjoner, står vi overfor flere risikoer i forsyningskjed
 ### 🔍 Men det er flere trusler i forsyningskjeden som lurer!
 
 1. **Kildekoden**: Risiko for uautorisert tilgang eller endringer, ofte via sårbare versjonskontroll systemer(GithHub) eller upålitelige avhengigheter.
-
    - Sikre tilgangskontroll til repositorier.
    - Aktiver Dependabot for å overvåke og oppdatere avhengigheter.
    - Bruk tofaktorautentisering (2FA) for økt sikkerhet.
@@ -337,11 +336,9 @@ Når vi utvikler applikasjoner, står vi overfor flere risikoer i forsyningskjed
    - Begrens bruken av personlige tilgangstokens (PATs), og sørg for minimal tilgang der de brukes.
 
 2. **Byggprosessen**: Manipulasjon av byggeverktøy eller bygdefiler kan kompromittere programvaren.\*
-
    - Sikre byggeprosessen med [nais/docker-build-push](https://docs.nais.io/services/vulnerabilities/how-to/sbom/).
 
 3. **Distribusjon**: Uautoriserte eller skadelige artifakter kan infiltrere uten riktige signerings- og valideringsrutiner.\*
-
    - Implementer robuste signerings- og valideringsprosedyrer med [nais/docker-build-push](https://docs.nais.io/services/vulnerabilities/how-to/sbom/).
 
 ### 🔧 Hvordan NAIS Console hjelper med sårbarheter

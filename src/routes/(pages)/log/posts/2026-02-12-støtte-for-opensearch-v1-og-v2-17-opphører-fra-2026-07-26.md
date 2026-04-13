@@ -16,6 +16,6 @@ Når man har kommet opp på v2.19 er det også mulig å oppgradere videre til v3
 
 Se også Aiven sine announcements med mer detaljer:
 
-* [Deprecation: Aiven for OpenSearch® version 1](https://aiven.io/changelog/724426b6-a8de-43d2-a08e-36f24abba306)
-* [Deprecation: Aiven for OpenSearch® 2.17](https://aiven.io/changelog/e7799d61-90a6-49a7-9253-02824c7bcfa8)
-* [Upgrade to OpenSearch® 3.3.2](https://aiven.io/changelog/c0337487-d7f2-48d3-b54a-be12cab92f7b)
+- [Deprecation: Aiven for OpenSearch® version 1](https://aiven.io/changelog/724426b6-a8de-43d2-a08e-36f24abba306)
+- [Deprecation: Aiven for OpenSearch® 2.17](https://aiven.io/changelog/e7799d61-90a6-49a7-9253-02824c7bcfa8)
+- [Upgrade to OpenSearch® 3.3.2](https://aiven.io/changelog/c0337487-d7f2-48d3-b54a-be12cab92f7b)

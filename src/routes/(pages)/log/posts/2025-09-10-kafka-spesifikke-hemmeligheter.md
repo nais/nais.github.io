@@ -9,9 +9,11 @@ layout: log
 Vi har nå endelig kommet til Kafka i Aiven-vedlikeholdsferden startet [mars](https://nav-it.slack.com/archives/C01DE3M9YBV/p1742461394110309)!
 
 ## Kafkaspesifikke kubernetes hemmeligheter
+
 Fra og med 10. september vil Nais gi alle nye deploys av apper som benytter Kafka en egen hemmelighet for kafkatilkobling.
 
 Dette fordi
+
 1. Reduserer nedslagsfeltet hvis man bruker flere Aiven tjenester
 1. Tillater uavhenging rotering av tilkoblingshemmeligheter av Aiven tjenester
 

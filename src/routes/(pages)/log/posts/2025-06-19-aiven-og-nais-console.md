@@ -15,6 +15,7 @@ Siden vi kjører Kafka som en instans, så er det ikke noen direkte kobling mell
 Derfor har vi laget vår egen forenklet fordeling, som vi tenker gir en pekepinne på hva slags kostnader et team har knyttet til Kafka.
 
 Måten vi har gått frem på er:
+
 - 50% av den totale kostnaden til Kafka fordeles likt på alle team som bruker Kafka.
   Dette betyr at jo flere som bruker Kafka, jo billigere blir det for alle.
 - De resterende 50% av kostnadene blir fordelt på teamets samlete størrelse på topics.

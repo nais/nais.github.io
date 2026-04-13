@@ -11,6 +11,6 @@ Dette har ført til noen problemer der navnet brukt i kubeconfig ikke har matche
 
 Dette problemet har først og fremst rammet utviklere utenfor Nav, fordi i Nav har vi av legacy-grunner gjort omskriving av navnet i kubeconfig.
 
-I nyeste versjon av nais cli så gjør vi nå en omskriving av context når vi genererer kubeconfig slik at  navnet i kubeconfig vil være det samme som miljø-navnet brukt andre steder i plattformen.
+I nyeste versjon av nais cli så gjør vi nå en omskriving av context når vi genererer kubeconfig slik at navnet i kubeconfig vil være det samme som miljø-navnet brukt andre steder i plattformen.
 
 Hvis du ønsker å fjerne de eksisterende contextene i kubeconfig og bare ha de med nye navn kan du kjøre `nais kubeconfig --clear`.

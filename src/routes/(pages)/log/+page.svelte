@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { format } from "date-fns";
-	import type { PageData } from "./$types";
 	import { nb } from "date-fns/locale";
+	import type { PageData } from "./$types";
 
 	const { data }: { data: PageData } = $props();
 </script>
@@ -12,7 +12,7 @@
 
 <i>Her poster Naisteamet informasjon om nyheter, endringer eller hendelser i plattformen.</i>
 
-{#each data.posts as { metadata, slug, default: Post }, i}
+{#each data.posts as { metadata, slug, default: Post }, i (slug)}
 	{#if i > 0}
 		<hr />
 	{/if}

@@ -6,7 +6,7 @@ tags: [postgres, cloudsql, experimental]
 layout: log
 ---
 
-*En ny måte å kjøre postgres i Nais :postgresql:*
+_En ny måte å kjøre postgres i Nais :postgresql:_
 
 I en periode har vi i Nais jobbet med å finne en mer kostnadseffektiv måte å kjøre Postgres i Nais.
 Per i dag så står CloudSQL for omtrent to tredjedeler av alle kostnader i Nais, og vi har derfor sett på alternative løsninger. :money_with_wings:

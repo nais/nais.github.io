@@ -8,11 +8,13 @@ layout: log
 
 Tidligere har Nais plattformen gjort det mulig for utviklere å skaffe seg en servicebruker for å kunne aksessere topics i Kafka clustere, ved hjelp av `nais aiven kafka create` CLI kommandoen.
 Denne kommandoen opprettet nødvendig servicebruker hos Aiven, men man måtte selv sikre seg å (på rett måte):
+
 - ordne lese/skrive/annen rettigheter
 - til én og enhver topic
 - manuelt selv
 
 For å kunne støtte oppunder utviklere som har behov for å for eksempel (ikke uttømmende liste):
+
 - manuelt flytte på `offset` til en Kafka topic tilbake i tid
 - resette topicene til en Kafka Stream
 
@@ -42,6 +44,7 @@ Use "nais aiven grant-access [command] --help" for more information about a comm
 ```
 
 En tenkt fremgangsmåte kan da være at man benytter seg av følgende kommandoer i denne rekkefølgen:
+
 ```
 $ nais aiven create kafka ...
 $ nais aiven get kafka ...

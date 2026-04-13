@@ -6,7 +6,7 @@ tags: [postgres, cli]
 layout: log
 ---
 
-*Personlig tilgang til databaser i den nye Postgres-løsningen*
+_Personlig tilgang til databaser i den nye Postgres-løsningen_
 
 Da vi annonserte den nye Postgres-løsningen var det en del ting som ikke var på plass ennå.
 
@@ -22,7 +22,7 @@ nais postgres proxy <app-navn>  # Setter opp en proxy, som man kan koble til med
 nais postgres psql <app-navn>   # Setter opp en proxy, og starter psql for deg.
 ```
 
-*Hvordan fungerer det?*
+_Hvordan fungerer det?_
 
 Alle medlemmer i teamet som eier databasen blir lagt til i databasen med en egen rolle for menneskelige brukere.
 
@@ -30,7 +30,7 @@ Denne rollen har lese- og skrive-tilganger ut av boksen. Den har ikke tilgang ti
 
 Når man logger inn i databasen, så benyttes et kortlevd (1 time) token fra login.nais.io, som man får ved hjelp av `nais auth login --nais`.
 
-*Videre planer for den nye postgres-løsningen?*
+_Videre planer for den nye postgres-løsningen?_
 
 DBA tilgang:
 I tillegg til at utviklere trenger tilgang til basen så vil det være situasjoner hvor man trenger hjelp av en DBA med utvidede tilganger.
@@ -47,4 +47,3 @@ Dette vil antageligvis bygges inn i løsningen som allerede benyttes for CloudSQ
 
 Migreringshjelp:
 Vi skal se på mulighetene for å lage verktøystøtte for å migrere fra CloudSQL til Postgres, men dette er fortsatt på tegnebordet så helt nøyaktig hvordan det blir er vanskelig å si.
-

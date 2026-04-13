@@ -28,6 +28,18 @@ export default ts.config(
 		},
 	},
 	{
-		ignores: ["build/", ".svelte-kit/", "dist/"],
+		ignores: [
+			"build/",
+			".svelte-kit/",
+			"dist/",
+			"package/",
+			".env",
+			".env.*",
+			"!.env.example",
+			"static/*.js",
+			"pnpm-lock.yaml",
+			"package-lock.json",
+			"yarn.lock",
+		],
 	},
 );

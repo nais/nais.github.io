@@ -119,7 +119,6 @@ vulnerability insights, takes only a few minutes, depending on the size of the i
 - Visualize historical data to monitor vulnerabilities over time.
 
 - Track data from the commit where the vulnerability was introduced.
-
   - Record when the vulnerability was fixed.
   - Measure lead time for resolving vulnerabilities.
   - Track when the vulnerability was first deployed.

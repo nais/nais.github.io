@@ -1,4 +1,5 @@
 <script>
+	import { resolve } from "$app/paths";
 	import { page } from "$app/stores";
 	import Nais from "./icons/Nais.svelte";
 
@@ -7,7 +8,7 @@
 </script>
 
 <header class="header">
-	<a class="home" href="/">
+	<a class="home" href={resolve("/")}>
 		<Nais />
 		<span class="name">Nais</span>
 	</a>
@@ -47,9 +48,15 @@
 	</button>
 	<nav class="main-menu" class:isOpen>
 		<ul class="main-menu-list">
-			<li><a class="main-menu-item" class:isActive={isActive("blog")} href="/blog">Artikler</a></li>
+			<li>
+				<a class="main-menu-item" class:isActive={isActive("blog")} href={resolve("/blog")}>
+					Artikler
+				</a>
+			</li>
 			<li><a class="main-menu-item" href="https://docs.nais.io">Dokumentasjon</a></li>
-			<li><a class="main-menu-item" class:isActive={isActive("log")} href="/log">Logg</a></li>
+			<li>
+				<a class="main-menu-item" class:isActive={isActive("log")} href={resolve("/log")}>Logg</a>
+			</li>
 			<li><a class="main-menu-item" href="mailto:nais@nav.no">Kontakt oss</a></li>
 			<li><a class="main-menu-item" href="https://console.nais.io">Console</a></li>
 		</ul>

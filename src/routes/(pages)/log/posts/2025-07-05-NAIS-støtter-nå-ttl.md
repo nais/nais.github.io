@@ -2,7 +2,7 @@
 title: "NAIS støtter nå TTL i spec.ttl"
 date: 2025-07-05T11:05:45+02:00
 author: Youssef Bel Mekki
-tags: [ workloads, naisjob, ttl ]
+tags: [workloads, naisjob, ttl]
 layout: log
 ---
 
