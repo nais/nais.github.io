@@ -6,7 +6,7 @@ tags: [postgres, cloudsql, experimental]
 layout: log
 ---
 
-Som vi annonserte i [juni i fjor](2025-06-23-en-ny-m%C3%A5te-%C3%A5-kj%C3%B8re-postgres-i-nais.md), så jobber vi med en helt ny måte å kjøre PostgreSQL i Nais.
+Som vi annonserte i [juni i fjor](#2025-06-23-en-ny-m%C3%A5te-%C3%A5-kj%C3%B8re-postgres-i-nais), så jobber vi med en helt ny måte å kjøre PostgreSQL i Nais.
 
 I løpet av året har vi lært mye, implementert og endret mye i bakgrunnen og gradvis bygget opp løsningen til noe som nærmer seg produksjonsklart.
 
