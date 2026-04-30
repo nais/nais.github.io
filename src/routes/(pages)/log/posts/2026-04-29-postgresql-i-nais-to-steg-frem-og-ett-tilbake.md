@@ -28,4 +28,4 @@ Planen nå er at vi frem mot sommeren skal jobbe med å implementere cloudnative
 Eksisterende brukere vil kunne fortsette med de basene de har inntil videre, men vil nok bli anmodet om å migrere etter sommeren en gang.
 Vi kommer til å se på om det kan gjøres automatisk på noe vis, vi vil kontakte aktuelle team med mer detaljer når det er klart.
 
-Håpet er at vi etter sommeren skal være ganske nære å kunne si at disse databasene er produksjonsklare.
+Vi forventer å ha produksjonsklare databaser tilgjengelig tidlig i høst.
