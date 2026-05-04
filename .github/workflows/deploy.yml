@@ -25,8 +25,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
       - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - uses: pnpm/action-setup@v4
+        uses: actions/configure-pages@v6
+      - uses: pnpm/action-setup@v6.0.3
       - uses: actions/setup-node@v6
         with:
           node-version: 24
@@ -36,7 +36,7 @@ jobs:
         env:
           SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: build/
 
@@ -50,4 +50,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
