@@ -8,7 +8,7 @@ layout: log
 
 Console har fått seg en real overhaling. Hensikten er å gjøre det enklere å forstå og gi bedre oversikt over hva som skjer.
 
-Det er ganske mye som endrer seg i denne oppdaterigen, så vi lister opp noen highlights:
+Det er ganske mye som endrer seg i denne oppdateringen, så vi lister opp noen highlights:
 
 - Oversiktssiden til teamet gir nå en rask oversikt på status på tvers av alle applikasjoner og jobber.
 - Oversiktssiden til apper og jobber oppsummerer og viser de mest relevante tingene for workloaden
