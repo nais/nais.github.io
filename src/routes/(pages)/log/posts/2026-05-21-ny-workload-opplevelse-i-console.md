@@ -16,6 +16,4 @@ Det er ganske mye som endrer seg i denne oppdateringen, så vi lister opp noen h
 - Alle handlinger man kan gjøre på en workload er samlet under en Actions-meny. (Restart, Stop, Resize, Set env variables, view manifest og Delete)
 - Filter og sortering finnes nå i sidemenyen på workloads og activityLog; det kommer fler senere.
 
----
-
 Bruk gjerne Feedback-knappen i Console om du har tilbakemeldinger.
