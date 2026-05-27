@@ -1,11 +1,9 @@
 ---
-title: "Rydd opp i falske positiver på en gang"
-description: "Du kan nå undertrykke en sårbarhet for flere workloads i en operasjon"
+title: "Rydd opp i alle falske positiver på en gang"
 date: 2026-05-27T15:00:00+02:00
-draft: false
 author: Youssef Bel Mekki
 tags: [security, vulnerabilities]
-language: no
+layout: log
 ---
 
 Team med mange workloads som deler samme image ser ofte den samme CVE-en flagget flere ganger. Tidligere måtte man undertrykke hver enkelt manuelt en om gangen. For et team med ti workloads betyr en falsk positiv minst ti klikk.
