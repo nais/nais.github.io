@@ -1,5 +1,5 @@
 ---
-title: "Rydd opp i falske positiver på en gang"
+title: "Rydd opp i alle falske positiver på en gang"
 description: "Du kan nå undertrykke en sårbarhet for flere workloads i en operasjon"
 date: 2026-05-27T15:00:00+02:00
 draft: false
