@@ -8,7 +8,7 @@ tags: [security, vulnerabilities]
 language: no
 ---
 
-Team med mange workloads som deler samme image ser ofte den samme CVEen flagget flere ganger. Tidligere måtte man undertrykke hver enkelt manuelt en om gangen. For et team med ti workloads betyr en falsk positiv minst ti klikk.
+Team med mange workloads som deler samme image ser ofte den samme CVE-en flagget flere ganger. Tidligere måtte man undertrykke hver enkelt manuelt en om gangen. For et team med ti workloads betyr en falsk positiv minst ti klikk.
 
 Det er nå mulig å undertrykke en sårbarhet for flere workloads i en operasjon direkte fra Console. Funksjonen finner du på teamsiden under "Vulnerabilities" ved å bruke søkefeltet "Search for vulnerability". Søk opp sårbarheten, velg hvilke workloads som er berørt, angi årsak, og det er gjort.
 
