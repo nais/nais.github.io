@@ -14,8 +14,8 @@ Token hentes på api.slack.com -> your apps -> nais-announcements -> install app
 Kjør:
 
 ```
-npm install
-npm run dev
+pnpm install
+pnpm run dev
 ```
 
 ## Opprette announcement
