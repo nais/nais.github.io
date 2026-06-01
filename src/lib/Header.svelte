@@ -128,6 +128,10 @@
 		align-items: baseline;
 		font-size: 2rem;
 	}
+	.home :global(svg) {
+		height: 1em;
+		width: auto;
+	}
 	.name {
 		font-size: 2.3rem;
 		color: var(--color-black);
