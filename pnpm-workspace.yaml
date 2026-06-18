@@ -1,0 +1,5 @@
+savePrefix: ""
+minimumReleaseAge: 20160
+allowBuilds:
+  esbuild: true
+  svelte-preprocess: true
