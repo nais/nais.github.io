@@ -6,7 +6,7 @@ tags: [workloads, naisjob, ttl]
 layout: log
 ---
 
-:naisely-done: NAIS støtter nå `spec.ttl` for automatisert opprydding i **Naisjob**!
+✅ NAIS støtter nå `spec.ttl` for automatisert opprydding i **Naisjob**!
 
 Det er nå mulig å angi en **TTL (time to live)** direkte i `spec.ttl` for Naisjob — noe som tidligere kun var
 tilgjengelig for Application-ressurser.

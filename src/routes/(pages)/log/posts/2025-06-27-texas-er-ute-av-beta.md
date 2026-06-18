@@ -6,7 +6,7 @@ tags: [texas, token, oauth, jwt]
 layout: log
 ---
 
-:texas: Sent [i fjor introduserte vi Texas i beta](https://nais.io/log/#2024-11-22-texas). Det er en tjeneste som gjør det meget mye enklere å navigere seg rundt alt av JWTer og OAuth.
+🤠 Sent [i fjor introduserte vi Texas i beta](https://nais.io/log/#2024-11-22-texas). Det er en tjeneste som gjør det meget mye enklere å navigere seg rundt alt av JWTer og OAuth.
 
 Texas er nå automatisk tilgjengelig for alle apper som bruker minst én av:
 
