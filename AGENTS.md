@@ -10,7 +10,7 @@ Primary content language is Norwegian; some blog posts are in English.
 
 ## Prerequisites
 
-- **Node:** 24.11.0 (pinned in `mise.toml`)
+- **Node:** 24.14.1 (pinned in `mise.toml`)
 - **Package manager:** pnpm (pinned in `mise.toml`)
 - Install deps: `pnpm install --frozen-lockfile`
 
