@@ -1,4 +1,3 @@
-savePrefix: ""
 minimumReleaseAge: 20160
 allowBuilds:
   esbuild: true
