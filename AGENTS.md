@@ -61,7 +61,6 @@ src/
 static/                 # Static assets served at site root
 svelte.config.js        # SvelteKit + mdsvex configuration
 eslint.config.js        # ESLint flat config (primary)
-remark-custom-emojis.js # Custom remark plugin for Slack emojis
 build-rss.js            # RSS feed generator (runs post-build)
 ```
 
@@ -117,7 +116,7 @@ build-rss.js            # RSS feed generator (runs post-build)
 | CSS class names       | kebab-case preferred       | `.main-menu-toggle`, `.byline`           |
 | Blog post dirs        | kebab-case                 | `otel-from-0-to-100/`                    |
 | Log post files        | `YYYY-MM-DD-kebab-slug.md` | `2026-02-24-bedre-navn.md`               |
-| Config/plugin files   | kebab-case                 | `remark-custom-emojis.js`                |
+| Config/plugin files   | kebab-case                 | `build-rss.js`                           |
 
 ### Imports
 
@@ -169,7 +168,6 @@ Use SvelteKit path aliases: `$lib/...`, `$app/...`. Use relative paths for same-
   layout: log
   ---
   ```
-- Custom Slack emojis can be used inline (`:naisely-done:`, `:texas:`)
 - RSS feed auto-generated at build time by `build-rss.js`
 
 ### Dates
@@ -195,5 +193,4 @@ From `.github/copilot_instructions.md` — applies to all content and documentat
 - mdsvex processes `.svelte`, `.svx`, `.md` extensions
 - Shiki syntax highlighting with `github-dark` theme (JS, TS, YAML, Bash, Elm, Shell, Kotlin, JSON)
 - `@nais` npm packages come from Google Artifact Registry (configured in `.npmrc`)
-- The `SLACK_TOKEN` env var is needed at build time for custom emoji resolution (optional — degrades gracefully)
 - Build produces RSS at `build/log/rss.xml` via post-build `build-rss.js` step

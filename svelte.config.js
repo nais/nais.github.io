@@ -3,7 +3,6 @@ import path from "path";
 import { mdsvex, escapeSvelte } from "mdsvex";
 import { createHighlighter } from "shiki";
 import remarkRelativeImages from "mdsvex-relative-images";
-import remarkCustomEmojis from "./remark-custom-emojis.js";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -24,7 +23,7 @@ const config = {
 	preprocess: [
 		mdsvex({
 			extensions: [".svx", ".md", ".mdx"],
-			remarkPlugins: [remarkCustomEmojis, remarkRelativeImages],
+			remarkPlugins: [remarkRelativeImages],
 			layout: {
 				log: join(__dirname, "/src/routes/(pages)/log/post.svelte"),
 				blog: join(__dirname, "/src/routes/(pages)/blog/posts/mdsvex_layout.svelte"),
