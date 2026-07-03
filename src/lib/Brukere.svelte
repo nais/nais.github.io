@@ -19,8 +19,10 @@
 		<a class="mail" href="mailto:nais@nav.no">Snakk med oss</a>
 		om Nais kan passe hos dere
 	</div>
-	<div class="text">
-		Se tilgjengelighetserklæringen på <a href="https://uustatus.no/nb/erklaringer/publisert/f048df55-0ea0-43d4-b884-6a6be23f098f">bokmål</a> eller <a href="https://uustatus.no/nn/erklaringer/publisert/f048df55-0ea0-43d4-b884-6a6be23f098f">nynorsk</a> for nais.io.
+	<div class="uu">
+		<a href="https://uustatus.no/nb/erklaringer/publisert/f048df55-0ea0-43d4-b884-6a6be23f098f">
+			Tilgjengelighetserklæring
+		</a>
 	</div>
 </div>
 
@@ -66,5 +68,13 @@
 	.mail {
 		color: var(--color-primary);
 		font-weight: bold;
+	}
+	.uu {
+		font-size: 0.9rem;
+		opacity: 0.55;
+	}
+	.uu a {
+		color: inherit;
+		text-decoration: none;
 	}
 </style>
