@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 const theme = "github-dark";
 const highlighter = await createHighlighter({
 	themes: [theme],
-	langs: ["javascript", "typescript", "yaml", "bash", "ts", "elm", "sh", "shell", "kotlin", "json"],
+	langs: ["javascript", "typescript", "yaml", "bash", "ts", "elm", "sh", "shell", "kotlin", "json", "svelte"],
 });
 
 /** @type {import('@sveltejs/kit').Config} */
