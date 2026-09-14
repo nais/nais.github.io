@@ -1,9 +1,9 @@
 <script>
 	import Glance from "$lib/Glance.svelte";
 	import {
-		BulletListIcon,
 		CogRotationIcon,
 		HandShakeHeartIcon,
+		MigrationIcon,
 		RocketIcon,
 		SealCheckmarkIcon,
 		VitalsIcon,
@@ -11,7 +11,7 @@
 </script>
 
 <div class="glances">
-	<Glance heading="Utrulling" --color="#FF9100">
+	<Glance heading="Utviklingsfart" --color="#FF9100">
 		<div slot="icon">
 			<RocketIcon aria-hidden />
 		</div>
@@ -23,27 +23,31 @@
 		</div>
 		<p slot="text">Du sier hva du trenger, så setter Nais opp infrastrukturen automatisk.</p>
 	</Glance>
-	<Glance heading="Full oversikt" --color="#3380A5">
-		<div slot="icon">
-			<BulletListIcon aria-hidden />
-		</div>
-		<p slot="text">
-			Ha kontroll på det du har kjørende, hva det koster og hvor godt du utnytter det.
-		</p>
-	</Glance>
-	<Glance heading="Innsikt" --color="#939E00">
+	<Glance heading="Oversikt" --color="#3380A5">
 		<div slot="icon">
 			<VitalsIcon aria-hidden />
 		</div>
-		<p slot="text">Verktøyene du trenger for å få innsikt i hvordan systemene dine oppfører seg.</p>
+		<p slot="text">
+			Ha kontroll på det du har kjørende – hvordan det oppfører seg, hva det koster og
+			utnyttelsesgraden.
+		</p>
 	</Glance>
 	<Glance heading="Sikkerhet" --color="#06893A">
 		<div slot="icon">
 			<SealCheckmarkIcon aria-hidden />
 		</div>
 		<p slot="text">
-			Nais kommer med solide standardinnstillinger ut av boksen, og gir deg det du trenger for å
-			sikre systemene dine.
+			Nais kommer med solide standardinnstillinger ut av boksen, og gir deg full sporbarhet på hvem
+			som gjorde hva, når.
+		</p>
+	</Glance>
+	<Glance heading="Suveren og autonom" --color="#0067C5">
+		<div slot="icon">
+			<MigrationIcon aria-hidden />
+		</div>
+		<p slot="text">
+			Nais bygger på industristandarder slik at både koden du lager og plattformen du kjører på
+			enkelt kan flytte på seg om verden endrer seg.
 		</p>
 	</Glance>
 	<Glance heading="Et Nais fellesskap" --color="#DE2E2E">
