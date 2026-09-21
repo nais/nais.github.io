@@ -11,8 +11,8 @@ Vi lanserer nå en ny deploy-løsning i Nais. Denne løsningen består av to del
 - [`nais/setup`](https://github.com/nais/setup) er en GitHub Action som setter opp Nais CLI i workflowen deres.
 - [`nais apply`](https://cli.nais.io/nais_apply.html) deployer manifestene med Nais CLI.
 
-Vi lanserer også V3 av [`nais/deploy`](https://github.com/nais/deploy/releases/tag/v3), denne støtter eksisterende manifester og templating, men bruker Nais CLI under panseret.
-For de fleste team er det nok å oppdatere `nais/deploy`-actionen til v3.
+Vi lanserer også V3 av [`nais/deploy/actions/deploy`](https://github.com/nais/deploy/releases/tag/v3), denne støtter eksisterende manifester og templating, men bruker Nais CLI under panseret.
+For de fleste team er det nok å oppdatere `nais/deploy/actions/deploy`-actionen til v3.
 
 ## `nais apply` og `nais/setup`
 
