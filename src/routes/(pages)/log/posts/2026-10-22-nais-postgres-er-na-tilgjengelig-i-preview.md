@@ -12,9 +12,9 @@ Dere får PostgreSQL 18, administrert av plattformen, med selvbetjent opprettels
 ## Databasen som en selvstendig ressurs
 
 En endring fra tidligere er at Postgres-databasen nå er en selvstendig ressurs med sin egen livssyklus, og ikke underordnet en workload.
-Det betyr at dere oppretter og administrerer databasen separat fra applikasjoner og jobber, gjennom [Nais Console](https://console.nais.io), [Nais CLI](https://cli.nais.io) eller et manifest i Git.
+Det betyr at dere oppretter og administrerer databasen separat fra applikasjoner og jobber, gjennom [Nais Console](https://console.nais.io), [Nais CLI](https://cli.nais.io) eller et [manifest i Git](https://docs.nais.io/persistence/postgres/reference/example/).
 
-Applikasjoner og jobber får tilgang ved å referere til databasen i manifestet sitt.
+Applikasjoner og jobber får tilgang ved å [referere til databasen i manifestet sitt](https://docs.nais.io/persistence/postgres/how-to/use-in-workload/).
 En applikasjon eller jobb kan kobles til flere databaser, og flere applikasjoner og jobber i teamet kan bruke samme database.
 
 ## Sikkerhetskopiering og auditlogging som standard
@@ -47,7 +47,7 @@ Basert på erfaringene vi gjør oss underveis vurderer vi skjebnen og evt. migre
 
 ## Kom i gang
 
-Opprett deres første Nais Postgres rett i [Console](https://console.nais.io), med `nais postgres create` i [Nais CLI](https://cli.nais.io) eller med et manifest.
+Opprett deres første Nais Postgres rett i [Console](https://console.nais.io), med `nais postgres create` i [Nais CLI](https://cli.nais.io) eller med et [manifest](https://docs.nais.io/persistence/postgres/reference/example/).
 Se [dokumentasjonen](https://docs.nais.io/persistence/postgres/) mer info.
 
 Tilbakemeldinger i #nais eller på DM settes stor pris på.
