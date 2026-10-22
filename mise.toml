@@ -1,6 +1,6 @@
 [settings]
 pin = true
-task_output = "interleave"
+task.output = "interleave"
 
 [tools]
 node = "24.14.1"
