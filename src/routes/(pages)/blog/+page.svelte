@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { resolve } from "$app/paths";
 	import { format } from "date-fns";
 	import { nb } from "date-fns/locale";
 	import type { PageData } from "./$types";
@@ -15,7 +14,8 @@
 	{#each data.posts as post (post.slug)}
 		<article lang={post.metadata.language}>
 			<h1 class="heading">
-				<a class="link" href={resolve("/blog/posts/[slug]", { slug: post.slug })}>
+				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- slug is dynamic; no typed route for individual posts -->
+				<a class="link" href="/blog/posts/{post.slug}/">
 					{post.metadata.title}
 				</a>
 			</h1>

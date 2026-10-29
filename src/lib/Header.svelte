@@ -55,7 +55,7 @@
 			</li>
 			<li><a class="main-menu-item" href="https://docs.nais.io">Dokumentasjon</a></li>
 			<li>
-				<a class="main-menu-item" class:isActive={isActive("log")} href={resolve("/log")}>Logg</a>
+				<a class="main-menu-item" class:isActive={isActive("log")} href={resolve("/log/")}>Logg</a>
 			</li>
 			<li><a class="main-menu-item" href="mailto:nais@nav.no">Kontakt oss</a></li>
 			<li><a class="main-menu-item" href="https://console.nais.io">Console</a></li>
