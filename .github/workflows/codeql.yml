@@ -56,16 +56,12 @@ jobs:
         # Details on CodeQL's query packs refer to : https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
         # queries: security-extended,security-and-quality
 
-
         uses: github/codeql-action/autobuild@bc0b696b4103f5fe60f15749af68a046868d511a # ratchet:github/codeql-action/autobuild@codeql-bundle-v2.25.4
       # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
 
       #   If the Autobuild fails above, remove it and uncomment the following three lines.
 
-
       #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
-
-
 
       # - run: |
       #   echo "Run, Build Application using script"

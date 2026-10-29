@@ -12,7 +12,7 @@ Det er ganske mye som endrer seg i denne oppdateringen, så vi lister opp noen h
 
 - Oversiktssiden til teamet gir nå en rask oversikt på status på tvers av alle applikasjoner og jobber.
 - Oversiktssiden til apper og jobber oppsummerer og viser de mest relevante tingene for workloaden
-- Vi byttet tidligere ut sidemenyen når man var inne på en app eller job, dette er nå tabs i steden. 
+- Vi byttet tidligere ut sidemenyen når man var inne på en app eller job, dette er nå tabs i steden.
 - Alle handlinger man kan gjøre på en workload er samlet under en Actions-meny. (Restart, Stop, Resize, Set env variables, view manifest og Delete)
 - Filter og sortering finnes nå i sidemenyen på workloads og activityLog; det kommer fler senere.
 

@@ -22,7 +22,7 @@ Etter at vi fant ut at vi ikke var helt fornøyd med Zalando så tok vi en kort 
 Konklusjonen etter den testen er at vi har lyst til å prøve cloudnative-pg i stedet for Zalandos postgres-operator.
 
 Det betyr at vi må ta noen steg tilbake og skrive om en del av det vi har gjort så langt, og eksisterende pilotbrukere vil være nødt til å migrere databasene sine når vi kommer så langt.
-Inntil vi er klare med endringene så ønsker vi at teamene venter med å opprette *nye* databaser på denne løsningen.
+Inntil vi er klare med endringene så ønsker vi at teamene venter med å opprette _nye_ databaser på denne løsningen.
 
 Planen nå er at vi frem mot sommeren skal jobbe med å implementere cloudnative-pg i plattformen der vi tidligere har brukt Zalando postgres-operator.
 Eksisterende brukere vil kunne fortsette med de basene de har inntil videre, men vil nok bli anmodet om å migrere etter sommeren en gang.
