@@ -1,9 +1,9 @@
 <script>
 	import { resolve } from "$app/paths";
-	import { page } from "$app/stores";
+	import { page } from "$app/state";
 	import Nais from "./icons/Nais.svelte";
 
-	const isActive = (/** @type {string} */ path) => $page.url.pathname.startsWith(`/${path}`);
+	const isActive = (/** @type {string} */ path) => page.url.pathname.startsWith(`/${path}`);
 	let isOpen = $state(false);
 </script>
 
@@ -49,13 +49,13 @@
 	<nav class="main-menu" class:isOpen>
 		<ul class="main-menu-list">
 			<li>
-				<a class="main-menu-item" class:isActive={isActive("blog")} href={resolve("/blog")}>
+				<a class="main-menu-item" class:isActive={isActive("blog")} href={resolve("blog")}>
 					Artikler
 				</a>
 			</li>
 			<li><a class="main-menu-item" href="https://docs.nais.io">Dokumentasjon</a></li>
 			<li>
-				<a class="main-menu-item" class:isActive={isActive("log")} href={resolve("/log/")}>Logg</a>
+				<a class="main-menu-item" class:isActive={isActive("log")} href={resolve("log/")}>Logg</a>
 			</li>
 			<li><a class="main-menu-item" href="mailto:nais@nav.no">Kontakt oss</a></li>
 			<li><a class="main-menu-item" href="https://console.nais.io">Console</a></li>

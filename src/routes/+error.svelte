@@ -1,5 +1,5 @@
 <script>
-	import Nais from "$lib/icons/Nais.svelte";
+	import Nais from "#lib/icons/Nais.svelte";
 </script>
 
 <div class="centered">

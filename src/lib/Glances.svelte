@@ -1,5 +1,5 @@
 <script>
-	import Glance from "$lib/Glance.svelte";
+	import Glance from "#lib/Glance.svelte";
 	import {
 		CogRotationIcon,
 		HandShakeHeartIcon,
