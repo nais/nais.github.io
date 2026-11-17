@@ -1,31 +1,31 @@
 <script>
-	import Glance from "#lib/Glance.svelte";
 	import {
-		CogRotationIcon,
-		HandShakeHeartIcon,
-		MigrationIcon,
-		RocketIcon,
-		SealCheckmarkIcon,
-		VitalsIcon,
-	} from "@nais/ds-svelte-community/icons";
+		Activity,
+		ArrowRightLeft,
+		BadgeCheck,
+		Cog,
+		HeartHandshake,
+		Rocket,
+	} from "@lucide/svelte";
+	import Glance from "#lib/Glance.svelte";
 </script>
 
 <div class="glances">
 	<Glance heading="Utviklingsfart" --color="#FF9100">
 		<div slot="icon">
-			<RocketIcon aria-hidden />
+			<Rocket size="1em" aria-hidden="true" focusable="false" />
 		</div>
 		<p slot="text">Nais tar ideene dine raskt fra kode til produksjon, uten nedetid.</p>
 	</Glance>
 	<Glance heading="Automatisering" --color="#634689">
 		<div slot="icon">
-			<CogRotationIcon aria-hidden />
+			<Cog size="1em" aria-hidden="true" focusable="false" />
 		</div>
 		<p slot="text">Du sier hva du trenger, så setter Nais opp infrastrukturen automatisk.</p>
 	</Glance>
 	<Glance heading="Oversikt" --color="#3380A5">
 		<div slot="icon">
-			<VitalsIcon aria-hidden />
+			<Activity size="1em" aria-hidden="true" focusable="false" />
 		</div>
 		<p slot="text">
 			Ha kontroll på det du har kjørende – hvordan det oppfører seg, hva det koster og
@@ -34,7 +34,7 @@
 	</Glance>
 	<Glance heading="Sikkerhet" --color="#06893A">
 		<div slot="icon">
-			<SealCheckmarkIcon aria-hidden />
+			<BadgeCheck size="1em" aria-hidden="true" focusable="false" />
 		</div>
 		<p slot="text">
 			Nais kommer med solide standardinnstillinger ut av boksen, og gir deg full sporbarhet på hvem
@@ -43,7 +43,7 @@
 	</Glance>
 	<Glance heading="Suveren og autonom" --color="#0067C5">
 		<div slot="icon">
-			<MigrationIcon aria-hidden />
+			<ArrowRightLeft size="1em" aria-hidden="true" focusable="false" />
 		</div>
 		<p slot="text">
 			Nais bygger på industristandarder slik at både koden du lager og plattformen du kjører på
@@ -52,7 +52,7 @@
 	</Glance>
 	<Glance heading="Et Nais fellesskap" --color="#DE2E2E">
 		<div slot="icon">
-			<HandShakeHeartIcon aria-hidden />
+			<HeartHandshake size="1em" aria-hidden="true" focusable="false" />
 		</div>
 		<p slot="text">Vi er mange som bruker og utvikler Nais, og vi hjelper hverandre.</p>
 	</Glance>
