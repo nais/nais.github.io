@@ -57,16 +57,16 @@ jobs:
         # queries: security-extended,security-and-quality
 
         uses: github/codeql-action/autobuild@bc0b696b4103f5fe60f15749af68a046868d511a # ratchet:github/codeql-action/autobuild@codeql-bundle-v2.25.4
-      # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
-
       #   If the Autobuild fails above, remove it and uncomment the following three lines.
 
       #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
 
       # - run: |
+
       #   echo "Run, Build Application using script"
       #   ./location_of_script_within_repo/buildscript.sh
       - name: Perform CodeQL Analysis
+        # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
 
         # ℹ️ Command-line programs to run using the OS shell.
 
