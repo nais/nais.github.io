@@ -30,6 +30,6 @@ updates:
           - "*"
     ignore:
       - dependency-name: "typescript"
-        update-types: ["version-update:semver-major"]
+        versions: [">=6.1.0"]
     cooldown:
       default-days: 7
