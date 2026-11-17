@@ -1,4 +1,7 @@
 minimumReleaseAge: 20160
+update:
+  ignoreDeps:
+    - typescript
 overrides:
   js-yaml: 4.3.2
 allowBuilds:
