@@ -20,7 +20,7 @@
 			}
 		</style>
 	</defs>
-	<title>Artboard 1</title>
+	<title>Arbeidstilsynet</title>
 	<circle class="cls-1" cx="75.91" cy="79.24" r="68.12" />
 	<path
 		d="M161.61,155.16l21.66-50.54h6.86l21.66,50.54H201.61L196.84,144H176.56l-4.76,11.19Zm18.63-19.86h12.85l-6.43-14.95Z" />

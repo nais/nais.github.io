@@ -8,6 +8,7 @@
 	viewBox="0 0 437 115"
 	xmlns="http://www.w3.org/2000/svg"
 	fill="currentColor">
+	<title>Landbruksdirektoratet</title>
 	<path d="M52.175 115L112.97 0.68042H109.34L48.5454 115H52.175Z" />
 	<path d="M42.4201 115L103.215 0.68042H99.8124L38.7905 115H42.4201Z" />
 	<path d="M32.6662 115L93.688 0.68042H90.0585L29.0366 115H32.6662Z" />
