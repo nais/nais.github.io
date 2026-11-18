@@ -12,9 +12,7 @@
 		<Navlogo />
 		<SsblogoFull />
 		<Ldir />
-		<div style="margin-bottom: -7px">
-			<Atil />
-		</div>
+		<Atil />
 		<KSDigitalLogo />
 	</div>
 	<div class="text">
