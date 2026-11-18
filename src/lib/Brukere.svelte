@@ -3,6 +3,7 @@
 	import SsblogoFull from "./icons/SsblogoFull.svelte";
 	import Ldir from "./icons/Ldir.svelte";
 	import Atil from "./icons/Atil.svelte";
+	import KSDigitalLogo from "./icons/KSDigitalLogo.svelte";
 </script>
 
 <div class="section">
@@ -14,6 +15,7 @@
 		<div style="margin-bottom: -7px">
 			<Atil />
 		</div>
+		<KSDigitalLogo />
 	</div>
 	<div class="text">
 		<a class="mail" href="mailto:nais@nav.no">Snakk med oss</a>
